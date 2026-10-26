@@ -1,0 +1,96 @@
+{
+  "id": "C2-all-false",
+  "raw_model": {
+    "name": "all-false",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "u",
+      "v"
+    ],
+    "truth": {
+      "u": false,
+      "v": false
+    },
+    "domains": [
+      "a"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint": {
+      "u": [
+        [
+          "0"
+        ]
+      ],
+      "v": [
+        [
+          "0"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  },
+  "expected_capability": true,
+  "record_expectations": [
+    {
+      "record": [
+        "0"
+      ],
+      "verdict": "FALSE",
+      "compatible_histories": [
+        "u",
+        "v"
+      ]
+    },
+    {
+      "record": [
+        "1"
+      ],
+      "verdict": "OUTSIDE_MODEL",
+      "compatible_histories": []
+    }
+  ],
+  "manual_justification": "Both compatible histories are false; a constant claim is decidable on model exposures, not outside them.",
+  "kind": "control",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0"
+          ],
+          "verdict": "FALSE",
+          "compatible_histories": [
+            "u",
+            "v"
+          ]
+        },
+        {
+          "record": [
+            "1"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        },
+        {
+          "record": [
+            "__outside__"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": true,
+      "certificate_objects_cross_verified": 0,
+      "witness_verifications": 0
+    }
+  },
+  "unmutated_matches_manual_expectations": true
+}

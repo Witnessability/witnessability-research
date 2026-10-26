@@ -1,0 +1,134 @@
+{
+  "id": "M6-ambiguity-needs-opposite-truth",
+  "mutant": "verify_without_truth_obligation",
+  "raw_model": {
+    "name": "M6-opposite-truth-required",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "f",
+      "g"
+    ],
+    "truth": {
+      "f": false,
+      "g": false
+    },
+    "domains": [
+      "a"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint": {
+      "f": [
+        [
+          "0"
+        ]
+      ],
+      "g": [
+        [
+          "0"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  },
+  "query": {
+    "operation": "verify-ambiguity",
+    "record": [
+      "0"
+    ],
+    "witnesses": [
+      {
+        "history": "f",
+        "honest": [
+          "0"
+        ],
+        "fault": []
+      },
+      {
+        "history": "g",
+        "honest": [
+          "0"
+        ],
+        "fault": []
+      }
+    ]
+  },
+  "expected": {
+    "valid": false
+  },
+  "expected_capability": true,
+  "record_expectations": [
+    {
+      "record": [
+        "0"
+      ],
+      "verdict": "FALSE",
+      "compatible_histories": [
+        "f",
+        "g"
+      ]
+    }
+  ],
+  "manual_justification": "The supplied distinct histories both honestly expose 0 and both have truth false. All membership obligations hold, but there is no true history. This is not an ambiguity witness. Ignoring the opposite-truth obligation incorrectly accepts it.",
+  "kind": "mutation",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0"
+          ],
+          "verdict": "FALSE",
+          "compatible_histories": [
+            "f",
+            "g"
+          ]
+        },
+        {
+          "record": [
+            "1"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        },
+        {
+          "record": [
+            "__outside__"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": true,
+      "certificate_objects_cross_verified": 0,
+      "witness_verifications": 0
+    },
+    "query_witness_checks": {
+      "A": {
+        "valid": false,
+        "rejection": "CertificateError",
+        "message": "wrong witness truth"
+      },
+      "B": {
+        "valid": false,
+        "rejection": "InvalidCertificate",
+        "message": "wrong witness history or truth"
+      },
+      "C": {
+        "valid": false
+      }
+    }
+  },
+  "unmutated_matches_manual_expectations": true,
+  "actual_mutant_result": {
+    "valid": true
+  },
+  "mutation_detected": true
+}

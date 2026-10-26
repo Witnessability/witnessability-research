@@ -1,0 +1,305 @@
+{
+  "status": "pass",
+  "python": "3.12.14",
+  "implementation": "CPython",
+  "source_files": [
+    {
+      "path": "validation/r02-06/run_mutations.py",
+      "sha256": "832b763392f8f5e7fcbaf31a5208aa4bcd4364ed9c4ff0b4d38f80ea87be0143",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "validation/r02-06/run_consistency.py",
+      "sha256": "212eeb20b42424ed29f4545c0d684bba689444d9bdf160e85554699840ebb4be",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "validation/r02-06/PROTOCOL.md",
+      "sha256": "85c1d9bef0745c7dd801e7c0fcdd49111093ca377257853f996d1dffa03b7fcc",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "validation/r02-06/third-checker/third_checker.py",
+      "sha256": "8ffcb248825fa67422e0f67931f8a7d4fc8c5924f5286fbb491d63147b7a08c2",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "src/witnessability_research/finite.py",
+      "sha256": "228347b86970fc5dbeb38ca44149c1cd07a8bba58725da82224f23e8905d402e",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/__init__.py",
+      "sha256": "29173d924f69319bceed4ae09511ffc467b38f92d3e288113ad727fc89d5044a",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/analysis.py",
+      "sha256": "bebc7340f1e13b2a3e8ea92dbe30ff425f63c6599bcc82177d28d3c795cba0d7",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/capability_command.py",
+      "sha256": "72206f435e86d066cafe9c4c721dcb5ed78ec07f1bd4a2be8aa3e7cc078c3fb0",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/cli.py",
+      "sha256": "fa90888f5ae5dd2b3f770884c1a277c80edfc7fd6af1ab2eeee931c47c3ff3f9",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/common.py",
+      "sha256": "0754a2ec68284b4b8c2411356f79dec35887140c18888ad19c5d275da0f61a92",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/context.py",
+      "sha256": "7f551fd06f8d123b4191924ab4676264e11b8ad0a0383fa6a9610a3d9469e668",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/legacy.py",
+      "sha256": "b749d73065d0373a7377ff4d1bac1a89f4d7c19aaef5f0da18454c5f8090db78",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/model.py",
+      "sha256": "e4fc3704c13b6da816b43b5f5a445a79bd2a9c00ff2e0727ce3ba51e09fff4ad",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/validation.py",
+      "sha256": "caa71617c6a1ba9ef6859e6aae1808fb98e98e9a67a479595af20282d2bfc611",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    },
+    {
+      "path": "standalone/src/witnessability_checker/verify.py",
+      "sha256": "f2fb2cfb8b34d050bfe3238b11e6a516afc46b4f5b2bcf603c6415569ec8bb0e",
+      "identity_status": "byte-identical published-path counterpart of historical input"
+    }
+  ],
+  "controls": [
+    {
+      "id": "C1-all-true",
+      "file": "validation/r02-06/results/mutations-python312-cases/C1-all-true.json",
+      "passed": true
+    },
+    {
+      "id": "C2-all-false",
+      "file": "validation/r02-06/results/mutations-python312-cases/C2-all-false.json",
+      "passed": true
+    },
+    {
+      "id": "C3-disjoint-opposite-truths",
+      "file": "validation/r02-06/results/mutations-python312-cases/C3-disjoint-opposite-truths.json",
+      "passed": true
+    },
+    {
+      "id": "C4-mixed-with-valid-witness",
+      "file": "validation/r02-06/results/mutations-python312-cases/C4-mixed-with-valid-witness.json",
+      "passed": true
+    }
+  ],
+  "mutations": [
+    {
+      "id": "M1-cartesian-marginals",
+      "file": "validation/r02-06/results/mutations-python312-cases/M1-cartesian-marginals.json",
+      "expected": {
+        "verdict": "FALSE",
+        "compatible_histories": [
+          "f"
+        ]
+      },
+      "actual": {
+        "verdict": "UNRESOLVED",
+        "compatible_histories": [
+          "f",
+          "t"
+        ]
+      },
+      "detected": true
+    },
+    {
+      "id": "M2-components-are-not-record-fibres",
+      "file": "validation/r02-06/results/mutations-python312-cases/M2-components-are-not-record-fibres.json",
+      "expected": {
+        "verdict": "TRUE",
+        "compatible_histories": [
+          "h0",
+          "h1"
+        ]
+      },
+      "actual": {
+        "verdict": "UNRESOLVED",
+        "compatible_histories": [
+          "h0",
+          "h1",
+          "h2"
+        ]
+      },
+      "detected": true
+    },
+    {
+      "id": "M3-fault-family-not-its-union",
+      "file": "validation/r02-06/results/mutations-python312-cases/M3-fault-family-not-its-union.json",
+      "expected": {
+        "verdict": "TRUE",
+        "compatible_histories": [
+          "t"
+        ]
+      },
+      "actual": {
+        "verdict": "UNRESOLVED",
+        "compatible_histories": [
+          "f",
+          "t"
+        ]
+      },
+      "detected": true
+    },
+    {
+      "id": "M4-two-faults-not-one-shared-fault",
+      "file": "validation/r02-06/results/mutations-python312-cases/M4-two-faults-not-one-shared-fault.json",
+      "expected": {
+        "capability": false
+      },
+      "actual": {
+        "capability": true
+      },
+      "detected": true
+    },
+    {
+      "id": "M5-empty-compatibility-is-not-true",
+      "file": "validation/r02-06/results/mutations-python312-cases/M5-empty-compatibility-is-not-true.json",
+      "expected": {
+        "verdict": "OUTSIDE_MODEL",
+        "compatible_histories": []
+      },
+      "actual": {
+        "verdict": "TRUE",
+        "compatible_histories": []
+      },
+      "detected": true
+    },
+    {
+      "id": "M6-ambiguity-needs-opposite-truth",
+      "file": "validation/r02-06/results/mutations-python312-cases/M6-ambiguity-needs-opposite-truth.json",
+      "expected": {
+        "valid": false
+      },
+      "actual": {
+        "valid": true
+      },
+      "detected": true
+    }
+  ],
+  "expected_basis": "literal hand-derived expectations fixed in this script, not majority vote",
+  "scope": "internal bounded mathematical controls and deliberately wrong functions; not authoritative oracle, external validation or real capture",
+  "production_source_modified": false,
+  "unmutated_models_checked": 10,
+  "unmutated_record_queries": 43,
+  "elapsed_seconds": 0.023716509000223596,
+  "case_files": [
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/C1-all-true.json",
+      "sha256": "1684d3008ed147dd0fbd921e2043e3fe4f61612a6147092d2b227d25738b050d"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/C2-all-false.json",
+      "sha256": "adb446bf3c290441f756a6d20274c95fde5c2f2ec6663ec9a5e526ee544eaad3"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/C3-disjoint-opposite-truths.json",
+      "sha256": "979a67ca7dd7f76a56b5398dda10889482031dd68cb34ce0eb3d33f03200303a"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/C4-mixed-with-valid-witness.json",
+      "sha256": "0d3a5a04daadcbc904a8473f8c29d31518e54fe58364b0a6292304396ac90a08"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/M1-cartesian-marginals.json",
+      "sha256": "0ea04fec636959c06a8fba6db8810045003715f1fe3950a830d9e5872afc9fd4"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/M2-components-are-not-record-fibres.json",
+      "sha256": "61ccb55777caacd7dc7c0bc9d1d406ef11f3d45dcf2979bc94217cc27d0f33a0"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/M3-fault-family-not-its-union.json",
+      "sha256": "eb7f2055b99866f6ce973f1a75c937924886c5f79500a74abc256c944d0b58e5"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/M4-two-faults-not-one-shared-fault.json",
+      "sha256": "bd54cb52d5e2050da8ae7c7a17401095a12818c39c143e46bbb3d44c498b34c9"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/M5-empty-compatibility-is-not-true.json",
+      "sha256": "431b06b48202cd44cebbea8e9791ac75f06a2ba3069c33c1eefe0b034e84de36"
+    },
+    {
+      "path": "validation/r02-06/results/mutations-python312-cases/M6-ambiguity-needs-opposite-truth.json",
+      "sha256": "8bacbac590debcce918987ad6c48e97268166f31f5194cdf6e1bc7b47570a79d"
+    }
+  ],
+  "schema": "r0206-disclosure-projection-1",
+  "raw_schema": "r0206-directed-mutations-1",
+  "disclosure_projection": {
+    "raw_sha256": "e749a0c8849119ea2a5be2ec400320e79b6d1ede5dedf1998ef2f69eb8e513b7",
+    "raw_metadata_retained_privately": true,
+    "fields_removed": [
+      "/command",
+      "/source",
+      "/reference"
+    ],
+    "fields_normalized": [
+      "/source_files/0",
+      "/source_files/1",
+      "/source_files/2",
+      "/source_files/3",
+      "/source_files/4",
+      "/source_files/5",
+      "/source_files/6",
+      "/source_files/7",
+      "/source_files/8",
+      "/source_files/9",
+      "/source_files/10",
+      "/source_files/11",
+      "/source_files/12",
+      "/source_files/13",
+      "/source_files/14",
+      "/source_files/15",
+      "/controls/0/file",
+      "/controls/1/file",
+      "/controls/2/file",
+      "/controls/3/file",
+      "/mutations/0/file",
+      "/mutations/1/file",
+      "/mutations/2/file",
+      "/mutations/3/file",
+      "/mutations/4/file",
+      "/mutations/5/file",
+      "/case_files/0/path",
+      "/case_files/1/path",
+      "/case_files/2/path",
+      "/case_files/3/path",
+      "/case_files/4/path",
+      "/case_files/5/path",
+      "/case_files/6/path",
+      "/case_files/7/path",
+      "/case_files/8/path",
+      "/case_files/9/path"
+    ],
+    "original_commands_omitted": true,
+    "replacement_command_claimed_executed": false,
+    "numeric_results_and_model_result_digests_unchanged": true,
+    "computational_source_hashes_preserved": true,
+    "historical_document_hashes": [],
+    "description": "Disclosure projection of recorded development results, not raw logs or a new execution. Reproduction examples are in RESULTS.md."
+  }
+}

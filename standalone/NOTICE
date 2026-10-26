@@ -1,0 +1,6 @@
+Witnessability Research standalone private candidate.
+Derived from Witnessability/witnessability-research finite.py, commit
+9ec68cff4981567705490b44ab5f76ffc0590cbb. Copyright 2026 Mikhail Sergeev.
+Software extraction and candidate changes are distributed under Apache-2.0.
+This is a private development candidate, not a public release or new independent
+mathematical implementation. The original package and its notices are unchanged.

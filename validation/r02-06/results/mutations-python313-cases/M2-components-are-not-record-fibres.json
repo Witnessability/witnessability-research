@@ -1,0 +1,265 @@
+{
+  "id": "M2-components-are-not-record-fibres",
+  "mutant": "component_as_record_compatibility",
+  "raw_model": {
+    "name": "M2-nontransitive-confusability",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "h0",
+      "h1",
+      "h2"
+    ],
+    "truth": {
+      "h0": true,
+      "h1": true,
+      "h2": false
+    },
+    "domains": [
+      "a",
+      "b",
+      "c"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint": {
+      "h0": [
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "h1": [
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "h2": [
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "faults": [
+      [],
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ]
+    ]
+  },
+  "query": {
+    "operation": "evaluate-record",
+    "record": [
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "expected": {
+    "verdict": "TRUE",
+    "compatible_histories": [
+      "h0",
+      "h1"
+    ]
+  },
+  "expected_capability": false,
+  "record_expectations": [
+    {
+      "record": [
+        "0",
+        "0",
+        "0"
+      ],
+      "verdict": "TRUE",
+      "compatible_histories": [
+        "h0",
+        "h1"
+      ]
+    },
+    {
+      "record": [
+        "0",
+        "1",
+        "1"
+      ],
+      "verdict": "UNRESOLVED",
+      "compatible_histories": [
+        "h1",
+        "h2"
+      ]
+    }
+  ],
+  "manual_justification": "Each exposure is the radius-one binary Hamming ball. Distances between 000/001, 001/111 and 000/111 are 1,2,3. Thus graph edges are h0-h1 and h1-h2, but not h0-h2. Record 000 has only true histories h0,h1. Record 011 is shared by h1 and false h2, so global capability is false. Transitive closure adds false h2 to the fibre at 000 even though h2 cannot expose that record.",
+  "graph_expectation": {
+    "edges": [
+      [
+        "h0",
+        "h1"
+      ],
+      [
+        "h1",
+        "h2"
+      ]
+    ],
+    "nonedges": [
+      [
+        "h0",
+        "h2"
+      ]
+    ]
+  },
+  "kind": "mutation",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0",
+            "0",
+            "0"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "h0",
+            "h1"
+          ]
+        },
+        {
+          "record": [
+            "0",
+            "0",
+            "1"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "h0",
+            "h1"
+          ]
+        },
+        {
+          "record": [
+            "0",
+            "1",
+            "0"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "h0"
+          ]
+        },
+        {
+          "record": [
+            "0",
+            "1",
+            "1"
+          ],
+          "verdict": "UNRESOLVED",
+          "compatible_histories": [
+            "h1",
+            "h2"
+          ]
+        },
+        {
+          "record": [
+            "1",
+            "0",
+            "0"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "h0"
+          ]
+        },
+        {
+          "record": [
+            "1",
+            "0",
+            "1"
+          ],
+          "verdict": "UNRESOLVED",
+          "compatible_histories": [
+            "h1",
+            "h2"
+          ]
+        },
+        {
+          "record": [
+            "1",
+            "1",
+            "0"
+          ],
+          "verdict": "FALSE",
+          "compatible_histories": [
+            "h2"
+          ]
+        },
+        {
+          "record": [
+            "1",
+            "1",
+            "1"
+          ],
+          "verdict": "FALSE",
+          "compatible_histories": [
+            "h2"
+          ]
+        },
+        {
+          "record": [
+            "__outside__",
+            "0",
+            "0"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": false,
+      "certificate_objects_cross_verified": 2,
+      "witness_verifications": 6
+    },
+    "actual_collision_graph_edges": [
+      [
+        "h0",
+        "h1"
+      ],
+      [
+        "h1",
+        "h2"
+      ]
+    ]
+  },
+  "unmutated_matches_manual_expectations": true,
+  "actual_mutant_result": {
+    "verdict": "UNRESOLVED",
+    "compatible_histories": [
+      "h0",
+      "h1",
+      "h2"
+    ]
+  },
+  "mutation_detected": true
+}

@@ -1,0 +1,51 @@
+{
+  "protocol": "85c1d9bef0745c7dd801e7c0fcdd49111093ca377257853f996d1dffa03b7fcc",
+  "pilot_status": "pilot_pass",
+  "selected_full_run_wall_seconds": 600,
+  "upper_ceiling_seconds": 900,
+  "rationale": "Pilot passed 256-model prefix of each class; total <1 second. Full runs scheduled with conservative 600-second POSIX deadline per interpreter. Prefix timing is not assumed representative of every model. Existing public CI unchanged.",
+  "classes": [
+    {
+      "id": "legacy-2x2",
+      "pilot_models": 256,
+      "elapsed_seconds": 0.1192432799944072,
+      "linear_prefix_estimate_seconds": 0.5240183202879223
+    },
+    {
+      "id": "singleton-3x3",
+      "pilot_models": 256,
+      "elapsed_seconds": 0.1419412570030545,
+      "linear_prefix_estimate_seconds": 43.150142128928564
+    },
+    {
+      "id": "joint-catalog-3x3",
+      "pilot_models": 256,
+      "elapsed_seconds": 0.16208111100422684,
+      "linear_prefix_estimate_seconds": 20.786902486292092
+    }
+  ],
+  "measurement_note": "Budget selected from the earlier same-mathematics pilot; final runner adds only error-reporting initialization. Final pilot is provided separately; original elapsed measurements retained.",
+  "budget_selection_pilot": {
+    "visibility": "historical earlier pilot retained privately; not the final-runner pilot below",
+    "raw_sha256": "a664af07250d6356eb40741e529c2274dc2e6471523d3734d23ae0fb2ec3f44a",
+    "class_elapsed_measurements_retained": true
+  },
+  "final_runner_pilot_disclosure_projection": "validation/r02-06/results/pilot-python312-pinned.json",
+  "final_runner_pilot_raw_sha256": "f94ac4ca35a5b59b593739c93b7a0807d1db7eb9c95f395ae3197675261522a6",
+  "schema": "r0206-disclosure-projection-1",
+  "raw_schema": null,
+  "disclosure_projection": {
+    "raw_sha256": "9b76a66e6a9f48157bb5eab04a74aee9c0eba3e6e471b1a32dd05e30c47a1c64",
+    "raw_metadata_retained_privately": true,
+    "fields_removed": [
+      "/pilot"
+    ],
+    "fields_normalized": [],
+    "original_commands_omitted": false,
+    "replacement_command_claimed_executed": false,
+    "numeric_results_and_model_result_digests_unchanged": true,
+    "computational_source_hashes_preserved": true,
+    "historical_document_hashes": [],
+    "description": "Disclosure projection of recorded development results, not raw logs or a new execution. Reproduction examples are in RESULTS.md."
+  }
+}

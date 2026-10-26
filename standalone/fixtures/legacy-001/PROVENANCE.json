@@ -1,0 +1,68 @@
+{
+  "fixtures_sha256": {
+    "certificate-baseline-r0000.json": "a12b25abfb5071b05b07f1d9b721c4fa2661d255563b245bbc07c7c3ade0e86e",
+    "expected-certificate-baseline-r0000.json": "64d8c1aa39ee736b37ca67c6442c60c9f9ba052639dbabe45694ba58485d0dbe",
+    "expected-model-atomic.json": "f3f475c015cc635c5fad22ad91a4514d1b33af495fcb575e682b4e1643cc0d12",
+    "expected-model-baseline.json": "065c7cf40dfffe097b862a65078954d56f215c7dede4b26bbded5f462472bade",
+    "model-atomic.json": "9474507c8dd4805fcc141fda48bc0a01a0815e5f50900f77f217d53a5873726e",
+    "model-baseline.json": "5105bb93a58990fd4b2d2c806e903bc9a37f76fd13d3aa9c554c05b9285f3f83",
+    "record-atomic-r0000.json": "20030e77f1dd64b9c52c2e2f5cd8111b624a67e2a8ff5230d5559d561b518ebc",
+    "record-atomic-r0002.json": "ec6553e129e772d904d4a11c6d06d7477016cdd42f0403fe16dac4d545ab374f",
+    "record-baseline-r0000.json": "0e0811686c7ceb225eaf22721ff03f24f627b3314b7254b1d7f196405c2b48ed"
+  },
+  "origin": "Selected values from preserved development run. Fragment files are canonical serializations, not original parent-file bytes. Expected legacy certificate pins are separately supplied fixture trust anchors cross-checked against manifest model/claim and consumer projection digest. Not independent real-world evidence.",
+  "selected_judgments": [
+    {
+      "admission": "ADMITTED",
+      "criterion_judgment": "UNRESOLVED",
+      "judgment": "UNRESOLVED",
+      "model_id": "baseline",
+      "record_id": "baseline/r0000"
+    },
+    {
+      "admission": "ADMITTED",
+      "criterion_judgment": "FALSE",
+      "judgment": "FALSE",
+      "model_id": "atomic",
+      "record_id": "atomic/r0000"
+    },
+    {
+      "admission": "ADMITTED",
+      "criterion_judgment": "TRUE",
+      "judgment": "TRUE",
+      "model_id": "atomic",
+      "record_id": "atomic/r0002"
+    }
+  ],
+  "selected_raw_capability": {
+    "atomic": true,
+    "baseline": false
+  },
+  "source_artifact_sha256": {
+    "certificates.json": "09fa4e85bc14fb9f3d267ddd66c2f11c4e968c7a366904ed0933c820a9facc38",
+    "consumer-projections.json": "1c3fb362da403ae743151d8f7d86aa5df258a57d8f4c5f4b7e5eb6b7b9a1dffe",
+    "judgments.json": "8f559af5e72c0d6358abec383f9cb566bfc708f7d63d0cab39c7d779fb4350d5",
+    "models.json": "cb5f08f7fa1543c1b941df4f8afa8b5a544c97484ceb30729e43aacbbfa3cc23",
+    "raw-observations.json": "10766fd6322b7dcd935dd4a5a3232337c0c1b19a82985bec4fee64ed2bad31d6",
+    "raw-traces.json": "435118aca3923b11318f7505b41ea84093c9c6f1e86cdd8bfca566855253ec1a",
+    "summary.json": "2954733b126f1cd9f6d42c519b2df28a657d18935a328c52ada85d3c9d91d251"
+  },
+  "source_pin": "2105966ee5f75ca5678393b989d226d913f176978be85fa55395063fa5a6c744",
+  "source_repository_commit": "9ec68cff4981567705490b44ab5f76ffc0590cbb",
+  "source_run_created_at": "2026-10-25T20:14:10.156887+00:00",
+  "source_run_manifest_sha256": "7d0508ed71db73ad4069fa9da6206dcca782593686063295fc84afe81e31221f",
+  "parent_run_origin": {
+    "visibility": "private archive; complete parent run not included in this source projection",
+    "description": "Selected fixture fragments from a preserved development run. Private repository locator omitted; no public parent-run archive is asserted."
+  },
+  "disclosure_projection": {
+    "schema": "legacy-provenance-disclosure-1",
+    "raw_sha256": "511430bbad3ff609b12dd5ce90ad354d2a76f79ab1b16b5b8a566ced4fbe46d9",
+    "raw_metadata_retained_privately": true,
+    "fields_removed": [
+      "/preserved_origin"
+    ],
+    "fixture_bytes_and_all_existing_artifact_hashes_preserved": true,
+    "not_a_new_run_or_independent_authentication": true
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "wresearch-checker-input-1",
+  "semantics_version": "finite-joint-identity-1",
+  "model": {
+    "name": "tiny-mixed",
+    "claim": "declared binary proposition",
+    "binding": "identity",
+    "histories": [
+      "f",
+      "g",
+      "t"
+    ],
+    "truth": {
+      "f": false,
+      "g": false,
+      "t": true
+    },
+    "domains": [
+      "x"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "joint": {
+      "f": [
+        [
+          "0"
+        ]
+      ],
+      "g": [
+        [
+          "0"
+        ],
+        [
+          "2"
+        ]
+      ],
+      "t": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  }
+}

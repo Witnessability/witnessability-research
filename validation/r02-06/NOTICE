@@ -1,0 +1,8 @@
+License notice for newly authored R02-06 material
+
+Python source and tests in this directory and third-checker/: Apache-2.0.
+Markdown documentation and this notice: CC-BY-4.0.
+Synthetic run metadata and result JSON in results/: CC0-1.0.
+These are the existing project license types; see ../../LICENSE.md and ../../LICENSES/.
+Implementation provenance is disclosed in third-checker/PROVENANCE.md.
+No third-party source code was imported into the reference checker.

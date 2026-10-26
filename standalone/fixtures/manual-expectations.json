@@ -1,0 +1,27 @@
+{
+  "status": "hand-derived-before-semantic-runs",
+  "models": {
+    "mixed": {
+      "records": {
+        "0": "UNRESOLVED",
+        "1": "TRUE",
+        "2": "FALSE",
+        "3": "OUTSIDE_MODEL",
+        "outside": "OUTSIDE_MODEL"
+      },
+      "raw_capability": false
+    },
+    "separated": {
+      "raw_capability": true,
+      "records": {
+        "2": "OUTSIDE_MODEL"
+      }
+    },
+    "alternative-faults": {
+      "raw_capability": false,
+      "records": {
+        "10": "UNRESOLVED"
+      }
+    }
+  }
+}
