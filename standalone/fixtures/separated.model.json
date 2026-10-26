@@ -1,0 +1,42 @@
+{
+  "schema_version": "wresearch-checker-input-1",
+  "semantics_version": "finite-joint-identity-1",
+  "model": {
+    "name": "tiny-separated",
+    "claim": "declared binary proposition",
+    "binding": "identity",
+    "histories": [
+      "f",
+      "t"
+    ],
+    "truth": {
+      "f": false,
+      "t": true
+    },
+    "domains": [
+      "x"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1",
+        "2"
+      ]
+    ],
+    "joint": {
+      "f": [
+        [
+          "0"
+        ]
+      ],
+      "t": [
+        [
+          "1"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+test_all_declared_boundaries_reject_explicitly (test_third_checker.ReferenceTests.test_all_declared_boundaries_reject_explicitly) ... ok
+test_all_four_record_outcomes_and_exact_compatible_sets (test_third_checker.ReferenceTests.test_all_four_record_outcomes_and_exact_compatible_sets) ... ok
+test_bad_record_shape_raises (test_third_checker.ReferenceTests.test_bad_record_shape_raises) ... ok
+test_capability_does_not_imply_universal_support (test_third_checker.ReferenceTests.test_capability_does_not_imply_universal_support) ... ok
+test_compiled_object_owns_a_snapshot_and_returns_fresh_results (test_third_checker.ReferenceTests.test_compiled_object_owns_a_snapshot_and_returns_fresh_results) ... ok
+test_disjoint_exposure_has_capability (test_third_checker.ReferenceTests.test_disjoint_exposure_has_capability) ... ok
+test_empty_and_nonbinary_atoms (test_third_checker.ReferenceTests.test_empty_and_nonbinary_atoms) ... ok
+test_entrypoints_agree_with_compiled_methods (test_third_checker.ReferenceTests.test_entrypoints_agree_with_compiled_methods) ... ok
+test_exact_limits_and_accounting (test_third_checker.ReferenceTests.test_exact_limits_and_accounting) ... ok
+test_fault_order_is_set_semantics (test_third_checker.ReferenceTests.test_fault_order_is_set_semantics) ... ok
+test_history_order_preserved (test_third_checker.ReferenceTests.test_history_order_preserved) ... ok
+test_joint_support_is_not_marginal_product (test_third_checker.ReferenceTests.test_joint_support_is_not_marginal_product) ... ok
+test_negative_capability_returns_checkable_collision (test_third_checker.ReferenceTests.test_negative_capability_returns_checkable_collision) ... ok
+test_nonfirst_valid_supplied_witness_accepted (test_third_checker.ReferenceTests.test_nonfirst_valid_supplied_witness_accepted) ... ok
+test_nonraw_and_nonidentity_are_unsupported (test_third_checker.ReferenceTests.test_nonraw_and_nonidentity_are_unsupported) ... ok
+test_same_truth_overlap_is_capable (test_third_checker.ReferenceTests.test_same_truth_overlap_is_capable) ... ok
+test_true_record_does_not_imply_capability (test_third_checker.ReferenceTests.test_true_record_does_not_imply_capability) ... ok
+test_undeclared_fault_rejected (test_third_checker.ReferenceTests.test_undeclared_fault_rejected) ... ok
+test_verify_never_calls_compiler_or_universe_enumerator (test_third_checker.ReferenceTests.test_verify_never_calls_compiler_or_universe_enumerator) ... ok
+test_witness_mutations_rejected_without_replacement (test_third_checker.ReferenceTests.test_witness_mutations_rejected_without_replacement) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.002s
+
+OK

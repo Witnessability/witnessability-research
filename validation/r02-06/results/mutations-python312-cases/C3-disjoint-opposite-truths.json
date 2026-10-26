@@ -1,0 +1,98 @@
+{
+  "id": "C3-disjoint-opposite-truths",
+  "raw_model": {
+    "name": "disjoint",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "f",
+      "t"
+    ],
+    "truth": {
+      "f": false,
+      "t": true
+    },
+    "domains": [
+      "a"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint": {
+      "f": [
+        [
+          "0"
+        ]
+      ],
+      "t": [
+        [
+          "1"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  },
+  "expected_capability": true,
+  "record_expectations": [
+    {
+      "record": [
+        "0"
+      ],
+      "verdict": "FALSE",
+      "compatible_histories": [
+        "f"
+      ]
+    },
+    {
+      "record": [
+        "1"
+      ],
+      "verdict": "TRUE",
+      "compatible_histories": [
+        "t"
+      ]
+    }
+  ],
+  "manual_justification": "With no faults, the two opposite-truth histories expose different records.",
+  "kind": "control",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0"
+          ],
+          "verdict": "FALSE",
+          "compatible_histories": [
+            "f"
+          ]
+        },
+        {
+          "record": [
+            "1"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "t"
+          ]
+        },
+        {
+          "record": [
+            "__outside__"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": true,
+      "certificate_objects_cross_verified": 0,
+      "witness_verifications": 0
+    }
+  },
+  "unmutated_matches_manual_expectations": true
+}

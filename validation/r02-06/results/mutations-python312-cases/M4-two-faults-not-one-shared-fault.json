@@ -1,0 +1,181 @@
+{
+  "id": "M4-two-faults-not-one-shared-fault",
+  "mutant": "same_fault_for_both_histories",
+  "raw_model": {
+    "name": "M4-two-separately-allowed-faults",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "f",
+      "t"
+    ],
+    "truth": {
+      "f": false,
+      "t": true
+    },
+    "domains": [
+      "a",
+      "b"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint": {
+      "f": [
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "t": [
+        [
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "faults": [
+      [],
+      [
+        "a"
+      ],
+      [
+        "b"
+      ]
+    ]
+  },
+  "query": {
+    "operation": "check-capability",
+    "scope": "raw"
+  },
+  "expected": {
+    "capability": false
+  },
+  "expected_capability": false,
+  "record_expectations": [
+    {
+      "record": [
+        "0",
+        "1"
+      ],
+      "verdict": "UNRESOLVED",
+      "compatible_histories": [
+        "f",
+        "t"
+      ]
+    }
+  ],
+  "manual_witness": {
+    "record": [
+      "0",
+      "1"
+    ],
+    "witnesses": [
+      {
+        "history": "f",
+        "honest": [
+          "0",
+          "0"
+        ],
+        "fault": [
+          "b"
+        ]
+      },
+      {
+        "history": "t",
+        "honest": [
+          "1",
+          "1"
+        ],
+        "fault": [
+          "a"
+        ]
+      }
+    ],
+    "expected_valid": true
+  },
+  "manual_justification": "00 under fault {b} and 11 under fault {a} both expose 01. These are two alternative histories, so their allowed fault sets need not be identical. No single allowed fault contains the disagreement {a,b}; requiring one common fault therefore misses this real model collision and returns capability true.",
+  "kind": "mutation",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0",
+            "0"
+          ],
+          "verdict": "FALSE",
+          "compatible_histories": [
+            "f"
+          ]
+        },
+        {
+          "record": [
+            "0",
+            "1"
+          ],
+          "verdict": "UNRESOLVED",
+          "compatible_histories": [
+            "f",
+            "t"
+          ]
+        },
+        {
+          "record": [
+            "1",
+            "0"
+          ],
+          "verdict": "UNRESOLVED",
+          "compatible_histories": [
+            "f",
+            "t"
+          ]
+        },
+        {
+          "record": [
+            "1",
+            "1"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "t"
+          ]
+        },
+        {
+          "record": [
+            "__outside__",
+            "0"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": false,
+      "certificate_objects_cross_verified": 2,
+      "witness_verifications": 6
+    },
+    "manual_witness_checks": {
+      "A": {
+        "valid": true
+      },
+      "B": {
+        "valid": true
+      },
+      "C": {
+        "valid": true
+      }
+    }
+  },
+  "unmutated_matches_manual_expectations": true,
+  "actual_mutant_result": {
+    "capability": true
+  },
+  "mutation_detected": true
+}

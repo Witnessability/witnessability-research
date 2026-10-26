@@ -1,0 +1,96 @@
+{
+  "id": "C1-all-true",
+  "raw_model": {
+    "name": "all-true",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "u",
+      "v"
+    ],
+    "truth": {
+      "u": true,
+      "v": true
+    },
+    "domains": [
+      "a"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint": {
+      "u": [
+        [
+          "0"
+        ]
+      ],
+      "v": [
+        [
+          "0"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  },
+  "expected_capability": true,
+  "record_expectations": [
+    {
+      "record": [
+        "0"
+      ],
+      "verdict": "TRUE",
+      "compatible_histories": [
+        "u",
+        "v"
+      ]
+    },
+    {
+      "record": [
+        "1"
+      ],
+      "verdict": "OUTSIDE_MODEL",
+      "compatible_histories": []
+    }
+  ],
+  "manual_justification": "Both compatible histories are true; sharing an observation with the same truth is not a collision.",
+  "kind": "control",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "u",
+            "v"
+          ]
+        },
+        {
+          "record": [
+            "1"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        },
+        {
+          "record": [
+            "__outside__"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": true,
+      "certificate_objects_cross_verified": 0,
+      "witness_verifications": 0
+    }
+  },
+  "unmutated_matches_manual_expectations": true
+}

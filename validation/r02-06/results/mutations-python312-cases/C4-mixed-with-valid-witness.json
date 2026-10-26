@@ -1,0 +1,136 @@
+{
+  "id": "C4-mixed-with-valid-witness",
+  "raw_model": {
+    "name": "mixed",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "f",
+      "t"
+    ],
+    "truth": {
+      "f": false,
+      "t": true
+    },
+    "domains": [
+      "a"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint": {
+      "f": [
+        [
+          "0"
+        ]
+      ],
+      "t": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  },
+  "expected_capability": false,
+  "record_expectations": [
+    {
+      "record": [
+        "0"
+      ],
+      "verdict": "UNRESOLVED",
+      "compatible_histories": [
+        "f",
+        "t"
+      ]
+    },
+    {
+      "record": [
+        "1"
+      ],
+      "verdict": "TRUE",
+      "compatible_histories": [
+        "t"
+      ]
+    }
+  ],
+  "manual_witness": {
+    "record": [
+      "0"
+    ],
+    "witnesses": [
+      {
+        "history": "f",
+        "honest": [
+          "0"
+        ],
+        "fault": []
+      },
+      {
+        "history": "t",
+        "honest": [
+          "0"
+        ],
+        "fault": []
+      }
+    ],
+    "expected_valid": true
+  },
+  "manual_justification": "Record 0 is shared by false f and true t; record 1 is exposed only by true t.",
+  "kind": "control",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0"
+          ],
+          "verdict": "UNRESOLVED",
+          "compatible_histories": [
+            "f",
+            "t"
+          ]
+        },
+        {
+          "record": [
+            "1"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "t"
+          ]
+        },
+        {
+          "record": [
+            "__outside__"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": false,
+      "certificate_objects_cross_verified": 2,
+      "witness_verifications": 6
+    },
+    "manual_witness_checks": {
+      "A": {
+        "valid": true
+      },
+      "B": {
+        "valid": true
+      },
+      "C": {
+        "valid": true
+      }
+    }
+  },
+  "unmutated_matches_manual_expectations": true
+}

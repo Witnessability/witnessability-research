@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: CC-BY-4.0
+cff-version: 1.2.0
+message: >-
+  Cite the exact repository commit and component used. This metadata identifies
+  the software project, not a released v0.2, a published paper, or a completed
+  preregistered experiment. Do not infer a DOI or external endorsement.
+type: software
+title: Witnessability Research
+authors:
+  - family-names: Sergeev
+    given-names: Mikhail
+    website: https://github.com/MikhailSergeev369
+repository-code: https://github.com/Witnessability/witnessability-research
+url: https://github.com/Witnessability/witnessability-research
+abstract: >-
+  Development experiments and bounded checking of explicit finite models with
+  identity binding. Results are conditional on declared histories, observation
+  supports, claim truth and fault assumptions. This citation does not establish
+  real-world capture completeness or conformance to WCC, WEXP or AAR.

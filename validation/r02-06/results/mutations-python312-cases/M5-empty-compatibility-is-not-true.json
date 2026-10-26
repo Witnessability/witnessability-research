@@ -1,0 +1,129 @@
+{
+  "id": "M5-empty-compatibility-is-not-true",
+  "mutant": "empty_compatibility_is_true",
+  "raw_model": {
+    "name": "M5-nonvacuous-record-decision",
+    "claim": "declared binary predicate on labelled histories",
+    "binding": "identity",
+    "histories": [
+      "f",
+      "t"
+    ],
+    "truth": {
+      "f": false,
+      "t": true
+    },
+    "domains": [
+      "a"
+    ],
+    "alphabets": [
+      [
+        "0",
+        "1",
+        "2"
+      ]
+    ],
+    "joint": {
+      "f": [
+        [
+          "0"
+        ]
+      ],
+      "t": [
+        [
+          "1"
+        ]
+      ]
+    },
+    "faults": [
+      []
+    ]
+  },
+  "query": {
+    "operation": "evaluate-record",
+    "record": [
+      "2"
+    ]
+  },
+  "expected": {
+    "verdict": "OUTSIDE_MODEL",
+    "compatible_histories": []
+  },
+  "expected_capability": true,
+  "record_expectations": [
+    {
+      "record": [
+        "0"
+      ],
+      "verdict": "FALSE",
+      "compatible_histories": [
+        "f"
+      ]
+    },
+    {
+      "record": [
+        "1"
+      ],
+      "verdict": "TRUE",
+      "compatible_histories": [
+        "t"
+      ]
+    },
+    {
+      "record": [
+        "2"
+      ],
+      "verdict": "OUTSIDE_MODEL",
+      "compatible_histories": []
+    }
+  ],
+  "manual_justification": "Atom 2 is in the declared alphabet but in neither fault-free exposure. The compatible set is empty. Universal truth over an empty set must not be returned as TRUE. The two actual exposures {0} and {1} are disjoint, so capability is true.",
+  "kind": "mutation",
+  "unmutated": {
+    "comparison": {
+      "records": [
+        {
+          "record": [
+            "0"
+          ],
+          "verdict": "FALSE",
+          "compatible_histories": [
+            "f"
+          ]
+        },
+        {
+          "record": [
+            "1"
+          ],
+          "verdict": "TRUE",
+          "compatible_histories": [
+            "t"
+          ]
+        },
+        {
+          "record": [
+            "2"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        },
+        {
+          "record": [
+            "__outside__"
+          ],
+          "verdict": "OUTSIDE_MODEL",
+          "compatible_histories": []
+        }
+      ],
+      "capability": true,
+      "certificate_objects_cross_verified": 0,
+      "witness_verifications": 0
+    }
+  },
+  "unmutated_matches_manual_expectations": true,
+  "actual_mutant_result": {
+    "verdict": "TRUE",
+    "compatible_histories": []
+  },
+  "mutation_detected": true
+}

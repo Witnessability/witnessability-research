@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "witnessability-research-checker"
+version = "0.2.0.dev1"
+description = "Private candidate: bounded finite-model evaluation and ambiguity checking"
+requires-python = ">=3.12"
+dependencies = []
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+witnessability-checker = "witnessability_checker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
