@@ -128,6 +128,18 @@ which larger finite classes were run and the limits of the third implementation.
 
 ## Scope, provenance and contributions
 
+The [three C1 event-absence cases](interop/event-absence-c1-checker/README.md)
+pair this Checker with the published Probity fixture under stated assumptions.
+The package contains pinned synthetic inputs, a runner, full expected outputs
+and recorded Checker outputs. From the repository root, reproduce it with:
+
+```sh
+python interop/event-absence-c1-checker/run.py --out runs/event-absence-c1
+```
+
+Use Python 3.12 or newer and a new output directory. This is a bounded
+comparison; it does not establish general equivalence or execute Probity.
+
 Recorded [bounded validation](validation/r02-06/RESULTS.md) is provided
 with its exact finite classes and disclosure limits; it is not a general
 correctness proof or external validation. This source projection includes

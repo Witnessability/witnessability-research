@@ -42,3 +42,6 @@ relicensed under this table; their provenance is recorded in
 
 New material outside the mapped paths must have an explicit license notice
 before it is added to a release. See [`NOTICE`](NOTICE) for attribution.
+
+The C1 reproduction package has a path-specific
+[license and attribution notice](interop/event-absence-c1-checker/LICENSE-NOTICE.md).

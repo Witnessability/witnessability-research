@@ -1,0 +1,68 @@
+{
+  "source_repository": "probityai/agent-evidence-vectors",
+  "source_commit": "1044438a97b199bc3c3d887965138b19378f4140",
+  "source_path": "interop/event-absence-c1-sergeev/source/checker",
+  "files": [
+    {
+      "path": "inputs/HISTORIES.json",
+      "sha256": "e7a9d9bb655fb9970c8a39c3e212e7501e61a443b3fc8c412507ccf68bec1445",
+      "length": 2546
+    },
+    {
+      "path": "inputs/checker-model.json",
+      "sha256": "a0f865860ab02bfb3c586eab46a152f6230e2dac39e392f591c46e1268089820",
+      "length": 1062
+    },
+    {
+      "path": "inputs/checker-policy.json",
+      "sha256": "c66ce3c733d0eb1360fef95faf869fb3b07affbdcd56d648cac0bf3a3ef43b71",
+      "length": 83
+    },
+    {
+      "path": "inputs/EXPECTED.json",
+      "sha256": "a06057ba8a656c5621ea350248946839b8572eb30cae892b9e25dc95e5c8021b",
+      "length": 2391
+    },
+    {
+      "path": "inputs/capability-pins.json",
+      "sha256": "dde9326a1849270fd41b43b36c61b8bf7e285402e65ac17a9b595e0448709299",
+      "length": 322
+    },
+    {
+      "path": "inputs/C1-03-ambiguity-certificate.json",
+      "sha256": "06888d8cd787420fbcf7e19d82a5caf0ee37abec4be9aba9d326f385a171f474",
+      "length": 794
+    },
+    {
+      "path": "inputs/records/C1-01-covered-empty.json",
+      "sha256": "4abf2f5a2513ca065ada6de553abf6147ca020b6149a61e968768857159f1918",
+      "length": 22
+    },
+    {
+      "path": "inputs/records/C1-02-event-with-gap.json",
+      "sha256": "bb3f385f90a9e53cb7d3607561c893163e6bb5a983865e08101d450883aa8f56",
+      "length": 21
+    },
+    {
+      "path": "inputs/records/C1-03-empty-with-gap.json",
+      "sha256": "842074ed23b53f5132e8bda94a1944626b6d2aa8a71a41167d5c00401a4cceb2",
+      "length": 21
+    },
+    {
+      "path": "inputs/expected-pins/C1-01-covered-empty.json",
+      "sha256": "49fa1e3f495bcbf1814df46cb650903a8cd1dedca2ade7f220aee07cc135b725",
+      "length": 402
+    },
+    {
+      "path": "inputs/expected-pins/C1-02-event-with-gap.json",
+      "sha256": "2ec6f1160fb4bc8d46458504052f266127b9c41a92d909cc087143278f70728c",
+      "length": 402
+    },
+    {
+      "path": "inputs/expected-pins/C1-03-empty-with-gap.json",
+      "sha256": "f54badabc2a68a9dbf0bc0a6281993f7f5f87eb454d31c50b983e83386be1991",
+      "length": 402
+    }
+  ],
+  "expected_sha256": "fccc3e70711fbc1f396ab54040f8367a42e30371234168e1858fa1c7b9b1af33"
+}
