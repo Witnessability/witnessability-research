@@ -33,3 +33,5 @@ jobs:
         run: python -m pip install --disable-pip-version-check pip==26.2.2 setuptools==84.1.0 wheel==0.48.0
       - name: Check standalone installation and bounded consistency offline
         run: make check-standalone PYTHON=python
+      - name: Reproduce the three pinned C1 event-absence cases
+        run: python interop/event-absence-c1-checker/run.py --out runs/event-absence-c1
