@@ -1,0 +1,43 @@
+{
+  "byte_identical_original_study_source": true,
+  "byte_identical_retained_study_files": 149,
+  "checked": "2026-11-01",
+  "checks_per_run": 9,
+  "comparison_notes": {
+    "finite": "elapsed_seconds omitted",
+    "other_results": "complete JSON equality",
+    "retained_validation": "validation_time_utc, package_path, python and cryptography omitted; curated outer manifest count is 150"
+  },
+  "counts": {
+    "anchor_budget_comparisons": 116,
+    "anchor_model_group_pairs": 26,
+    "exhaustive_binary_configurations": 13536,
+    "isolated_negative_controls": 3,
+    "portfolio_checks": 252,
+    "seeded_configurations": 300,
+    "signed_target_mutation_rejections": 224,
+    "verified_retained_signatures": 224
+  },
+  "cryptography": "50.0.2",
+  "input_files_unchanged_after_both_runs": true,
+  "kind": "fresh executions of supplied Python implementations and retained-data verification",
+  "path_with_spaces_expected_scientific_results_match": true,
+  "pinned_input_file_count": 180,
+  "primary_expected_scientific_results_match": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "runner": "tools/reproduce.py",
+  "runner_sha256": "36f255b0defc390eff2c410c02fb04bd8cf11efc9de1929ecd178fc6850c81c8",
+  "schema": "d3-reader-replay-check/v1",
+  "scope": {
+    "general_theorem_proved_by_this_run": false,
+    "historical_os_execution_trace_verified": false,
+    "historical_record_claims_raised_by_new_validation": false,
+    "independently_authored_implementation": false,
+    "native_lean_executed": false,
+    "native_wolfram_executed": false,
+    "original_file_experiment_executed": false,
+    "private_signing_keys_used": false
+  },
+  "source_pins_sha256": "cb59efafdbfeb8a99673d8dd5717a33bb81b1286354dbb40e1c81c87c0ba383a",
+  "status": "PASS"
+}

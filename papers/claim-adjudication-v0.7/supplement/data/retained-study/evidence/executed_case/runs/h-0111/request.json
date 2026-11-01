@@ -1,0 +1,25 @@
+{
+  "actions": [
+    {
+      "action": "create-experiment-file",
+      "content": "actual effect for 6df518cb-4774-42c1-a287-d997ed1ba891/A\n",
+      "perform": true,
+      "principal": "synthetic-local-actor",
+      "resource": "A.txt",
+      "sensitivity": 5,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "action": "create-experiment-file",
+      "content": "actual effect for 6df518cb-4774-42c1-a287-d997ed1ba891/B\n",
+      "perform": true,
+      "principal": "synthetic-local-actor",
+      "resource": "B.txt",
+      "sensitivity": 3,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    }
+  ],
+  "context": "one-host-local-study/2026-10-13",
+  "policy_sha256": "c53787acf62187aadf3a1d1a46059aef3109e2812b53af7d000893a229a9c324",
+  "run": "6df518cb-4774-42c1-a287-d997ed1ba891"
+}

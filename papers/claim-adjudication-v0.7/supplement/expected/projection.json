@@ -1,0 +1,842 @@
+{
+  "schema": "d3-file-study-projection-recalculation/v1",
+  "status": "PASS",
+  "script_sha256": "20134103feb82da0b8b9c90dd642ed1edcdb2cfbc1fe94868e1ac67dc2b8c621",
+  "scope": "New finite arithmetic from the manuscript's declared histories and projections; not a replay of the original file study.",
+  "history_count": 16,
+  "projection_tables": {
+    "bound": {
+      "class_count": 16,
+      "classes": [
+        {
+          "observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "verdict": "TRUE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "verdict": "TRUE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "verdict": "TRUE"
+        },
+        {
+          "observation": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "histories": [
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "verdict": "TRUE"
+        }
+      ],
+      "counts": {
+        "FALSE": 12,
+        "TRUE": 4,
+        "UNRESOLVED": 0
+      },
+      "six_separate_domain_margin": 3,
+      "one_host_domain_margin": 1
+    },
+    "unbound": {
+      "class_count": 9,
+      "classes": [
+        {
+          "observation": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "histories": [
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "histories": [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "histories": [
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "histories": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "histories": [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "verdict": "UNRESOLVED"
+        },
+        {
+          "observation": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "histories": [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "verdict": "UNRESOLVED"
+        },
+        {
+          "observation": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "histories": [
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "verdict": "FALSE"
+        },
+        {
+          "observation": [
+            2,
+            2,
+            2,
+            1,
+            1,
+            1
+          ],
+          "histories": [
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "verdict": "UNRESOLVED"
+        },
+        {
+          "observation": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "histories": [
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "verdict": "TRUE"
+        }
+      ],
+      "counts": {
+        "FALSE": 5,
+        "TRUE": 1,
+        "UNRESOLVED": 3
+      },
+      "six_separate_domain_margin": 0,
+      "one_host_domain_margin": 0
+    }
+  },
+  "historical_signatures_verified": 0,
+  "new_file_effects_executed": 0,
+  "historical_subprocess_invocations_verified": 0,
+  "warning": "Original reports, public keys, requests, effect files, source script and digest manifest were not available to this calculation."
+}

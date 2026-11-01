@@ -1,0 +1,36 @@
+[
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "claimed_effect_sha256": "29d9e317ff86c2edb99ad4c6bc7727af72aedf14ec04317bcbe0072a8d94da52",
+      "context": "one-host-local-study/2026-10-13",
+      "execution_mode": "observation-study",
+      "invoked": true,
+      "principal": "synthetic-local-actor",
+      "producer": "executor",
+      "request_sha256": "90290f01d8ebc64532a503c295a1d4dbaea3978783e4313f8641de4f89523b06",
+      "role": "executor",
+      "run": "7cca638f-df7d-48fb-8bc6-b284d9b509c3",
+      "schema": "local-witness-study/1",
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    "signature": "HEDrdx/4+H0EtNyFLSf48RrUMiVTDmaAIegY7rY0EclDaY3eeG2qNY6SLE2YI7Jh9Opx5kqCH6C+U8UK/wlmCA=="
+  },
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "claimed_effect_sha256": null,
+      "context": "one-host-local-study/2026-10-13",
+      "execution_mode": "observation-study",
+      "invoked": false,
+      "principal": "synthetic-local-actor",
+      "producer": "executor",
+      "request_sha256": "d04855d1dbf20e25c108b72649ecd0350bcb2d8aa63d435bba41e54f07470295",
+      "role": "executor",
+      "run": "7cca638f-df7d-48fb-8bc6-b284d9b509c3",
+      "schema": "local-witness-study/1",
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    "signature": "HaMCjeXcDD9S+TeQY/mZYPkk0AO/U8anPJjK9aG09xl84cftJNMtfiYf7T8sMD5IBqPoOzlS/uP7Zlx/aInNDA=="
+  }
+]

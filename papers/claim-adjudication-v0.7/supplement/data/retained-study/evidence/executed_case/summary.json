@@ -1,0 +1,43 @@
+{
+  "actions": 32,
+  "actual_created_files": 16,
+  "actual_failure_domains": 1,
+  "actual_one_domain_margin": 1,
+  "bound_observation_classes": {
+    "false": 12,
+    "total": 16,
+    "true": 4,
+    "unresolved": 0
+  },
+  "claim_scope": "local rule permits A and expected A file is present at readback",
+  "code_sha256": "2a44059b468432caac704d55cef94eb9fd66f82fc21584b3b8ec32ffcfd5caa6",
+  "controlled_histories": 16,
+  "counterexample_histories": [
+    "h-1010",
+    "h-1001"
+  ],
+  "domain_basis": "all processes, keys, policy and files under same host/user",
+  "elapsed_seconds": 6.901,
+  "executed": true,
+  "guarantee_for_one_arbitrary_actual_domain_failure": false,
+  "hypothetical_six_domain_margin": 3,
+  "not_established": [
+    "production-system validity",
+    "organizational independence",
+    "trusted complete capture outside this experiment",
+    "OS/host integrity against its controller",
+    "durability after the readback",
+    "Cedar runtime replay"
+  ],
+  "python": "3.12.14",
+  "schema": "executed-local-case/1",
+  "signed_target_tamper_rejections": 224,
+  "subprocess_invocations": 112,
+  "unbound_observation_classes": {
+    "false": 5,
+    "total": 9,
+    "true": 1,
+    "unresolved": 3
+  },
+  "verified_signed_records": 224
+}

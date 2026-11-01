@@ -1,0 +1,12 @@
+{
+  "blend_boolean_cases": 8,
+  "checked_certificates": {
+    "necessity": 5,
+    "sufficiency_outside_F1": 5
+  },
+  "full_first_order_or_Lean_theorem_checked": false,
+  "invalid_certificate_rejections": 2,
+  "resolution_steps": 10,
+  "scope": "two local propositional implications conditional on equality/transformation interpretation",
+  "verifier_sha256": "1257afd2ffbe36d8b5a609535a935808d6939dd3ee141aa722d1a627c0a436cc"
+}

@@ -1,0 +1,26 @@
+{
+  "checked": true,
+  "domain_permutation_outside_theorem": {
+    "correct_transport": "F0 union sigma(F1)",
+    "fault_family": [
+      [],
+      [
+        0
+      ]
+    ],
+    "r0": [
+      0,
+      0
+    ],
+    "r1": [
+      1,
+      1
+    ],
+    "shared_observation": [
+      0,
+      1
+    ],
+    "theorem_applicable": false,
+    "untransported_criterion_would_wrongly_predict_separation": true
+  }
+}

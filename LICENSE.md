@@ -45,3 +45,5 @@ before it is added to a release. See [`NOTICE`](NOTICE) for attribution.
 
 The C1 reproduction package has a path-specific
 [license and attribution notice](interop/event-absence-c1-checker/LICENSE-NOTICE.md).
+
+The claim adjudication supplement has a path-specific [license and attribution notice](papers/claim-adjudication-v0.7/LICENSE-NOTICE.md).

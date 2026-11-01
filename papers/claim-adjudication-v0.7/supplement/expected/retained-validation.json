@@ -1,0 +1,2591 @@
+{
+  "action_receipts": [
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0000",
+      "request_sha256": "69c594ea2affa71e4b255ead067154f17db514d739f62a4ed509064d8f23424b",
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0000",
+      "request_sha256": "5d614a774dec27d47218f700bf8f9867f39a41f73cae4e76e3e5f92cf932df7e",
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0001",
+      "request_sha256": "dc8e5dd0d2e9bf09cd6418307ffa590852ebf35114ee7a65b7528b6bb550a758",
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "523562793864fc19a773906461067431d092f2909d04c4d069927ade666d3a43",
+      "history": "h-0001",
+      "request_sha256": "b3bd7f77c043a4c0e3a14cb5766db7e162152ec2a4d162fc3ad638c29170f5fb",
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "f26e123151e1be9f7d8781f0ee847cb94aec669b85cecf200cb923b6b606e00b",
+      "history": "h-0010",
+      "request_sha256": "32d535536ded921f7722f3928a3ad85e79690e3195f15d4f59389254dc8708de",
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0010",
+      "request_sha256": "ad046890f38f50cd5b427f1a1bf166f2a2eb86814f5cb1d6ec70f7a93df6425c",
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "8201c5d7010bfb6c0ca5f7cab4c58a5bd6e3803ff6142f6c702f1895db9f6766",
+      "history": "h-0011",
+      "request_sha256": "d0594e0779cf4b81c2e0a317bec0ea9615be2da2553ba41ba9339de13eb064b9",
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "925e8e9f1175b129c76e2b314c57c041e4765c9f4fc1710c98d0ea88469b70bf",
+      "history": "h-0011",
+      "request_sha256": "528ff016bc56cf21767622c8268995fb533d344112a4d08adb10a84f99b7a492",
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0100",
+      "request_sha256": "977a05aae658e5539874ce586e5e226e08d1533964a9bcce44dac07d8429660f",
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0100",
+      "request_sha256": "0955ea0d3a7b6d5ea94c1c17c5475c661aa340ffabb3a601edbd745e1877fb30",
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0101",
+      "request_sha256": "2447efd13d88e5d1e100077a26ef7d80e2c558742b4b8374a165f60a94153125",
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "b73a95d06a0e2b2f1640d3368796357ad623915b2ca084d914d0943d3f691fe0",
+      "history": "h-0101",
+      "request_sha256": "29af71cd94dc21260fcfc1f1d0ad923898b7a7e005bc4bce88231c6bb43b62d0",
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "3738d17f9585f508738d69a349015414d3509613aff32179c7e8afbec6201845",
+      "history": "h-0110",
+      "request_sha256": "a8e6d3f24cdf35ae15f60f70ad0e9068d241afa7545aef5c91f53d19429cd941",
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-0110",
+      "request_sha256": "2f73c0cb91f1010a730ea9947f5f9fa6acd5e44f369b0d8519cbc7d9dc807200",
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "107981e9b2d4066fa538d0005293060b0d487b640a702a5190e6940c722fe806",
+      "history": "h-0111",
+      "request_sha256": "1c0bb54b09a468a241d726e780dd19ec22ddd033b8224a9335992bded6ec722c",
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "b908e1d98dc71f7ff8b53e57fd59d73fc63f6712e016071b92aa00c3fa162349",
+      "history": "h-0111",
+      "request_sha256": "4b5ba2c61b88cbb134dc98365cf0636029fec761d521533f472b4281d7765cb3",
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1000",
+      "request_sha256": "6bf75978084eaef7b8256a618f9778b265db705bc76b8cbb467062fa7bafad9d",
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1000",
+      "request_sha256": "1e3d6d969d09e97a18dc75315e7ebed70cfd1cff755524006e5c990c858caa87",
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1001",
+      "request_sha256": "aa21bd2149ae4bf855fee1628b1e496bd7f702eabf1ca2b9cdd294797760d6f9",
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "211757416262316b71f4be506afbc7e1e87bb7fd1ce6238d9bb4879fd221a5cd",
+      "history": "h-1001",
+      "request_sha256": "11e7fc86d1e3583e8d757664468fc94c1fe8c6fd70e2714771163d9861c190c1",
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "34a6ccb70d8d8ee5cab8870342977ce951777bb17b54f26ceae9bb4c983f0cb2",
+      "history": "h-1010",
+      "request_sha256": "ad60ec72451f97d6787a1a00287fcff835fbb3f44cbbaad6659a1e7f405e8573",
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1010",
+      "request_sha256": "ff619d35a2eb5c88d0aa31379985dc64d0643e150c37bcda0dbeb7af8ca5bdbf",
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "d961b1598bcee6797e2df70956855e075969923af50ec6faff77bc99232a6a68",
+      "history": "h-1011",
+      "request_sha256": "be899074f42b05320952770d5bad35cf7d666d8b7627bcebac2130a66be9c292",
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "2ff49b511a42e715215b879baee94e7a3afc680fa200e9f3cc994df5d7bad172",
+      "history": "h-1011",
+      "request_sha256": "d3c80b16a059794837b8157df3e11dec8cd02d9b4c76bf38465a9ab5dc9304df",
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1100",
+      "request_sha256": "b2235137f514851ad1b0d5303c74d0d78fc610cf015e8605f08202cb18491924",
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1100",
+      "request_sha256": "daa083bf0b8e90a2bd941f3e2ce35cc8f952d727f6ed235f24ce662f2faecb28",
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1101",
+      "request_sha256": "12895a8129b7d97297d42abe4bf1db5743b24301cce6d66049921014bfb2ca09",
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "42c7f6240699231e659acf389dea52e095fde2eea3b86dca081072550dcc684f",
+      "history": "h-1101",
+      "request_sha256": "94241c50a7576c6e703574254291de4d4a5b65d354aa94106482d436a620a692",
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "29d9e317ff86c2edb99ad4c6bc7727af72aedf14ec04317bcbe0072a8d94da52",
+      "history": "h-1110",
+      "request_sha256": "90290f01d8ebc64532a503c295a1d4dbaea3978783e4313f8641de4f89523b06",
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "effect_present": false,
+      "effect_sha256": null,
+      "history": "h-1110",
+      "request_sha256": "d04855d1dbf20e25c108b72649ecd0350bcb2d8aa63d435bba41e54f07470295",
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "ba851c007823d8a4b64f21b7ff970807af67aeb604fc09d0e6127c238f590a2c",
+      "history": "h-1111",
+      "request_sha256": "deaf7fd6a2af9cfa184b788da4fc20ee2ed1b221d54fffca99f41e58b812a801",
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "effect_present": true,
+      "effect_sha256": "e8391b966a63d5dad8732b1d8956d51e52473cdd0ee9806e149abbbd3c1b75fd",
+      "history": "h-1111",
+      "request_sha256": "cd118a714e02a638897b50fef173602eddca0af2eb0da4cc30a7e268d3b3352a",
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    }
+  ],
+  "bound_classes": [
+    {
+      "history_ids": [
+        "h-0000"
+      ],
+      "record": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0001"
+      ],
+      "record": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0010"
+      ],
+      "record": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0011"
+      ],
+      "record": [
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0100"
+      ],
+      "record": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0101"
+      ],
+      "record": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0110"
+      ],
+      "record": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0111"
+      ],
+      "record": [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-1000"
+      ],
+      "record": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-1001"
+      ],
+      "record": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-1010"
+      ],
+      "record": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "verdict": "true"
+    },
+    {
+      "history_ids": [
+        "h-1011"
+      ],
+      "record": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "verdict": "true"
+    },
+    {
+      "history_ids": [
+        "h-1100"
+      ],
+      "record": [
+        3,
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-1101"
+      ],
+      "record": [
+        3,
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-1110"
+      ],
+      "record": [
+        3,
+        3,
+        3,
+        2,
+        2,
+        2
+      ],
+      "verdict": "true"
+    },
+    {
+      "history_ids": [
+        "h-1111"
+      ],
+      "record": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "verdict": "true"
+    }
+  ],
+  "distinct_public_keys": 7,
+  "historical_execution_boundary": {
+    "claimed_subprocess_invocations": 112,
+    "code_expected_invocations": 112,
+    "historical_fsync_calls_independently_verified": 0,
+    "historical_timestamp_or_controller_identity_authenticated": false,
+    "independent_os_execution_receipts_verified": 0,
+    "new_native_effect_execution": false,
+    "public_keys_prove_organizational_independence": false,
+    "retained_file_bytes_prove_historical_write_syscalls": false,
+    "retained_per_process_record_groups": 112
+  },
+  "manifests": {
+    "executed_case": {
+      "all_hashes_match": true,
+      "exact_coverage_excluding_self": true,
+      "listed_files": 148
+    },
+    "package": {
+      "all_hashes_match": true,
+      "exact_coverage_excluding_self": true,
+      "listed_files": 150
+    }
+  },
+  "observed_and_recalculated": {
+    "actions": 32,
+    "actual_created_files": 16,
+    "actual_one_domain_margin": 1,
+    "bound_observation_classes": {
+      "false": 12,
+      "total": 16,
+      "true": 4,
+      "unresolved": 0
+    },
+    "controlled_histories": 16,
+    "hypothetical_six_domain_margin": 3,
+    "signed_target_tamper_rejections": 224,
+    "unbound_observation_classes": {
+      "false": 5,
+      "total": 9,
+      "true": 1,
+      "unresolved": 3
+    },
+    "verified_signed_records": 224
+  },
+  "record_json_files": 112,
+  "report_receipts": [
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1af2ff18aa4bd57dae94c0debb5fb8104aa2dd8ce35fbd5e6bc65f38c3f1f344",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/authority-0.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "9ad3c5d41366e11e0e446ccba3353d5787b237d91807fdb13e4fc734e530dd13",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/authority-0.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "db0049c6c271afa23dd2f2bd17e0846f0048f6f74a10b7abb1ea0ecd80a55720",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/authority-1.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "6a31f755b59cbf554bd7858ebe0d2d4126c5b6df8ce95e89c634eb0e82a23747",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/authority-1.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "073cdbe254250d0d4a88e2a596778eb0fa78c7855bf34a806efd52d9a8c5ff7f",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/authority-2.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "bd80d5925958d0ee2c02fe3f85a89857b159116d87fa3435164511df5290ceb7",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/authority-2.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "211396b7492a3ff73f0cc2367bd87ed9c939241a02f92c5b3c31e18453957bb1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/executor.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "011a5970eabd3631e4955cee42ff4a83bc155ac370b6aa18d2af61dbe6705560",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/executor.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0c34a3141d4c41df6805ab294729ec9296b883b181add723e5a26185f5b45ef6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/reader-0.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "64042a4086b31741f254bfdd8e0a0be7fb51993888761cc4c060fc8a81e9bc33",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/reader-0.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "8ffa0103e8e74b1432842b3d5c1ff8f5a345796417cffc5e5cc28d984d5afa8d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/reader-1.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2c879bed01fc1ac9bca54750a63f9ade8ff5486aac5b931874851720b5951153",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/reader-1.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "4ee9e07e87e75a82213e27d6e830b6c309c01e933506391cd0eeda21d6a3346b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/reader-2.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "60ba91ea5a6539b2c024be822a46c5077877e19027d7dd7dc5394f44a345e712",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0000/records/reader-2.json",
+      "signature_verified": true,
+      "target": "4c94d081-0ff3-4ed5-a424-692bf0db60e6/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f496370f8aac437ebd542cbfb4d17bfd20b0f5c0acf88b246e27b8167875f711",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/authority-0.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "632cfdd22ef0ebf4be3adbaef1620d610658d2d3aa0d898161800e7117f89890",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/authority-0.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "ce4023664c14f1516ba07d8cb34a3e97901150b9ccbb6554c854cefc14c151fd",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/authority-1.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "dc8fce0febc239a180ba2f6e73c7f3a1ab3c0aaec190edd80994a8a3c7ce53aa",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/authority-1.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1cbdd5c4a6705ddcdefa95b9e75859636ec507ca94c102ef2d13c64b0ba5f19f",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/authority-2.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "d3ecb516397aff9677e0f03cb18b33fc260feca6029d3b2332bb88e2f09d9cad",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/authority-2.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "146650689f84831697667bf2f035b464c7c03117e8c2d64352452c7380d0baaa",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/executor.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "972ccb912749f1b5792ad1c708fca4bd16367a37bbfb9345283426790f2b13d0",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/executor.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "928fe9e351b22db978401da9f440c37e9a34c71b0ec666986c20347062b7157e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/reader-0.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "cce506d5955bbbd34efabe2ebc30a1dbcc98c1227fb632a273c1e459a3ad82c6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/reader-0.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "387e72b09b6718c4a5c59bc8757a70428827a2b2cf4b86cae2360324b6aa5a81",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/reader-1.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "02a10645cceb3c2258214d74a50b4fb2a82cdecd77586628ac62aa5a292b82d4",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/reader-1.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0d4472952214f8a8f9ed10903638a6ba4429a4860b661f69c5ba965b869e6eee",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/reader-2.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "b9e17e5e37b9633b12711664809baedc112641057e54c4f586889a682a0cab4c",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0001/records/reader-2.json",
+      "signature_verified": true,
+      "target": "6e3632cc-be88-4385-a437-a705dbc2e286/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2f46f87d162f49c6c96ded5161aceb13cfe5133b0aca07f41a0affa8345c43a8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/authority-0.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "6c90e67e5b07cc6f5083dbcb5084b9c0c69b4f8a70b54b2799b27749d880c770",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/authority-0.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "ea56f592cb719d01c93121c624b5630663b7e593ec0fcfd220383c3193a330a4",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/authority-1.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "79abc3464c88967899d4d6b478c61253e8586328e2ea96cbb4a8db75bad7574a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/authority-1.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f0d4e5b2e06e75f3bff3faca84adbc7d0ab416f527380f67f95a81040f7413e0",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/authority-2.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "177dfa3f56edb5738e3cb3dadd10a1a259e6577fe87585c1cbcf613c4948caef",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/authority-2.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "306c5857a55e66b9b3452877b5f551b668b729b936c3a57241932e506e3955a5",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/executor.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c68859ca33a5f4b1edde6f9f5dbef8d0df60916551ddb1f15108730c777bbf97",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/executor.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "10b1e89bc7ce0a859e79ec45313765f35d7eacbf6b42713650e25ec326068daa",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/reader-0.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "7747801b7bfb221f1b86eada9fe91ecacb7bfdf8658c224ea91d8dcb03a6b7af",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/reader-0.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "7f97d4e7a0d7e719057f5a97f212c72c296192e0889e5c3bbc9e1044d6384759",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/reader-1.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "a19e028d147201cb7830aa319810ab4d1c2091019ae7d387d31c1db253b74930",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/reader-1.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "02676d96428511966e3f1b3faee09582aafd91eff2c6dbbcd238701ff81ab808",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/reader-2.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "7f0d7ed8c96d0ba31b012d81b9b15b4628f0ac78650a1594c466b2eeb0c08123",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0010/records/reader-2.json",
+      "signature_verified": true,
+      "target": "a6a77353-766f-4d40-af21-ba8e97f144e0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "eb9fe1dd4c3ac89555fcc0e2ef1d59f1acd4aa0780daae43f63cf963d77de805",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/authority-0.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "743eeedcc632d571f306773591a590e307aec9f1d4727e41251e334295604afd",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/authority-0.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "db0a29058df208148c9952604f6facf6e5fd68c558fc66cc88672333072e1cc3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/authority-1.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "238626b289529a49ab996340365bf163cb5333fac2fdf8d730b3bf505d18236f",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/authority-1.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2147581e64564a93c7444925ba57a67d0fb73ec2fa450486b7e41a9bf12bb59b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/authority-2.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e55e7455e5de20337906be13799da2688f2aeae30efc0611d047e91cfee227f6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/authority-2.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "baf3cc09a12dfb91187dd726008408c99f53041c2ca651e68e34a18633be9cb9",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/executor.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f3e5bfece7c87cb3829651c99ad8b5691b3c6d58bc853657cf4bdf50dc0b7b61",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/executor.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "978fd5e850cad76f0c9edf03d90e8e5647f87472d20da8c1e2742e350e26714c",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/reader-0.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "188672a60b34b5fd12135a2a6cd6a6909bf26ac511ed8c06bccdf1781b9e62e8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/reader-0.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "9c3b0da9834c35098c933d2f7ec19ecb6784c4315b1db7a49498358c7d62aaa7",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/reader-1.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "4839d26ece2522984a668463967385bf9b7c72d158940ddb513a0f866cbae622",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/reader-1.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1f14a56c218173247cacfa36ef57e2d4607175e68b57a5df2c906746f6bb4e51",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/reader-2.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "69e3520d4f8dd52b5c13420a030334fe297a53c8632f60db07354084cdfb8fed",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0011/records/reader-2.json",
+      "signature_verified": true,
+      "target": "51a80444-53b2-40f3-8246-0385c466936d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "4fad1c3c45e3a77633059e19c1d3f26120ad12dde4bf903ac828246bfff07be1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/authority-0.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "ada2aaf03ae80da5a218b636ba54ee3082b9742cd4736e302c2019ddf896ba1a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/authority-0.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "20005b1078e6d1b66fe2bbdf6b8e66ebd0feec9ce634e82e2ba1fcdd8afacb95",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/authority-1.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0931befa35830597c3baf81e184e6f2e8fbf9da70f2040289dc7f9834aaa6de5",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/authority-1.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "747f2620c13427d9488e07af984115c1fa565cb85f7ebb91c18224e756f0b6cd",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/authority-2.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "b17061281940cb0132ce3beef1313692abab3019b9cd037d89e33be7bae38202",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/authority-2.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "ced11181b4f9ed6872d9dd6a1a3716ba0af6e825232fb2e8f45547f0af788a48",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/executor.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "a66a31e1ee91ba96fa965b1d6b66ae93d0a09fa3aff236b351f1b76b5cc719d0",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/executor.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "9ed96ced0431573a91d0b5b42c2a45276369a4478baeb5d61c6413c00b271251",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/reader-0.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "8a4d664bbbbc2cd61e34ac0d686028c7d8db49617345444126c5b78159a73895",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/reader-0.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "5662926f9007aa13e078d89dd7481a97bbb8f84f1ef1fa577234f76179b0aa82",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/reader-1.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "eb834936a96e8790d4696bfe237aaef2116b0fa2848f418fcdc5a2973d16d7f6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/reader-1.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "677f42a975381cf114e2f19d1639aa9162409ad59a45577cb2312c09282d9045",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/reader-2.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "bf11501167c7385680888e5fd6ba9459e4200ca70210a49f791bb61505cecd7b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0100/records/reader-2.json",
+      "signature_verified": true,
+      "target": "15c955a9-7c28-48fd-8805-cf90dd13c59f/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e310438e0bbea84b59cee66be583877940a5159a4f91f0a29b0a68614371333a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/authority-0.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e729e7fd87a876c87d87ea66abf77b22c4529626e5891715c52a7c90f87d51c2",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/authority-0.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "4a3fd999bf1677c9971e835ba326f4246c0ef1fd7783d4e99a0c6f748e841ac3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/authority-1.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e44f9d452ac70b7e0b4098a374b9fd327c69e117f8fc04557e1348ae86c28a40",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/authority-1.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0058e3982795da41c1523df3b8399bc356840d6cc79d1e72e4d8faa1ce37c7f1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/authority-2.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "54262c81d12803450fe05c2ecf15127a3142189da022ccb6c7d35798cda27356",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/authority-2.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "fde2af059041547c9808ac1773793dcbf3d8bf0f9638b269cfe73d0191189af8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/executor.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c6f0bd4910cf09a96bb232ae2d8f0b8afdb4dc2ce217ea905d783476ac863250",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/executor.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "9845c2ceff66d7bfb652687d2b63279656d53c43176e88d4c698cd34f667af56",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/reader-0.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "47808463969e77187c5a39b3f34dfaf769ab99ada3366863629a0217f1f3fc0e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/reader-0.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e8f9cef8b608b6fced4b9c5eb8ce5f06b0f67e5190458a13a6354fa7041e5424",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/reader-1.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c84f53fc46abd32faf9491818ac70b72a1a278d3a330d2c52b81c763ba89806e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/reader-1.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "09d6f5ba9f6f3beadeb76579465e639f9022800260f0160ff9805bc3f74b1dc5",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/reader-2.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0c02acf9fb05b5193bade41a4b4530bb6f952bdf534f7cbd4343d757c8ed846d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0101/records/reader-2.json",
+      "signature_verified": true,
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "b9992dd444753edeb3bde8618a2994393cb44c2d8b30230be9ba6cba054d6271",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/authority-0.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0519f0707d55284c51c50916282386e6f089f2013bcb2298dc1cff0a8897566a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/authority-0.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "859f387fc635e2e7febed1cc98514e587558162e5aa268098b27175aa5937f5a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/authority-1.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "9955516d2d0a42ccc7d62113bab5263e251f4fbfa5a6ac87521f19999e9926f1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/authority-1.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f76c68052060e405b323a424bbd890fc36b4da3049e26ba9399c33edc49d3202",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/authority-2.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c890c462cd5d655a47b8eaf45d3f8b97b0343073ed513b6a0c92d8cb96fbfebd",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/authority-2.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e00b29e93d8eb42f8ec373479371da0fb0d5f105b5d9d81778b02d258e087f7f",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/executor.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "788a4b4e1c14daa7b2177b1ec18cd44640dabcdf3664297b32b53a854dc7d391",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/executor.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "6d67c0f8a4be1dc296ad8866564d470afba1d14c0147554f2f93a66dc73c73a6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/reader-0.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "10e3ced7ebbba6362ca1bcaa59a214b8e3a756fa071b54ea3be0b98cb2bf0c9e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/reader-0.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "adaf28944da84883a041199d713a9856bd45cccb0728e15cc2c0e9dde093f72d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/reader-1.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "7b98930f03c2a55757105bfd82d4aaa090feec5a0124ec89ed8c7825d170c182",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/reader-1.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "7bb0ba061655fddd062c4c88eda71dd7c63e1315df85eb1c35c929fb348e7ce8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/reader-2.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "d11c3229293ef85ab54a03156d30a2de081ab575aaa2d9545b72561288b85070",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0110/records/reader-2.json",
+      "signature_verified": true,
+      "target": "5a3e628f-9f37-49ea-bb31-9143acc0f87c/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "4384005dd74fb5f5ccb6896f74f43e67bb8e869943e01a2a2ae9c95df5f0c8c6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/authority-0.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c4b5c68e156df03af91eaa2da44c09d8d833e42f14632108f51ce98314d2590e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/authority-0.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c979b1ad68ab8ebd39bdeb817037730289580ac9325a8989d969d03c5428c9b9",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/authority-1.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f00f09a3f10cd980b6bc6afb0355b903888604a952677e1f902fa0f029237cc3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/authority-1.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1ac923ad3fdf9fde582742175e07338a91e481cc79843355f083d7219f7c3fc9",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/authority-2.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "fcfaf122380b2c94ed0d335e0b7aace29164a978f2ecd07472853bfd4efb8af8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/authority-2.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "47cfcdaf01822fe3755f5e2497eb55a2b1f98277bdefc9ac915096bcaed6cf8f",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/executor.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "3de60c4050c37862ddb07a553a38eda4b62008166eb329bec29eebadea727e85",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/executor.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "5860c1a3b94579948d49986b3c421a381ef1b9b9a7394faa29ecde97070b1324",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/reader-0.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "13dc10967864e6d1d87fe3e7aed33f437bc88b2f5c654676398196de17d20103",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/reader-0.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "56b39745ac7baa0da96cc3d98038cd8a43f9ae244730a74fc52722c660539309",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/reader-1.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "384adee1b6733d68223efa2b2ad4b357af8ba9cfb3fbc6d9441a0b2159df61e1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/reader-1.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "3978539cb47da7f977cabc1cbbc29a7c523b6cb0d201db6f796b442e30c8dc11",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/reader-2.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "73e52bd10194619fafa212e30fb71be3916224b9b115fd6c72cd8da37b4c27c3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-0111/records/reader-2.json",
+      "signature_verified": true,
+      "target": "6df518cb-4774-42c1-a287-d997ed1ba891/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "78786f92a72049b9c39fc20a4ba41f54fe379f150fb76ca081385a4a136cba85",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/authority-0.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "be47ead32b6a4dacc3d164c64760737c147b4367d47e6d2340eb50fa93d0b03d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/authority-0.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e7c8aa4809de94a29a05c97b315c795e550a58a50eb7d155a8b1f39a8ce4a982",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/authority-1.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "53692190654ba54db9dac8520e13cc59b5a4e1ecf7db0c7cfb900087cc45e70b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/authority-1.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "347423b4f82758a0d970cc6e3510a9fc571aab14a49c211a50a392a97b19534c",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/authority-2.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2d2321daa9fe6b7d14a529330c9d7aa90e209d57d5ba297fb67a2e9b6d7a7861",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/authority-2.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c852993636f8de32f393b2a237325c6a34cd5810ead0e5b688d650f7e66ce079",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/executor.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "ef57981c226e64d41a8a2f0c3fcfed1989c08647a69d59da184a531d7210f2c8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/executor.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "72029fd42a16bc37b64e2ed79f9daab491b2a7f7b786dcbaf61ee0438294c5a9",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/reader-0.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1c00c1196641edc1d55fb342ffe512a892097e01b7e6cf2a7b9f47123892f4d6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/reader-0.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f91c107ecd293fb70c6189fe25f45178cf2fd4b19aca057363bfc4e5faa187f8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/reader-1.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f99e3588749e207a2b7c4d5265888e7c973ecaf962a000bed0c9c663bb74729f",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/reader-1.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "81d02d87db73b35fa4d75ef769d0d7712eaacc9a01b119291cc853136e2f7fc3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/reader-2.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "b5f6910d39cc0ff50676737f4513dcded4b728df8cb91526bd5a50a31dc84f7b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1000/records/reader-2.json",
+      "signature_verified": true,
+      "target": "1fc80285-bb15-4d6f-ac20-e28cf3bfc2e5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "5942907228a08a14ea0b8d030206007ad38f4b1937c6bccc3c5e577ed9c357dd",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/authority-0.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "363e980272ca697af0613e1348b2bb8bd74fee3c89df65ab6f05b59d2cabaec8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/authority-0.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "38b41d949a88b7795c9875c5d3b005a3c1bf9a53c3bd27dd22fb8e2a79f0b717",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/authority-1.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c8c461ea25bcaaaa6fdc00817cb5a5dbb3e804b77fafec536eb4382e6c8a58f7",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/authority-1.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "59175244b4f08bc3517558d92a94e57c9421416dd8c2e8a318be2c087e1816cc",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/authority-2.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "feabfdc75e117483cc11fdb216a8039ea8731cc18e62f2ce96d79ddd02c0c4df",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/authority-2.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "d6eef195869ef7b6014706d7b38afbec150732cb07c1d5d51d0d666afc8e6912",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/executor.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "b4ac20bce10056bc31d849e057d5d255efe075131e171515dda07e243156a23e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/executor.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "85f05694481f99684d002a25ddfd8d010bc97de21304c7c1e4f126e895911361",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/reader-0.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "8809b23ce757e0a7f89301e5d2d8143d4abe586188864af02c9166558f53e7c3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/reader-0.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "8d6309588c63c989cd3692cfa4eba65c99744370a06a8d4bff774d882b765594",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/reader-1.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "68cc2824951cc1f7d487c65da15e96fb2a8d9a48f36ca710c49da599937ec680",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/reader-1.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1e598c1468eba087bc2d1dc13e0d2832cf9510c4db605e6572cfdf4bce8e7ec9",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/reader-2.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "924aaa7dbded125b1b7702de4cd9f013c4e109ae6302eb23656b7ad0ac4a9533",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1001/records/reader-2.json",
+      "signature_verified": true,
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "782fc7ecc8c134ca6ca120358051b555778025f8d5b02fc142046535168949b3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/authority-0.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "6e254a44b8f0969c01120732485465b7d55ac18790d0454d1a77b3d2e4423e74",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/authority-0.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1b33b37a15b1468994614286927111cdc4efb09abbf5fbb320d0049d5d680d89",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/authority-1.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "d6e7993692e590be14c1a7af1c3931ed5233cf69dd3cdc340b955aac8320fa6d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/authority-1.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "5f364ec6284c38ccb3704826f1fe665bfc00f2d2717ce2592c9ac28aac132a05",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/authority-2.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "52a628d0d68b8ddf81a88a6f71c5f24c349deb07ddad83d97f9666158beba1c4",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/authority-2.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f6107ee316d4ed9fac8576c31bbdfe4a96ab1c6ecd6c682818302e56dc98e045",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/executor.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "20d3ea8b07848bb34d13f5785a448ead5fd277a0eb3b8b61e46e56b452bc17d5",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/executor.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2ada7641b84bb3bc82b6427fd30f095d22925a4f103ae13211e7071c0d08d039",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/reader-0.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f31714dd85662f16a16f169bda74b9296ca1c59426613bc4b28beb63fae1db88",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/reader-0.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1871cdbbdb09cee73dba9e0431c78debbb2b3ff7e97473cdb339d94d582444d3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/reader-1.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "585bda2320d1326f08f45abd5b5426d1b08885943a7b03153d09b31dafe85d96",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/reader-1.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "3cbd316c4436213ac89cdae14b2bb7130b151d7efe85071ebdf8d53ccf681dc2",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/reader-2.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "3e054e9be54aac992d43615d68fb2e080c3b569edccb6d2f8c78d8f6aeadaba1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1010/records/reader-2.json",
+      "signature_verified": true,
+      "target": "0bc09466-0627-4328-b5ca-f170386db5be/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "8ba72de4cc9224b1fadce1258c21834e5905889a7791cc088847c040383c5a46",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/authority-0.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2880ce781ca0fb8019e8527b0328aa53f1ce811c182299b70b7e1dc12e632a25",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/authority-0.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0614817c103a5b033ea8816db4a8c3b676747d1a62ca8e67667857db8fdf7d59",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/authority-1.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e1e232a7850c659c37c191ed58e3d6f9f4b46098d477a98c9f794b4ed4b123cb",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/authority-1.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "629a2c473c81ca51c36c199ed32dffde004aa2ab0fc02f6e5ff5be6b28a9ef43",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/authority-2.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "48e691ef619f0056f11dbba90cd5cc12d134a740db7df71b250a5b1e82a77e16",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/authority-2.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "26dfe2b6336c3e871bc85dc54fe79c8690641d302692795d7d0a77e0caee81e8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/executor.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "53bb06a4c6c3b55d66a47abfa9a712b8b1cd169c8436f74e1af89965bcbee371",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/executor.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2a3efa7dd99ca8239874084490b3e493b9c462288bce7667498ffd29a9a38ed6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/reader-0.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "bcace156f38a1e6222b4ce638341986cbff8d23d20a60f86bf02c25f5fbff65c",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/reader-0.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "8d0730657168ff8d10c18d7847b7e0672ff2dd3ea8cbe7d0b64e8b7e37f19de5",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/reader-1.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0942378f95f6a90cd0e22b1c35f7bd721455b6bad39c32a263840865058e10c6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/reader-1.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "5d5f74abc8c75bd035c844e01837517f17828a8a46ac6e52ebd1a6f5f43f4559",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/reader-2.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e8e1e2d20186170b64c89aefa41d2a976ccec0f58ebf06fc5fe74fb07ccbcfab",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1011/records/reader-2.json",
+      "signature_verified": true,
+      "target": "ae07a0c2-e4ff-4947-9c55-11e93255750b/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "31e542a559f60ac5649981f478694acd828e2b838e1f064b8fb29aab428f167b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/authority-0.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "4c5cfba930fb076799214fe9d48994e7386bc4107f00febb574e3279a778669b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/authority-0.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "29598ceb1b7c98d3c877c8361fe31683881c68821da8473e84bdbfd6cff36143",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/authority-1.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2d09e55a7743663a0d909ae7deef8d3c382da91b02cbff5e9fe8fdaeb08d1157",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/authority-1.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "bd4fedccb63448c4245973a7a2eb0f19385e69c36d1f8c3a0a616e904804ebf1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/authority-2.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e40a5d12e0bd1821f2135dadf5175eb4b2e23de10c6a29afe4970b54396b14a2",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/authority-2.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "37783c6c4a26d40723b955723dff58d7513f59a3d66f6d1aa914e6dfd5a7f2e0",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/executor.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "68943f371eb93e5fdf65bd61e5da2e5b19b0237c59024245d4675e755232c015",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/executor.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "3b485f4e6a488af2faf560a42b4b454606e8de2e1a25f9e5555f006433aa0de1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/reader-0.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "698d19dcf41910d4d373e1ab075ef78474b6da152a30f986d07cea21d83da5e3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/reader-0.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c32ddf855e5a474dedd4aab88575f34afe4b732b3e9d12034005215ec024c9ea",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/reader-1.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "77809ccb7f64c23df76e1d659999d30aa3b853b386fddfdf649e7492b68c661b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/reader-1.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "b8a678e49b2febb1b057152d53c41c2fb106257b32c05f750b92f66a4d303068",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/reader-2.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "12944ff739f157996f4dd2f7966e2d8fa408f24cd93e725e947aa890ee38f231",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1100/records/reader-2.json",
+      "signature_verified": true,
+      "target": "550dc4d9-3aa4-42e3-9b83-9332a86f145d/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "7824ccfc532a2a612f02b6c0455b9c30c14f06dab3ad9a71f52d74a6f9ee66f1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/authority-0.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "3db9d3d1f476a22138c436b3a5b64d03de503f57277041907cd26471c1b7fb1b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/authority-0.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "43e6ab4148fb9ef6d53917ea9b02bc0484c466eceb1455b166fbaf4af9523f5d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/authority-1.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "1a8d3c0af06700419e6f17a72f6ad9d3910bf291e9afb1880d2ecb6f64f47fc7",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/authority-1.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f74d1d645b9031c96954379b1a1290e81ab7127cad029ea77ad251245865948e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/authority-2.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "26e7534b918e434cefa133243236e793f737515c7f33732915606d0021b02e4a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/authority-2.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0ca5eb0cc82611e1054e892f0d9d7c348e7a6f9dfadd267b0ba6c444edc5fa08",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/executor.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "5443619ba62b4c46ef33a5a8c41eaa497babb6f67c693d41840414346a92a68c",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/executor.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "16acd2ca976a029e2ca4b390e3dac16d6a6e603e91758720dea1e07759723457",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/reader-0.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "bfe155c785a91d2b6fce0e4fc7e0ea04f654697914b906b0e6f040c5b92dbaa8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/reader-0.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "021afab75bc1af1de09f66ba68eaaad646d156c2b368c26dccaba0ca42fa942c",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/reader-1.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "dd680fcc88a578cd4caf47ce02efe7c184a461e0f606c9152d4a4412b09847b3",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/reader-1.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "5adb005b5717ae13179ff82e785ed00dc9d1ac9072c00a9a175cb158d6df438e",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/reader-2.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "56204cd5ceee053e6f7bf4a83a651ee27046cce66d4f1459591aa7eec202d2e0",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1101/records/reader-2.json",
+      "signature_verified": true,
+      "target": "25ad63b6-d0f3-4e2e-b7eb-dd4561566fc0/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "12e8130a4d8aef9a5c89648862fa30893224bf4f427aec8846226042f6fbb0b4",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/authority-0.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "b2bf76ba384987cc0b02630247dfcc4213241bab1596aa43c56c966cc713303a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/authority-0.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "7e886445014b8b3dd104f33a0810d0970be91ab942c68b3642278b1d3c83f97c",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/authority-1.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "a07786ca80c307d2018a72afff45f93b5c7ba4d53bd1a0d895449b7bbb87da35",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/authority-1.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "69ebb5a9956f68000c721240e49bd1abc46fb09f371b7277bcc920463dc589c0",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/authority-2.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "ff407967f9dff1731aa9e88067aa1504229c499f6f4ef04fbcdf3a0da4734409",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/authority-2.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f2375762613d9b47a5f8fdc8c5010ab43ec0a528f0f4ecfc968640951410dd34",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/executor.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "572d3c88cef7707d236856d60658d37cbf58ad40148a09dd9fc42a18e3d56365",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/executor.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e144b33054c341839b556cd5a221261d53cc2e290ccddfd1f47c411afdc973bd",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/reader-0.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "30b8ab70578276396ac910c8baf4598780fb18ce5da48e3ce7d4c65a62e76d45",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/reader-0.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "0e983c95602c3e9d1ed9f18c0a8ddd11652a77876e213fee8a534d4c235f4fec",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/reader-1.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "c1b6b396d4abe0642429918df6999eabd29458ef14ff5725f4ef11631f895fbd",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/reader-1.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "8151b830a38e47ab39ff54fd89bf57426bc97847b9847658b19e6ab2ce86cc2a",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/reader-2.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "d4df0f2998e71989d94a23f1a52b6b65c297cc9a0195aa28ec95efd568fd0d6f",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1110/records/reader-2.json",
+      "signature_verified": true,
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f779e43e27c6d927e92b30681786d66e8e1a5139383efc3217fefd4c17cabf93",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/authority-0.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e68060f39efc8b041733b71ab4b056bd9eaa39572287b3a88e192797294e92be",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/authority-0.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "f7d735030fafdf77e82365e688ab436c0316643c48c2fe07a14bfe6896b30265",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/authority-1.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "365ddbdf24b9e2cbc46fd23d647098f0bea209ebfb8a39621b5aef62e57ef3fa",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/authority-1.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "515bc8ad16a21eb8a7638deaab5f6fe0d6fa733972dc02e4bc859d576c8c4789",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/authority-2.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "4ec5c7286c16da7abaad3673720e7783658c24554a688f96916a3672ab6bc0d1",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/authority-2.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "72c752fa138f57254b665672109c68e69e3112dd284bd2a91b2be56da496f7f6",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/executor.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "e143f79c90bc8f22633083265310d6bf77a6368c3c5d63399def79019a85f55b",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/executor.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "ec9edd8bc6a82dfc33bbcd68038cb4ab8af21b55ed9e758e2f909374da770d7d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/reader-0.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "6bc958f70571482adbf764a09c497cfd391f35c128d1394f604dcfb0368743f7",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/reader-0.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "2e4bdbbe7b90d6077b816500ab775fae9be04528860c9d3f7c3da29d0fd70879",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/reader-1.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "05faa06175c7e12dee48099c67079c6e0b5267dd0da68c25db2725a0cce8568d",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/reader-1.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "d07fa7d82dc0e8235bdb9415ef2824eaadd821425ef66442c7ca13cd56de3368",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/reader-2.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/A"
+    },
+    {
+      "bindings_and_semantics_match": true,
+      "canonical_payload_sha256": "321589540ab627f1835f72ef145f0e9ff2ed86586954c43816a2df7eaed05bb8",
+      "new_target_mutation_rejected": true,
+      "path": "evidence/executed_case/runs/h-1111/records/reader-2.json",
+      "signature_verified": true,
+      "target": "d8a2e4d1-5459-4773-8cbc-f4a403fd4a61/B"
+    }
+  ],
+  "request_json_files": 16,
+  "retained_effect_files_count": 16,
+  "retained_effects_after_deny": 8,
+  "source_inventory": {
+    "evidence/executed_case/histories.json": "2f6e4b352988344af5a5fc06019b2fda8275c567d72ed73c7823d9edd0af7747",
+    "evidence/executed_case/manifest.json": "40cb5a3237fda7c98a9027305301d30873e70a410d4f83a1068f18cdc29ec0a7",
+    "evidence/executed_case/policy.json": "af95bff80d7cbcd38631c858827ee7e286ca253bd4090f1b38619bc4dfc61684",
+    "evidence/executed_case/public_keys.json": "22c33eb663b656cdc4cb26af5f34f2c0ac6772dc000874f663cdc62f91e4a187",
+    "evidence/executed_case/runs/h-0000/records/authority-0.json": "fd5341816c2ea2bdbd2b72d10041853d523a665e90d353bcdb29ca332557e719",
+    "evidence/executed_case/runs/h-0000/records/authority-1.json": "f9b73805d9daae7710dfa0c50ad982bc2669ffc191745d030da0119028a74b91",
+    "evidence/executed_case/runs/h-0000/records/authority-2.json": "e6b3ffa3cf3db34aff21cbd34b9238df3071aa4e1b158b5b2705716afd01c60a",
+    "evidence/executed_case/runs/h-0000/records/executor.json": "02e17bfb33feddadaa0aa3a89659cccf67756f86572eb3d9aea21fff2a464c9c",
+    "evidence/executed_case/runs/h-0000/records/reader-0.json": "f87aac15b9d333d2d43ccabb76ac50b13d4aa2936f1c24a90829fc7f88cd7a4a",
+    "evidence/executed_case/runs/h-0000/records/reader-1.json": "32bce0d8084ef6bbf76b7c09c28d2b2a538c68279fe235b7c4a286de33f98e89",
+    "evidence/executed_case/runs/h-0000/records/reader-2.json": "f8247d5c5064d7241ecb3b3bd2bc8685df7c4bd77bd6379118c67e04ce2802a2",
+    "evidence/executed_case/runs/h-0000/request.json": "27e7531be09d752c6242341fdfd4c4599eae905ed5e897d8d9ea87023f612b32",
+    "evidence/executed_case/runs/h-0001/effects/B.txt": "523562793864fc19a773906461067431d092f2909d04c4d069927ade666d3a43",
+    "evidence/executed_case/runs/h-0001/records/authority-0.json": "b6cb8e8c40a9368ac4e7f2767518664878bcd9f979e468acea73ef28814375f3",
+    "evidence/executed_case/runs/h-0001/records/authority-1.json": "d30a7d8a7be751a569a3b3f392d4bb904a51435ea774709469cdca2b8116f86d",
+    "evidence/executed_case/runs/h-0001/records/authority-2.json": "63a85cfee828810d720e3fed6dd327debcefa0537d80f3ba45cab5b7dd982bcb",
+    "evidence/executed_case/runs/h-0001/records/executor.json": "ea983b8eb6b90afc4a5653ab955fa712aa0730e4c3805c0d5a145a0db434fd82",
+    "evidence/executed_case/runs/h-0001/records/reader-0.json": "58d419cd08818341b8505793ba3f1be28f1bbcbdf318f39b0156de77966df6df",
+    "evidence/executed_case/runs/h-0001/records/reader-1.json": "1a0a70b872ae49f1b7f2f6160fa966e25fb436794db59ae046e07b10532ae24c",
+    "evidence/executed_case/runs/h-0001/records/reader-2.json": "babdc351b80929651e6ed23e1e76582cc72ec0ce80728c4bdc65eb1f7c55fceb",
+    "evidence/executed_case/runs/h-0001/request.json": "e0c3c6de8cce00d375a0701ff836a5f3e341dae193bb3bd2442ddd25bd19801e",
+    "evidence/executed_case/runs/h-0010/effects/A.txt": "f26e123151e1be9f7d8781f0ee847cb94aec669b85cecf200cb923b6b606e00b",
+    "evidence/executed_case/runs/h-0010/records/authority-0.json": "6766a7f78c03ac6baba950c49045c02ede11b66419520022162578eafe32771a",
+    "evidence/executed_case/runs/h-0010/records/authority-1.json": "5a6316bd64cd7631abaa09343884310c34422647f8cd4e196c62d3ab665031f9",
+    "evidence/executed_case/runs/h-0010/records/authority-2.json": "9275928844fc654de5d499c5c4f223f674438d6e345857b84af4d8b5f4dccf59",
+    "evidence/executed_case/runs/h-0010/records/executor.json": "0740fbc0b2ac47837fb1015ee81d3b0d338e758104c39db279bcf03bc974bd85",
+    "evidence/executed_case/runs/h-0010/records/reader-0.json": "a083e4b6147adc959b7cce5359d37f33ef31eedcb433d617ad1b024d03a23385",
+    "evidence/executed_case/runs/h-0010/records/reader-1.json": "e7c4a8c3752a03eeb5162e0733ac78cb26cd3794e7cfb804c704cf961ccab1f4",
+    "evidence/executed_case/runs/h-0010/records/reader-2.json": "f9e2efdebed8f1b907184a0d526616160ef80457c4849d54f8dff7211069db70",
+    "evidence/executed_case/runs/h-0010/request.json": "b60e8fbee5a735505df97f86787df62b31a9eed72f5a8f4bea57de633c9c3ca7",
+    "evidence/executed_case/runs/h-0011/effects/A.txt": "8201c5d7010bfb6c0ca5f7cab4c58a5bd6e3803ff6142f6c702f1895db9f6766",
+    "evidence/executed_case/runs/h-0011/effects/B.txt": "925e8e9f1175b129c76e2b314c57c041e4765c9f4fc1710c98d0ea88469b70bf",
+    "evidence/executed_case/runs/h-0011/records/authority-0.json": "01cee9ab3ff2514a62eeece3dbe7f9096f50a0d5caeac3ef7ff5152da5be0081",
+    "evidence/executed_case/runs/h-0011/records/authority-1.json": "4b214c2324b6e54ea244a2be9496272da7a4a7e8f73e67dc1aa75957ac040452",
+    "evidence/executed_case/runs/h-0011/records/authority-2.json": "417b22a3096c997b20f6501c4b095ca2994a9690836ce7f30be98801b378fc4e",
+    "evidence/executed_case/runs/h-0011/records/executor.json": "2be84f1ddfe447f26c60cd55ee21539784ef212e284f551a8fc560b4dc653e77",
+    "evidence/executed_case/runs/h-0011/records/reader-0.json": "9082da23c638854fa77cf0a36c4895cae2a17416bc7aa4d26f7046f0052b8c87",
+    "evidence/executed_case/runs/h-0011/records/reader-1.json": "8bfb5fe5a9bde80bcbf72e4a7e8878c76868ba58ea72f94f0f67881b3970fe8b",
+    "evidence/executed_case/runs/h-0011/records/reader-2.json": "c2f612c17f3506784b3dda39ac63d24864e291a621a87c1ff198f7e336e4fef5",
+    "evidence/executed_case/runs/h-0011/request.json": "8691663e5b1821628860e742a0e72672c38e9443b7df713e778eb054edf8ed8f",
+    "evidence/executed_case/runs/h-0100/records/authority-0.json": "e69630c309a58edc8cd85ab30e5b7ee0e212e915180cba4171d9ec62dd45d8ae",
+    "evidence/executed_case/runs/h-0100/records/authority-1.json": "fd63b4d4fc5f8a370f79ad721a188f50281f05f4352e290361f6cd4e179cd911",
+    "evidence/executed_case/runs/h-0100/records/authority-2.json": "952a83513dc14c81dc58ef510e775f20f276a2df87a20089a2ed95d3b196fc75",
+    "evidence/executed_case/runs/h-0100/records/executor.json": "09611a598d6cc31d2c966a4d55bac4fe3fc0ece1fca7ce276884a1730687cf3d",
+    "evidence/executed_case/runs/h-0100/records/reader-0.json": "b24bc307f9ab00df01dcf2b6a17b544368c91ef60e0af1a6aafa63fa98fb562c",
+    "evidence/executed_case/runs/h-0100/records/reader-1.json": "68ab89262abb7acfa4192de9967e55b2e6f4bb086e886cee4c1f36dc6e5f26d6",
+    "evidence/executed_case/runs/h-0100/records/reader-2.json": "2898d0d1138bb7c1ad39edf78e12389516ce657fa561e35739ae0c7aca463480",
+    "evidence/executed_case/runs/h-0100/request.json": "3043c40fc34f31a3eafe234d0b6052cf69a863036691fb6a4718c45455635144",
+    "evidence/executed_case/runs/h-0101/effects/B.txt": "b73a95d06a0e2b2f1640d3368796357ad623915b2ca084d914d0943d3f691fe0",
+    "evidence/executed_case/runs/h-0101/records/authority-0.json": "7c8db700a47d713766328745fc901cc9192f24c460705dbe70c2a0062c2d9454",
+    "evidence/executed_case/runs/h-0101/records/authority-1.json": "19dd7ed6d1b170fcb1d14a10ff0d547b39c90736d7a617a72e038c9593c77f91",
+    "evidence/executed_case/runs/h-0101/records/authority-2.json": "ad7ab39d8f96be38d9643be8a8b29141e60220e1529db4f0268247edeef102eb",
+    "evidence/executed_case/runs/h-0101/records/executor.json": "fd61d7b8923830af1a99698980cb6770124d30828c77bcf93cd5601f0ae5b3fb",
+    "evidence/executed_case/runs/h-0101/records/reader-0.json": "e5aaba24818dd4a575256a42a6b1dbc61700cd5df55e3ad296be46952b39335f",
+    "evidence/executed_case/runs/h-0101/records/reader-1.json": "d0be082f0340e5c2fb08e7ee53c02107819df8a163ac13e094c127a801c0c363",
+    "evidence/executed_case/runs/h-0101/records/reader-2.json": "72c560d943dd8d15aa7d38457e6368f0f67bcf19259946b79aea18e2a4623a2e",
+    "evidence/executed_case/runs/h-0101/request.json": "b355e5ba74e8fb42418bee8143718d9f4657ab4c218049828182deb19a394fd5",
+    "evidence/executed_case/runs/h-0110/effects/A.txt": "3738d17f9585f508738d69a349015414d3509613aff32179c7e8afbec6201845",
+    "evidence/executed_case/runs/h-0110/records/authority-0.json": "5d34ea19481d21627739ca309abb6ef8f4319395feb3eefffa77ca41ea02ecf3",
+    "evidence/executed_case/runs/h-0110/records/authority-1.json": "fb5e50ef6172acdcaf988a5f0b3d1b154b533f6712e5e3ab44b9640bdafd1ea7",
+    "evidence/executed_case/runs/h-0110/records/authority-2.json": "76cb255e20425da163c581d01467b75b9e6e7e6799a9e5a5ef8a9dfd87324bb2",
+    "evidence/executed_case/runs/h-0110/records/executor.json": "45cb3b0fc085eb361ac9d312cfc565889ae5d06d16357ef5e4a4b62dc55ff772",
+    "evidence/executed_case/runs/h-0110/records/reader-0.json": "3f43293b2583e73fc89f97451f9fa2eaf80b13870fcf869a5f8f7f69742b5a60",
+    "evidence/executed_case/runs/h-0110/records/reader-1.json": "89b0b1c708c2438333279f47e2f670a039ceb897f9f202b1b2c4b30952926b11",
+    "evidence/executed_case/runs/h-0110/records/reader-2.json": "43aadd339bb2c22107ea3f3c31f8b0fdc894bd0cbc1f1b6c50fdb319349bf367",
+    "evidence/executed_case/runs/h-0110/request.json": "89db044d29d9d9369ea9620f97c02582cf2087da0a7aa38d841c6f0fdbc252c1",
+    "evidence/executed_case/runs/h-0111/effects/A.txt": "107981e9b2d4066fa538d0005293060b0d487b640a702a5190e6940c722fe806",
+    "evidence/executed_case/runs/h-0111/effects/B.txt": "b908e1d98dc71f7ff8b53e57fd59d73fc63f6712e016071b92aa00c3fa162349",
+    "evidence/executed_case/runs/h-0111/records/authority-0.json": "8b571d3ec0143b283f29a9cdbca96533e38a87e73d66aa3d9c93764fdc919fc3",
+    "evidence/executed_case/runs/h-0111/records/authority-1.json": "e40ae59688e03fda3209ecf77c4ec927692988e6f0a1bcfa6ff59b1d51d9e53b",
+    "evidence/executed_case/runs/h-0111/records/authority-2.json": "427a7b6e1218b494cb7ad6004a68bffb329e5c505731f9fd7ae50a60d0971556",
+    "evidence/executed_case/runs/h-0111/records/executor.json": "44f09c6e2ba3b8c2a28d463b0d4967217876709c1cdf9b99d1c5108945232881",
+    "evidence/executed_case/runs/h-0111/records/reader-0.json": "ba73492113d29bf5c75b8bfb9269486b6e1a833ae774a206fe5bc44dfc5d9851",
+    "evidence/executed_case/runs/h-0111/records/reader-1.json": "41515ac997f1c627750faf9f4dcd88a82c3c57d140d31afdb8d9ea3a7701ebd0",
+    "evidence/executed_case/runs/h-0111/records/reader-2.json": "57820dd5969710e2a40ea7b5f0f194261ad0c1f49233cfdd63ebdd9e93c37860",
+    "evidence/executed_case/runs/h-0111/request.json": "8c75d2bd10dec8adcb90b8f1b37a9e73db8cc662f0c84b1b29fad33968ee85f2",
+    "evidence/executed_case/runs/h-1000/records/authority-0.json": "88f51d873dccfba2e8e559e9b28b2f9d96f4b5eb4ad55f4b9f8da840e23ee3d3",
+    "evidence/executed_case/runs/h-1000/records/authority-1.json": "258d938e96037adfde7291557854ef1d081a8c9edcf72f487c897fc3a6745b88",
+    "evidence/executed_case/runs/h-1000/records/authority-2.json": "9170579f9802dbebb19d6cc2504a4dabdd0601b52845aa0976bc96be6c1aab8b",
+    "evidence/executed_case/runs/h-1000/records/executor.json": "85bf593a725712614ffbd0e27e475c433f73b6201b5cf474a4710bbfd3e357da",
+    "evidence/executed_case/runs/h-1000/records/reader-0.json": "df7cd95eddae57742de4836958905bc0fcebadfc262911e060d2c158cc74301e",
+    "evidence/executed_case/runs/h-1000/records/reader-1.json": "0eacc5219a2c88273d047bbd69eafaa7a1863ff6c7293036d088a9481d3319e9",
+    "evidence/executed_case/runs/h-1000/records/reader-2.json": "33185ea774450378c0064b046b9286ce92707fe3fd538ac0e85b52e4e29ff4b6",
+    "evidence/executed_case/runs/h-1000/request.json": "c7852ad30f25879ead2552a94ef26cee8a7adbdd05c9689706d7f20a46ff2fc6",
+    "evidence/executed_case/runs/h-1001/effects/B.txt": "211757416262316b71f4be506afbc7e1e87bb7fd1ce6238d9bb4879fd221a5cd",
+    "evidence/executed_case/runs/h-1001/records/authority-0.json": "acb995cec02733071528dd316f85dd6c6f1bf7112688244fe8914d12bee211bb",
+    "evidence/executed_case/runs/h-1001/records/authority-1.json": "926dd7e464a56023916bf04246abd9077b803ae92af3f311993a3570e951a842",
+    "evidence/executed_case/runs/h-1001/records/authority-2.json": "ee5829e3ee7c813eada53dcb38a7ed63d6d4d2aa12ed7eb7591bc30a04d0ed5d",
+    "evidence/executed_case/runs/h-1001/records/executor.json": "9c6d33a64104f973eba6588a8c3f1de50301b41dc143af074af706ea549919ea",
+    "evidence/executed_case/runs/h-1001/records/reader-0.json": "1db70ea79c7e9ba1dc0c3fc5e0602203ff2e893d2423de464c5897eabb0bf147",
+    "evidence/executed_case/runs/h-1001/records/reader-1.json": "84c1254083e71692d3cf1dc3fadb9ddf38f0008205977497fb1e5cf4339823ea",
+    "evidence/executed_case/runs/h-1001/records/reader-2.json": "b04f5b057695eac00a9b98bc4537ccd04a8bc0044cc45bb7ed72c3360c610f1c",
+    "evidence/executed_case/runs/h-1001/request.json": "ccbb1eba0918ca61e2c1cf4f2c5581c1c16f200f7b3533b080bdcdc6b42ffa98",
+    "evidence/executed_case/runs/h-1010/effects/A.txt": "34a6ccb70d8d8ee5cab8870342977ce951777bb17b54f26ceae9bb4c983f0cb2",
+    "evidence/executed_case/runs/h-1010/records/authority-0.json": "50564693f51e3db03bcbd3e5ffe67b38a9e83579b18debd534f752a53e7b7b74",
+    "evidence/executed_case/runs/h-1010/records/authority-1.json": "a374f79558a8f8769de374b519731dc25ed52f31d1418cd266823b03165e34fa",
+    "evidence/executed_case/runs/h-1010/records/authority-2.json": "4db5642dcadfc2940df62314c6e61d19b9def521fdf2141e72c07e3cac96ae77",
+    "evidence/executed_case/runs/h-1010/records/executor.json": "9a604e430789a2160d98473904e50702e6ae6bd2f090ad3513c1699c511c5f44",
+    "evidence/executed_case/runs/h-1010/records/reader-0.json": "5de8ff82702e5bbfac4a2f1bd46ec05d9446aab2a4fec449a54fc0f946702905",
+    "evidence/executed_case/runs/h-1010/records/reader-1.json": "0827082fcdbf237b7d0fa611df9fced3c73873d84f464bb1628fa407b5a8528f",
+    "evidence/executed_case/runs/h-1010/records/reader-2.json": "5ce843797d5aa6ff3624cc705ca028083921c8dbcde58dc5703ba575087cdf36",
+    "evidence/executed_case/runs/h-1010/request.json": "fe731e3ad9ffb418677ba610a9fff0289f9da0c4993de1fdf7eae70e1b8b6ff2",
+    "evidence/executed_case/runs/h-1011/effects/A.txt": "d961b1598bcee6797e2df70956855e075969923af50ec6faff77bc99232a6a68",
+    "evidence/executed_case/runs/h-1011/effects/B.txt": "2ff49b511a42e715215b879baee94e7a3afc680fa200e9f3cc994df5d7bad172",
+    "evidence/executed_case/runs/h-1011/records/authority-0.json": "267a5b09428649956e0cef806ee9db9d26d9f14d5e2ef1eccdee910d741b7112",
+    "evidence/executed_case/runs/h-1011/records/authority-1.json": "c4095e08e2b8bb02b4deaa961c87d62ffde3a701b5333c91cd09ad5a2cff44de",
+    "evidence/executed_case/runs/h-1011/records/authority-2.json": "1da20efabadf9b542a4556f367b0011d560d5d3fdcbfd0fede24c30c6d92812c",
+    "evidence/executed_case/runs/h-1011/records/executor.json": "e64f98b1852134761c838a38daaf08e90488692ef3d09904bd8df58ce1b1bf94",
+    "evidence/executed_case/runs/h-1011/records/reader-0.json": "b091c57e8a91d7a8e82257bc13a6d2299a711791f9563562696360eba0067a15",
+    "evidence/executed_case/runs/h-1011/records/reader-1.json": "d5d2496a543a78164953b0b21cb441053b8305a73bf3851e31d6010df4d09b0b",
+    "evidence/executed_case/runs/h-1011/records/reader-2.json": "76a0b55e51c00bb7597fb3782eaac675dbcca188de5f45495d3e573f711bb1aa",
+    "evidence/executed_case/runs/h-1011/request.json": "785b669d921ebb2cb22e188d960e674b7da08866b08d41113fa60e5cea67bc4c",
+    "evidence/executed_case/runs/h-1100/records/authority-0.json": "3992749819cd4e257fb390d94602a837f05af60203c019060019643bb926cb47",
+    "evidence/executed_case/runs/h-1100/records/authority-1.json": "972b256828dcfdf876890ea0bdd31208c15c6a334e21a8ff86ad54e253dfd55c",
+    "evidence/executed_case/runs/h-1100/records/authority-2.json": "84ae2db292a670695796a3400bf04bbc2ac34f6d6766ae2c659f4a33b2b9f305",
+    "evidence/executed_case/runs/h-1100/records/executor.json": "50acf9a637a460c5665af3c195f85bcae4fec76707ea88f1dd31c6a4689c78d9",
+    "evidence/executed_case/runs/h-1100/records/reader-0.json": "8064c45c083041948748548415b44abcd54ca47ef72e3e6b8c52d5386cf64c89",
+    "evidence/executed_case/runs/h-1100/records/reader-1.json": "c6c2944ff4c5e86f11bcc4fd3851b7611858adf04d95cde3f404961cbfa743c7",
+    "evidence/executed_case/runs/h-1100/records/reader-2.json": "cacf6d40879ef3bcc8f6b7023e97d4fa945fa73fb930a051e2e528b5afe41c81",
+    "evidence/executed_case/runs/h-1100/request.json": "1fc9ed807aea675668d3cf7fc92cd7033166a8f098d6f40749069b8a5bf9e68b",
+    "evidence/executed_case/runs/h-1101/effects/B.txt": "42c7f6240699231e659acf389dea52e095fde2eea3b86dca081072550dcc684f",
+    "evidence/executed_case/runs/h-1101/records/authority-0.json": "bd406c4d0b565579ff460cb9d7eac6e2c631e06750f3e087ddebc40a3339df7e",
+    "evidence/executed_case/runs/h-1101/records/authority-1.json": "0b0d5630c32fc100c9a1e5698624b3220a77a9f32465ace63cc23ab83047c9a0",
+    "evidence/executed_case/runs/h-1101/records/authority-2.json": "08a2b6182cc4bd45209a7b50f3bc5a4a51f4fa0c0933808e968e76dbae9ba3c6",
+    "evidence/executed_case/runs/h-1101/records/executor.json": "1958cb002fcab9300cf89307279e224a07e868cdd9333c728c26d620594f6ed0",
+    "evidence/executed_case/runs/h-1101/records/reader-0.json": "37d377d3a5fde150d9e52daaef1f7d4bdf3bb533370e8c30bdb7284c22d493ba",
+    "evidence/executed_case/runs/h-1101/records/reader-1.json": "1847223b4ac1e6d746ba6fdc21c2a6bc6cae873634ba7fc5c3c180619dcdea08",
+    "evidence/executed_case/runs/h-1101/records/reader-2.json": "f0c92751cc292cbaee0f5740896a6abbf41d62364da5aaf9e225ec0c86b3483f",
+    "evidence/executed_case/runs/h-1101/request.json": "abb8541ea3ad552db064b4019dcffaa0017539c6ed85482ddb8b111a15ef1b4a",
+    "evidence/executed_case/runs/h-1110/effects/A.txt": "29d9e317ff86c2edb99ad4c6bc7727af72aedf14ec04317bcbe0072a8d94da52",
+    "evidence/executed_case/runs/h-1110/records/authority-0.json": "a3e3444d38b8066babb513fa20c167517eec40a8292c819ca672ba90f800672f",
+    "evidence/executed_case/runs/h-1110/records/authority-1.json": "f8f9fd400a9d3a15c56a6db7766aa249337ced2bf6901faabf0c67e063cb1b1d",
+    "evidence/executed_case/runs/h-1110/records/authority-2.json": "de96edade8673acec9ec94eee40f96702049a8da3b54ff48c47ad52fcb6ceb5c",
+    "evidence/executed_case/runs/h-1110/records/executor.json": "67b246324e5d2a4d9c7bf18052552210be9d0fc8f2816c8d5aa65352fbc3a689",
+    "evidence/executed_case/runs/h-1110/records/reader-0.json": "1e13378e7bece546b931374049a4f7c17968327412762a07287d72ac8942ff92",
+    "evidence/executed_case/runs/h-1110/records/reader-1.json": "330e4911bca17e337c08b892b9ecbed58b703cb498588b17e78076db148b54bd",
+    "evidence/executed_case/runs/h-1110/records/reader-2.json": "0320101e57d843466baf5255fd315a1e8f6e1bdc0605534b6d6841dda372bd55",
+    "evidence/executed_case/runs/h-1110/request.json": "455ab018788cac14b16d42638c90b1c9260c7b50330ffc130e37125fe3d36a92",
+    "evidence/executed_case/runs/h-1111/effects/A.txt": "ba851c007823d8a4b64f21b7ff970807af67aeb604fc09d0e6127c238f590a2c",
+    "evidence/executed_case/runs/h-1111/effects/B.txt": "e8391b966a63d5dad8732b1d8956d51e52473cdd0ee9806e149abbbd3c1b75fd",
+    "evidence/executed_case/runs/h-1111/records/authority-0.json": "21e884455dbfd3f687686377f56a551f263af3593bac112f4e3f52091eaf7222",
+    "evidence/executed_case/runs/h-1111/records/authority-1.json": "ae05aed347781dccf929c695f906dc7e3480d12ea554f5f1446686163ca17e75",
+    "evidence/executed_case/runs/h-1111/records/authority-2.json": "8c4adf46737c9d8521680df076fe0ac81f73b82c8df3c5b0edaa9fee8cbcb780",
+    "evidence/executed_case/runs/h-1111/records/executor.json": "6dc50c6bd154f979ce569daadb0b85eab5b6d48775ab9bb1fe2d4b8cc5909aae",
+    "evidence/executed_case/runs/h-1111/records/reader-0.json": "6b00d899774734e040e682adf99c2f2be93fe7cdede37393c4a1b3b11e83d22d",
+    "evidence/executed_case/runs/h-1111/records/reader-1.json": "2fb85d74f0652a139e9f563ff35897647dd0eeeff2d04dacd487aa6cd390cd18",
+    "evidence/executed_case/runs/h-1111/records/reader-2.json": "229e9148095fbc49b0aa324529a7013a470b6330da8cdbe6fe4d8d92050d724f",
+    "evidence/executed_case/runs/h-1111/request.json": "66720398b358a7299702a33f95502a0d380a93bc0bd97cc472bbee66559cd8f7",
+    "evidence/executed_case/summary.json": "120c3c009a0d208a540f2688239e3eacba4fccef1ff8538c5d9db66885664afe"
+  },
+  "source_sha256": "2a44059b468432caac704d55cef94eb9fd66f82fc21584b3b8ec32ffcfd5caa6",
+  "status": "PASS",
+  "summary_field_interpretation": {
+    "actual_created_files": "16 retained files verified now; historical creation events not independently traced"
+  },
+  "unbound_classes": [
+    {
+      "history_ids": [
+        "h-0000"
+      ],
+      "record": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0001",
+        "h-0010"
+      ],
+      "record": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0011"
+      ],
+      "record": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0100",
+        "h-1000"
+      ],
+      "record": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-0101",
+        "h-0110",
+        "h-1001",
+        "h-1010"
+      ],
+      "record": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "verdict": "unresolved"
+    },
+    {
+      "history_ids": [
+        "h-0111",
+        "h-1011"
+      ],
+      "record": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "verdict": "unresolved"
+    },
+    {
+      "history_ids": [
+        "h-1100"
+      ],
+      "record": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "verdict": "false"
+    },
+    {
+      "history_ids": [
+        "h-1101",
+        "h-1110"
+      ],
+      "record": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "verdict": "unresolved"
+    },
+    {
+      "history_ids": [
+        "h-1111"
+      ],
+      "record": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "verdict": "true"
+    }
+  ],
+  "unbound_margin": 0,
+  "validation_kind": "new read-only verification of retained v0.4 evidence",
+  "validator_sha256": "80af388600921d1214d4550abdf12a87f572774456f6d22f00bbf05c44b20081"
+}

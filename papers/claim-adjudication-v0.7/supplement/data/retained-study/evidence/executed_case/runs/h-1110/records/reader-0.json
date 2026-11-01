@@ -1,0 +1,38 @@
+[
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "context": "one-host-local-study/2026-10-13",
+      "coverage": "two declared paths at this readback; no claim about other actions",
+      "effect_sha256": "29d9e317ff86c2edb99ad4c6bc7727af72aedf14ec04317bcbe0072a8d94da52",
+      "exists_at_readback": true,
+      "matches_expected_content": true,
+      "principal": "synthetic-local-actor",
+      "producer": "reader-0",
+      "request_sha256": "90290f01d8ebc64532a503c295a1d4dbaea3978783e4313f8641de4f89523b06",
+      "role": "reader",
+      "run": "7cca638f-df7d-48fb-8bc6-b284d9b509c3",
+      "schema": "local-witness-study/1",
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/A"
+    },
+    "signature": "fU0jm1l3f9Al24OGko2GG+bzCNtU549qNwcr4w9vL1S3uwKYSD7VHsWN1makHKlB5s4Bmoq85ZKHhjz1NqG+Dg=="
+  },
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "context": "one-host-local-study/2026-10-13",
+      "coverage": "two declared paths at this readback; no claim about other actions",
+      "effect_sha256": null,
+      "exists_at_readback": false,
+      "matches_expected_content": false,
+      "principal": "synthetic-local-actor",
+      "producer": "reader-0",
+      "request_sha256": "d04855d1dbf20e25c108b72649ecd0350bcb2d8aa63d435bba41e54f07470295",
+      "role": "reader",
+      "run": "7cca638f-df7d-48fb-8bc6-b284d9b509c3",
+      "schema": "local-witness-study/1",
+      "target": "7cca638f-df7d-48fb-8bc6-b284d9b509c3/B"
+    },
+    "signature": "hrXxDpjjeVqE1KltGhNYcbUdth62cRVAU+Jq1ETOHnURq9SP7JuWU8gNzOF6HvUOuQRb4Fltq6yFngh+pC/9CQ=="
+  }
+]

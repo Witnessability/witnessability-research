@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the associated paper and identify the supplement commit used."
+type: software
+title: "Claim Adjudication under Uncertain Binding and Shared Failures: reproduction supplement"
+version: "0.7.0"
+authors:
+  - family-names: Sergeev
+    given-names: Mikhail A.
+    orcid: "https://orcid.org/0009-0001-6443-855X"
+repository-code: "https://github.com/Witnessability/witnessability-research"
+preferred-citation:
+  type: article
+  title: "Claim Adjudication under Uncertain Binding and Shared Failures"
+  authors:
+    - family-names: Sergeev
+      given-names: Mikhail A.
+  doi: "10.5281/zenodo.23871213"
+  year: 2026

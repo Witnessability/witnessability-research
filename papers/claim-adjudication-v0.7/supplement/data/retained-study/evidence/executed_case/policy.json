@@ -1,0 +1,6 @@
+{
+  "authority": "experiment-controller",
+  "decision_rule": "sensitivity <= 4",
+  "id": "local-policy/1",
+  "scope": "declared local file actions"
+}

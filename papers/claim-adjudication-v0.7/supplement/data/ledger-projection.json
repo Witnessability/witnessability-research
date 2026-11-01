@@ -1,0 +1,646 @@
+{
+  "archive_sha256": "5223360f08d91ea0f76dd097c989623c51861f67c5ca6643d69d4f4e5f476e3b",
+  "scope": "Selected projected records and declared finite models; raw archive excluded from reader export.",
+  "models": {
+    "ledger-omission": {
+      "alphabets": [
+        [
+          "empty",
+          "nonempty",
+          "unavailable"
+        ]
+      ],
+      "binding": "identity",
+      "claim": "No durable committed admitted action_ledger row in the external frozen invocation envelope scope, from committed epoch opening through committed action seal inclusive. The checker does not ingest or independently authenticate that envelope.",
+      "domains": [
+        "ledger_observation"
+      ],
+      "faults": [
+        []
+      ],
+      "histories": [
+        "L0",
+        "L1"
+      ],
+      "joint": {
+        "L0": [
+          [
+            "empty"
+          ]
+        ],
+        "L1": [
+          [
+            "empty"
+          ],
+          [
+            "nonempty"
+          ]
+        ]
+      },
+      "name": "Research Coverage-002 / ledger-omission",
+      "truth": {
+        "L0": true,
+        "L1": false
+      }
+    },
+    "business-C_BL": {
+      "alphabets": [
+        [
+          "empty",
+          "nonempty",
+          "unavailable"
+        ]
+      ],
+      "binding": "identity",
+      "claim": "No completed selected-object business write occurrence in the external frozen invocation envelope scope, from committed epoch opening through committed action seal inclusive. The checker does not ingest or independently authenticate that envelope.",
+      "domains": [
+        "ledger_observation"
+      ],
+      "faults": [
+        []
+      ],
+      "histories": [
+        "B0L0",
+        "B0L1",
+        "B1L1"
+      ],
+      "joint": {
+        "B0L0": [
+          [
+            "empty"
+          ]
+        ],
+        "B0L1": [
+          [
+            "nonempty"
+          ]
+        ],
+        "B1L1": [
+          [
+            "nonempty"
+          ]
+        ]
+      },
+      "name": "Research Coverage-002 / business-C_BL",
+      "truth": {
+        "B0L0": true,
+        "B0L1": true,
+        "B1L1": false
+      }
+    },
+    "ledger-exact": {
+      "alphabets": [
+        [
+          "empty",
+          "nonempty",
+          "unavailable"
+        ]
+      ],
+      "binding": "identity",
+      "claim": "No durable committed admitted action_ledger row in the external frozen invocation envelope scope, from committed epoch opening through committed action seal inclusive. The checker does not ingest or independently authenticate that envelope.",
+      "domains": [
+        "ledger_observation"
+      ],
+      "faults": [
+        []
+      ],
+      "histories": [
+        "L0",
+        "L1"
+      ],
+      "joint": {
+        "L0": [
+          [
+            "empty"
+          ]
+        ],
+        "L1": [
+          [
+            "nonempty"
+          ]
+        ]
+      },
+      "name": "Research Coverage-002 / ledger-exact",
+      "truth": {
+        "L0": true,
+        "L1": false
+      }
+    },
+    "business-unrestricted": {
+      "alphabets": [
+        [
+          "empty",
+          "nonempty",
+          "unavailable"
+        ]
+      ],
+      "binding": "identity",
+      "claim": "No completed selected-object business write occurrence in the external frozen invocation envelope scope, from committed epoch opening through committed action seal inclusive. The checker does not ingest or independently authenticate that envelope.",
+      "domains": [
+        "ledger_observation"
+      ],
+      "faults": [
+        []
+      ],
+      "histories": [
+        "B0L0",
+        "B0L1",
+        "B1L0",
+        "B1L1"
+      ],
+      "joint": {
+        "B0L0": [
+          [
+            "empty"
+          ]
+        ],
+        "B0L1": [
+          [
+            "nonempty"
+          ]
+        ],
+        "B1L0": [
+          [
+            "empty"
+          ]
+        ],
+        "B1L1": [
+          [
+            "nonempty"
+          ]
+        ]
+      },
+      "name": "Research Coverage-002 / business-unrestricted",
+      "truth": {
+        "B0L0": true,
+        "B0L1": true,
+        "B1L0": false,
+        "B1L1": false
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "P01",
+      "source_case": "empty",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "c667347d2a9dd658291723b8b103e15c545603949ddc2de54b819dbe383a46fd",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P02",
+      "source_case": "same-value",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "10a3f3ae6be64be57d1ce55511bb4251759102db4375de554e5d267d20a43304",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P03",
+      "source_case": "restore-endpoint",
+      "raw_action_count": 2,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "fcd50b8c0435efc09c0fe66d9e9c401f83ec671e487eabed38301ea50b5d2808",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P04",
+      "source_case": "ledger-constraint",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "0cfec5c4a4eba408e29ae3aba83ec35f276ea28852446b3deef8b4c65c52e06a",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P05",
+      "source_case": "caller-savepoint",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "2c51ba0c1e6d5645ea60821362a109f4efd6c7dbb31fe51142f1eb86345823c7",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P06",
+      "source_case": "caller-exception",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "9eeacd603357c9fef207e8d080b3c407404025c56b6b383a8005548d5dab14d7",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P07",
+      "source_case": "terminate-before-ledger",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "4a06861d296528bb88d532e57eeba83e2c9beedb657ac6d1edf319a9bb980e33",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P08",
+      "source_case": "lost-ack-after-commit",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "264b8c3ffec423deacd0cb7193ef3eeed52d7ed46d7f786976639e39ee3a1196",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P09",
+      "source_case": "lost-ack-before-commit",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "05e82dd84bcbc16895c5257a6eb3e166bdf80b3e462426b5ae58c88a5d6ab347",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P10",
+      "source_case": "two-identities-same-value",
+      "raw_action_count": 2,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "0fab90f5ee2ced8c269768522482e803dec56c2b61c85f4186f3821df183e2e2",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P11",
+      "source_case": "two-writes-one-transaction",
+      "raw_action_count": 2,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "bcc554c43a6126c52a5893d921d733bd02a10e799efeb6bebbd4aa7b163779ab",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P12",
+      "source_case": "application-permissions",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "9a8197489abbba97d280711d72abe7437a2e919a9f99fcf862f091532265bede",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P13",
+      "source_case": "writer-before-sealer",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "82fb847fbf08ab0fcb12e4ce72a615a02bddecd6144b2c906c774b918e0d63fb",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P14",
+      "source_case": "sealer-before-writer",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "ba8e5e73f570d370bd4522ab25911853d1f3441453acb07a5498bbd170eae3a6",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P15",
+      "source_case": "seal-rollback",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "704dc9105485f11a55172cd8bfa93ba6fe91c067c81169658096bb1eb418ed09",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P16",
+      "source_case": "same-transaction-final-write",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "cd45be05c694f04f5ce8eaf4831912e16c95842b925651cb6fa1a557467a3703",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P17",
+      "source_case": "old-writer-snapshot",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "6bf0664c3049b66b390ea497904c3f63bf65003df8afa386c03ef093e06667d6",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P18",
+      "source_case": "orphan-ledger",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "21803d5988659273c6c6cd322e55b2b02c0e1eea6467677a45518658b89696d5",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P19",
+      "source_case": "duplicate-ledger",
+      "raw_action_count": 2,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "d1414d9765476d7a43da521b39e802382e92010c66943306d05e27761d38d732",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P20",
+      "source_case": "other-object-whole-epoch",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "c923b50e0700fb9ea32e59c4b0b6dced13c21c10f00a58e6362550efc286100f",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P21",
+      "source_case": "wrong-domain-rejected",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "1f8ff1774437080bcd0bc7e4c21cedf0dec871dacdb3077bd7c779f75aa58cde",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P22",
+      "source_case": "broken-exception",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "154798263d20f14dfcb8f28927e3a05cb1a0d64914e49b0ad76dc799dd9a67f4",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "P23",
+      "source_case": "broken-eventual",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ],
+      "snapshot_sha256": "1ee5040c4c18af9f674f2d4d0673069ebdc3fc0023469b76d0d8827e7d53bb72",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "S01",
+      "source_case": "empty",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "UNRESOLVED",
+      "compatible": [
+        "L0",
+        "L1"
+      ],
+      "snapshot_sha256": "c667347d2a9dd658291723b8b103e15c545603949ddc2de54b819dbe383a46fd",
+      "model": "ledger-omission"
+    },
+    {
+      "id": "S02",
+      "source_case": "same-value",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ],
+      "snapshot_sha256": "10a3f3ae6be64be57d1ce55511bb4251759102db4375de554e5d267d20a43304",
+      "model": "ledger-omission"
+    },
+    {
+      "id": "G01",
+      "source_case": "empty",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "context-mismatch",
+      "verdict": null,
+      "compatible": null,
+      "snapshot_sha256": "c667347d2a9dd658291723b8b103e15c545603949ddc2de54b819dbe383a46fd",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "G02",
+      "source_case": "same-value",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "artifact-mismatch",
+      "verdict": null,
+      "compatible": null,
+      "snapshot_sha256": "10a3f3ae6be64be57d1ce55511bb4251759102db4375de554e5d267d20a43304",
+      "model": "ledger-exact"
+    },
+    {
+      "id": "B01",
+      "source_case": "empty",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "TRUE",
+      "compatible": [
+        "B0L0"
+      ],
+      "snapshot_sha256": "c667347d2a9dd658291723b8b103e15c545603949ddc2de54b819dbe383a46fd",
+      "model": "business-C_BL"
+    },
+    {
+      "id": "B02",
+      "source_case": "same-value",
+      "raw_action_count": 1,
+      "record": [
+        "nonempty"
+      ],
+      "gate": "admitted",
+      "verdict": "UNRESOLVED",
+      "compatible": [
+        "B0L1",
+        "B1L1"
+      ],
+      "snapshot_sha256": "10a3f3ae6be64be57d1ce55511bb4251759102db4375de554e5d267d20a43304",
+      "model": "business-C_BL"
+    },
+    {
+      "id": "B03",
+      "source_case": "broken-exception",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "admitted",
+      "verdict": "UNRESOLVED",
+      "compatible": [
+        "B0L0",
+        "B1L0"
+      ],
+      "snapshot_sha256": "154798263d20f14dfcb8f28927e3a05cb1a0d64914e49b0ad76dc799dd9a67f4",
+      "model": "business-unrestricted"
+    },
+    {
+      "id": "B04",
+      "source_case": "broken-eventual",
+      "raw_action_count": 0,
+      "record": [
+        "empty"
+      ],
+      "gate": "business-binding-counterexample",
+      "verdict": null,
+      "compatible": null,
+      "snapshot_sha256": "1ee5040c4c18af9f674f2d4d0673069ebdc3fc0023469b76d0d8827e7d53bb72",
+      "model": "business-C_BL"
+    }
+  ]
+}

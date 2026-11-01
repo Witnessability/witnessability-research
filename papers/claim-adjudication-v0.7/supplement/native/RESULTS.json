@@ -1,0 +1,374 @@
+{
+  "lean": {
+    "original": {
+      "axioms_reported": [
+        "propext",
+        "sorryAx",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "file": "lean/BindingFailure.lean",
+      "first_error": "BindingFailure.lean:63:9: error: unknown tactic (by_contra is not available with import Std only)",
+      "log": "lean/compile-original.log",
+      "rc": 1,
+      "sha256": "7de8477eae2c5c8050f89c986a77348bfed41e418ef5d8ab2a0a52513ada2826",
+      "status": "DOES_NOT_COMPILE"
+    },
+    "patched_copy": {
+      "axioms_reported": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "file": "lean/BindingFailure.patched.lean",
+      "log": "lean/compile-patched.log",
+      "patch": "One-line correction: by_contra hne -> refine Classical.byContradiction fun hne => ?_",
+      "rc": 0,
+      "sha256": "e0f12994e1e16a1244adb11b29d57209dfaa401b31e5e9e7cf07a6544f7f1653",
+      "status": "KERNEL_CHECKED_PATCHED_COPY"
+    },
+    "toolchain": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "recorded_execution_date": "2026-10-29",
+  "scope": "Pointwise gluing lemma and finite computations only; not a machine-checked proof of the complete theorem.",
+  "status": "retained native execution results; not rerun for this reader package",
+  "wolfram": {
+    "kernel": "15.0.1 for Linux x86 (64-bit) (July 2, 2026)",
+    "linter_note": "Every evaluation printed Symbol::undefined2 warnings naming pattern/local symbols (F, R, J, M, H, ...). They come from the evaluator's static symbol check, not from evaluation; all outputs are complete.",
+    "runs": [
+      {
+        "block": "A1-exhaustive",
+        "deviations": "wrapper also returns $SystemID",
+        "evaluated": "wolfram/A1-exhaustive.evaluated.wl",
+        "expected_in_source": [
+          13536,
+          13536,
+          13536
+        ],
+        "extracted": "wolfram/A1-exhaustive.wl",
+        "extracted_sha256": "8f2a4b1384322f2581079128759e5a3657e0ed67d98dd12f4fa71b6ffcb69756",
+        "match": true,
+        "output": [
+          13536,
+          13536,
+          13536
+        ],
+        "seconds": 14.503669
+      },
+      {
+        "block": "A2-general-seeded",
+        "deviations": "final expression Count[res, {a_, a_}] wrapped as {Count[res, {a_, a_}], Counts[res]}; the first element is the original expression",
+        "diagnostic_counts": {
+          "{False, False}": 9,
+          "{True, True}": 291
+        },
+        "evaluated": "wolfram/A2-general-seeded.evaluated.wl",
+        "expected_in_source": 300,
+        "extracted": "wolfram/A2-general-seeded.wl",
+        "extracted_sha256": "53f744124131e471bcacad29ce934e2a65bdeb7f5d668c39076528230b2c395d",
+        "match": true,
+        "output": 300,
+        "scope": "Proposition 1 detection only (two booleans).",
+        "seconds": 0.278302
+      },
+      {
+        "block": "A3-separated-and-benchmark",
+        "deviations": "trailing expected-value comment omitted (comment only)",
+        "evaluated": "wolfram/A3-separated-and-benchmark.evaluated.wl",
+        "expected_in_source": "300; six checked t=0,1 all False; t=2 {False,False,True,True}; t=3 all True; shared t=0 all False, t=1 all True; unbound t=0 all True",
+        "extracted": "wolfram/A3-separated-and-benchmark.wl",
+        "extracted_sha256": "a8d3022b72747901e7d2b09b245be77ca8f748beecbfc996e9826ef93c7eaef1",
+        "match": true,
+        "output": {
+          "bench": [
+            [
+              "six domains, checked",
+              0,
+              [
+                false,
+                false,
+                false,
+                false
+              ]
+            ],
+            [
+              "six domains, checked",
+              1,
+              [
+                false,
+                false,
+                false,
+                false
+              ]
+            ],
+            [
+              "six domains, checked",
+              2,
+              [
+                false,
+                false,
+                true,
+                true
+              ]
+            ],
+            [
+              "six domains, checked",
+              3,
+              [
+                true,
+                true,
+                true,
+                true
+              ]
+            ],
+            [
+              "shared control, checked",
+              0,
+              [
+                false,
+                false,
+                false,
+                false
+              ]
+            ],
+            [
+              "shared control, checked",
+              1,
+              [
+                true,
+                true,
+                true,
+                true
+              ]
+            ],
+            [
+              "six domains, unbound",
+              0,
+              [
+                true,
+                true,
+                true,
+                true
+              ]
+            ]
+          ],
+          "separated_count": 300
+        },
+        "seconds": 5.908244
+      },
+      {
+        "block": "A4-coalitions",
+        "deviations": "none besides wrapper",
+        "evaluated": "wolfram/A4-coalitions.evaluated.wl",
+        "expected_in_source": "no expected-value comment in code; compared with manuscript Table 1 (Section 5.4) rows 1-3",
+        "extracted": "wolfram/A4-coalitions.wl",
+        "extracted_sha256": "055f37910755c14d4c45f26a5524595ff80eefe67f7dfdc2a1ecc5918b7476ab",
+        "match": true,
+        "output": {
+          "bound": [
+            [
+              "{1}",
+              false,
+              "2/3",
+              1,
+              1
+            ],
+            [
+              "{2}",
+              false,
+              "2/3",
+              0,
+              0
+            ],
+            [
+              "{1,2}",
+              true,
+              1,
+              1,
+              1
+            ]
+          ],
+          "scoped": [
+            [
+              "{1}",
+              false,
+              "2/3",
+              0,
+              1
+            ],
+            [
+              "{2}",
+              false,
+              "2/3",
+              0,
+              0
+            ],
+            [
+              "{1,2}",
+              true,
+              1,
+              0,
+              1
+            ]
+          ],
+          "xor": [
+            [
+              "{1}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{2}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{3}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{4}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{1,2}",
+              false,
+              "2/3",
+              0,
+              1
+            ],
+            [
+              "{1,3}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{1,4}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{2,3}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{2,4}",
+              false,
+              0,
+              0,
+              0
+            ],
+            [
+              "{3,4}",
+              false,
+              "2/3",
+              0,
+              0
+            ],
+            [
+              "{1,2,3}",
+              false,
+              "2/3",
+              0,
+              1
+            ],
+            [
+              "{1,2,4}",
+              false,
+              "2/3",
+              0,
+              1
+            ],
+            [
+              "{1,3,4}",
+              false,
+              "2/3",
+              0,
+              0
+            ],
+            [
+              "{2,3,4}",
+              false,
+              "2/3",
+              0,
+              0
+            ],
+            [
+              "{1,2,3,4}",
+              true,
+              1,
+              0,
+              1
+            ]
+          ]
+        },
+        "output_row_format": "{coalition, decides p, TV(p), TV(s1), TV(s2)}",
+        "seconds": 0.046332,
+        "table1_comparison": {
+          "bound": "U alone: s1 and s2 exactly (TV 1, 1), p distinguishability 2/3; smallest deciding coalition 2; full coalition learns s1 and s2 - consistent",
+          "scoped": "u_A alone: s2 exactly; each single: p 2/3; s1 concealed (TV 0); smallest deciding coalition 2; forum learns s2 - consistent",
+          "xor": "every single custodian: TV 0 for p, s1, s2; only the full coalition of 4 decides p; forum learns s2 - consistent"
+        }
+      },
+      {
+        "block": "A4-shamir",
+        "deviations": "none besides wrapper",
+        "evaluated": "wolfram/A4-shamir.evaluated.wl",
+        "expected_in_source": [
+          3,
+          true,
+          11,
+          false,
+          true
+        ],
+        "extracted": "wolfram/A4-shamir.wl",
+        "extracted_sha256": "ca9307059a0372d2a56f11ca9342af26eea01eb1c89206177df7782f7f14b5fc",
+        "match": true,
+        "output": [
+          3,
+          true,
+          11,
+          false,
+          true
+        ],
+        "seconds": 2.156181
+      },
+      {
+        "block": "A2-theorem1-extension",
+        "consistency": "Proposition 1 part reproduces A.2 exactly (300 agreements; 291 + 9 detection pattern equals 291 + 8 + 1 here)",
+        "evaluated": "wolfram/A2-theorem1-extension.evaluated.wl",
+        "output": {
+          "all_four_agree": 300,
+          "counts": {
+            "{False, False, False, False}": 8,
+            "{False, False, True, True}": 1,
+            "{True, True, True, True}": 291
+          },
+          "models_sha256_wolfram_hash": "12f9484b45d06fcce095a507e7d872c0b6c4b6093d275b4d58d1ebe0802c5643",
+          "prop1_agree": 300,
+          "thm1_agree": 300
+        },
+        "purpose": "Separate extension using the A.2 seed and generator; adds structural and direct Theorem 1 adjudication checks.",
+        "seconds": 1.119206
+      }
+    ],
+    "system_id": "Linux-x86-64"
+  }
+}

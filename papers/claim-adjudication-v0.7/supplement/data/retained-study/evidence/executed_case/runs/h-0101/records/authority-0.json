@@ -1,0 +1,36 @@
+[
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "context": "one-host-local-study/2026-10-13",
+      "decision": "DENY",
+      "policy_sha256": "c53787acf62187aadf3a1d1a46059aef3109e2812b53af7d000893a229a9c324",
+      "principal": "synthetic-local-actor",
+      "producer": "authority-0",
+      "request_sha256": "2447efd13d88e5d1e100077a26ef7d80e2c558742b4b8374a165f60a94153125",
+      "role": "authority",
+      "run": "bca79f3f-4971-4600-bff9-f9a21e83db51",
+      "schema": "local-witness-study/1",
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/A",
+      "warrant": "declared-local-rule:sensitivity<=4"
+    },
+    "signature": "vSqb+B9TDUt1a5OtLa10f/c5dQ3lPGao9He/WuZnA9d1T7ns7ASYng00JVBDgUehQ2etjPVTiG9r9ho0r+HXCw=="
+  },
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "context": "one-host-local-study/2026-10-13",
+      "decision": "ALLOW",
+      "policy_sha256": "c53787acf62187aadf3a1d1a46059aef3109e2812b53af7d000893a229a9c324",
+      "principal": "synthetic-local-actor",
+      "producer": "authority-0",
+      "request_sha256": "29af71cd94dc21260fcfc1f1d0ad923898b7a7e005bc4bce88231c6bb43b62d0",
+      "role": "authority",
+      "run": "bca79f3f-4971-4600-bff9-f9a21e83db51",
+      "schema": "local-witness-study/1",
+      "target": "bca79f3f-4971-4600-bff9-f9a21e83db51/B",
+      "warrant": "declared-local-rule:sensitivity<=4"
+    },
+    "signature": "rN73Z5PP99oLOcHtGhD91lcfUR8a3aHLcvlPfsu2iRhRAKw+AC42vrIQ9c+Ic56KIL9u01xLZCHOvoWp3f7kCA=="
+  }
+]

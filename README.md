@@ -164,3 +164,7 @@ or [Witnessability Model](https://github.com/Witnessability/witnessability-model
 
 Reuse follows [LICENSE.md](LICENSE.md) and the applicable file notices;
 attribution is in [NOTICE](NOTICE). New documentation carries CC-BY-4.0 notices.
+
+## Claim adjudication paper supplement
+
+The [reproduction supplement](papers/claim-adjudication-v0.7/README.md) accompanies the [published preprint](https://doi.org/10.5281/zenodo.23871213). It includes finite checks, retained synthetic records and explicit component licenses.

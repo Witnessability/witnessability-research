@@ -1,0 +1,211 @@
+{
+  "matches": 28,
+  "cases": [
+    {
+      "id": "P01",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P02",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P03",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P04",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P05",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P06",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P07",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P08",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P09",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P10",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P11",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P12",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P13",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P14",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P15",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P16",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P17",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P18",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P19",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P20",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "P21",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P22",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "P23",
+      "verdict": "TRUE",
+      "compatible": [
+        "L0"
+      ]
+    },
+    {
+      "id": "S01",
+      "verdict": "UNRESOLVED",
+      "compatible": [
+        "L0",
+        "L1"
+      ]
+    },
+    {
+      "id": "S02",
+      "verdict": "FALSE",
+      "compatible": [
+        "L1"
+      ]
+    },
+    {
+      "id": "B01",
+      "verdict": "TRUE",
+      "compatible": [
+        "B0L0"
+      ]
+    },
+    {
+      "id": "B02",
+      "verdict": "UNRESOLVED",
+      "compatible": [
+        "B0L1",
+        "B1L1"
+      ]
+    },
+    {
+      "id": "B03",
+      "verdict": "UNRESOLVED",
+      "compatible": [
+        "B0L0",
+        "B1L0"
+      ]
+    }
+  ],
+  "margins": {
+    "ledger-omission": 0,
+    "business-C_BL": 0,
+    "ledger-exact": 1,
+    "business-unrestricted": 0
+  },
+  "excluded_admission_refusals": 3
+}

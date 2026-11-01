@@ -1,0 +1,38 @@
+[
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "context": "one-host-local-study/2026-10-13",
+      "coverage": "two declared paths at this readback; no claim about other actions",
+      "effect_sha256": null,
+      "exists_at_readback": false,
+      "matches_expected_content": false,
+      "principal": "synthetic-local-actor",
+      "producer": "reader-1",
+      "request_sha256": "aa21bd2149ae4bf855fee1628b1e496bd7f702eabf1ca2b9cdd294797760d6f9",
+      "role": "reader",
+      "run": "6e11446b-7cd7-4908-89c1-4725f7d132d5",
+      "schema": "local-witness-study/1",
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/A"
+    },
+    "signature": "S+NVs20Wdz36CBg90L9GiAmYwRs9LW5y78y+qJ1Y4mi0h+D3zPSiZrISU3lY/Bd7EVVmWoDz/3r04RnCTtr2AA=="
+  },
+  {
+    "payload": {
+      "action": "create-experiment-file",
+      "context": "one-host-local-study/2026-10-13",
+      "coverage": "two declared paths at this readback; no claim about other actions",
+      "effect_sha256": "211757416262316b71f4be506afbc7e1e87bb7fd1ce6238d9bb4879fd221a5cd",
+      "exists_at_readback": true,
+      "matches_expected_content": true,
+      "principal": "synthetic-local-actor",
+      "producer": "reader-1",
+      "request_sha256": "11e7fc86d1e3583e8d757664468fc94c1fe8c6fd70e2714771163d9861c190c1",
+      "role": "reader",
+      "run": "6e11446b-7cd7-4908-89c1-4725f7d132d5",
+      "schema": "local-witness-study/1",
+      "target": "6e11446b-7cd7-4908-89c1-4725f7d132d5/B"
+    },
+    "signature": "OIkJaIecYa/WVcIjoM2nuiVwdXSHUrZCQa3NMrI8uGBME+RBUUbDrPMRWC4szXT1uswmew0UK8pTic9EC1lKAA=="
+  }
+]

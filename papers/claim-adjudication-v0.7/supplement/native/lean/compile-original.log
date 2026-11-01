@@ -1,0 +1,41 @@
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+7de8477eae2c5c8050f89c986a77348bfed41e418ef5d8ab2a0a52513ada2826  BindingFailure.lean
+BindingFailure.lean:63:9: error: unknown tactic
+BindingFailure.lean:62:45: error: unsolved goals
+I A : Type
+b : Binding I A
+F₀ F₁ : Fault I
+r₀ r₁ : Record I A
+hc : Covered b F₀ F₁ r₀ r₁
+u : Record I A := blend b F₀ r₀ r₁
+v : Record I A := fun i => b.reverse i (u i)
+i : I
+hn : ¬F₁ i
+h₀ : ¬F₀ i
+⊢ r₀ i = b.forward i (r₁ i)
+BindingFailure.lean:62:4: error: unsolved goals
+case neg
+I A : Type
+b : Binding I A
+F₀ F₁ : Fault I
+r₀ r₁ : Record I A
+hc : Covered b F₀ F₁ r₀ r₁
+u : Record I A := blend b F₀ r₀ r₁
+v : Record I A := fun i => b.reverse i (u i)
+i : I
+hn : ¬F₁ i
+h₀ : ¬F₀ i
+hr : r₀ i = b.forward i (r₁ i)
+⊢ v i = r₁ i
+BindingFailure.lean:52:40: error: unsolved goals
+case refine_3
+I A : Type
+b : Binding I A
+F₀ F₁ : Fault I
+r₀ r₁ : Record I A
+hc : Covered b F₀ F₁ r₀ r₁
+u : Record I A := blend b F₀ r₀ r₁
+v : Record I A := fun i => b.reverse i (u i)
+⊢ ∀ (i : I), u i = b.forward i (v i)
+'Witnessability.gluing_iff_cover' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+rc=1 secs=3

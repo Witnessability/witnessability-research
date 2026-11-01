@@ -1,0 +1,2 @@
+# Tested with Python 3.12.14; Python >=3.10 is required by retained validators.
+cryptography==50.0.2
