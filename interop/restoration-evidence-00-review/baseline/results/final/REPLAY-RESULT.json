@@ -1,0 +1,1614 @@
+{
+  "checker_sha256": "4e30922ac5a5044e7e0fb821e620321dcaa6cb748eeb6c2f3280d541be103afe",
+  "external_dependencies": [],
+  "input_file_count": 75,
+  "limits": [
+    "unsigned record and bundle rules only",
+    "not full draft conformance",
+    "no admission or signature verification",
+    "interpretations are documented"
+  ],
+  "manifest_sha256": "7a3cd31da92c7349f508b8225f032dd43d16cb983ea647ac0027586bed31a6d0",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "results": [
+    {
+      "actual": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "id": "incident-action-authorization-control",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "id": "incident-action-authorization-accept-after-the-fact",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "id": "incident-action-authorization-accept-basis-unknown",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-statement-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-predicate-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-closed-vocabulary-violation",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "no-authorizer",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "no-authorizer",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-no-authorizer",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "no-accountable-party",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "no-accountable-party",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-no-accountable-party",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-authority-basis-missing",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-window-inverted",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authorization-window-inverted",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-authorization-window-inverted",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "intent-not-committed-before",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "intent-not-committed-before",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-intent-not-committed-before",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-expired",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authorization-expired",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-authorization-expired",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "induced-effects-unobserved",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "induced-effects-unobserved",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-induced-effects-unobserved",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-sweep-control",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-sweep-accept-issued-after-only",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-sweep-accept-use-after-revocation",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-statement-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-predicate-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-closed-vocabulary-violation",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "denominator-union-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "denominator-union-mismatch",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-denominator-union-mismatch",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "revocation-entries-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "revocation-entries-mismatch",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-revocation-entries-mismatch",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-coverage-claim-exceeds-proof",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "coverage-claim-incomplete",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "coverage-claim-incomplete",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-coverage-claim-incomplete",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "id": "re-enable-decision-control",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "id": "re-enable-decision-accept-resume-full",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "id": "re-enable-decision-accept-remain-restricted",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-statement-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-predicate-malformed",
+      "mode": "draft",
+      "reason_match": false,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-closed-vocabulary-violation",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "evidence-slot-missing",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "evidence-slot-missing",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-evidence-slot-missing",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "evidence-slot-unexplained",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "evidence-slot-unexplained",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-evidence-slot-unexplained",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "no-approver",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "no-approver",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-no-approver",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "partial-without-scope",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "partial-without-scope",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-partial-without-scope",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "full-with-scope",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "full-with-scope",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-full-with-scope",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "assignment-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "assignment-recorded",
+        "verdict": "accept"
+      },
+      "id": "joint-authority-control",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-statement-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-predicate-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-authority-basis-missing",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "single-organization",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "single-organization",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-single-organization",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "party-acts-outside-assignment",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "party-acts-outside-assignment",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-party-acts-outside-assignment",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-boundary-control",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-boundary-accept-commit-observed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-boundary-accept-not-established",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-statement-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-predicate-malformed",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "revocation-outside-window",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "revocation-outside-window",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-revocation-outside-window",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "counts-inconsistent",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "counts-inconsistent",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-counts-inconsistent",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "result-contradicts-counts",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "result-contradicts-counts",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-result-contradicts-counts",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "observer-not-at-sink",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "observer-not-at-sink",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-observer-not-at-sink",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "id": "bundle-consistent",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "id": "bundle-consistent-with-optional-records",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "id": "bundle-record-coverage-claim-exceeds-proof",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predecessor-not-carried",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predecessor-not-carried",
+        "verdict": "reject"
+      },
+      "id": "bundle-predecessor-not-carried",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predecessor-type-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predecessor-type-mismatch",
+        "verdict": "reject"
+      },
+      "id": "bundle-predecessor-type-mismatch",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "incident-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "incident-mismatch",
+        "verdict": "reject"
+      },
+      "id": "bundle-incident-mismatch",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predecessor-issued-later",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predecessor-issued-later",
+        "verdict": "reject"
+      },
+      "id": "bundle-predecessor-issued-later",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "restored-credential-unswept",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "restored-credential-unswept",
+        "verdict": "reject"
+      },
+      "id": "bundle-restored-credential-unswept",
+      "mode": "draft",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "id": "incident-action-authorization-control",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "id": "incident-action-authorization-accept-after-the-fact",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "authorization-recorded",
+        "verdict": "accept"
+      },
+      "id": "incident-action-authorization-accept-basis-unknown",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-statement-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-predicate-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-closed-vocabulary-violation",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "no-authorizer",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "no-authorizer",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-no-authorizer",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "no-accountable-party",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "no-accountable-party",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-no-accountable-party",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-authority-basis-missing",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-window-inverted",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authorization-window-inverted",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-authorization-window-inverted",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "intent-not-committed-before",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "intent-not-committed-before",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-intent-not-committed-before",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authorization-expired",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authorization-expired",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-authorization-expired",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "induced-effects-unobserved",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "induced-effects-unobserved",
+        "verdict": "reject"
+      },
+      "id": "incident-action-authorization-induced-effects-unobserved",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-sweep-control",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-sweep-accept-issued-after-only",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "sweep-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-sweep-accept-use-after-revocation",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-statement-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-predicate-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-closed-vocabulary-violation",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "denominator-union-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "denominator-union-mismatch",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-denominator-union-mismatch",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "revocation-entries-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "revocation-entries-mismatch",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-revocation-entries-mismatch",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-coverage-claim-exceeds-proof",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "coverage-claim-incomplete",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "coverage-claim-incomplete",
+        "verdict": "reject"
+      },
+      "id": "revocation-sweep-coverage-claim-incomplete",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "id": "re-enable-decision-control",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "id": "re-enable-decision-accept-resume-full",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "decision-recorded",
+        "verdict": "accept"
+      },
+      "id": "re-enable-decision-accept-remain-restricted",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-statement-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-predicate-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-closed-vocabulary-violation",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "evidence-slot-missing",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "evidence-slot-missing",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-evidence-slot-missing",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "evidence-slot-unexplained",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "evidence-slot-unexplained",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-evidence-slot-unexplained",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "no-approver",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "no-approver",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-no-approver",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "partial-without-scope",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "partial-without-scope",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-partial-without-scope",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "full-with-scope",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "full-with-scope",
+        "verdict": "reject"
+      },
+      "id": "re-enable-decision-full-with-scope",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "assignment-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "assignment-recorded",
+        "verdict": "accept"
+      },
+      "id": "joint-authority-control",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-statement-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-predicate-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "authority-basis-missing",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-authority-basis-missing",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "single-organization",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "single-organization",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-single-organization",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "party-acts-outside-assignment",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "party-acts-outside-assignment",
+        "verdict": "reject"
+      },
+      "id": "joint-authority-party-acts-outside-assignment",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-boundary-control",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-boundary-accept-commit-observed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "boundary-recorded",
+        "verdict": "accept"
+      },
+      "id": "revocation-boundary-accept-not-established",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "statement-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-statement-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-predicate-malformed",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "revocation-outside-window",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "revocation-outside-window",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-revocation-outside-window",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "counts-inconsistent",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "counts-inconsistent",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-counts-inconsistent",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "result-contradicts-counts",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "result-contradicts-counts",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-result-contradicts-counts",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "observer-not-at-sink",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "observer-not-at-sink",
+        "verdict": "reject"
+      },
+      "id": "revocation-boundary-observer-not-at-sink",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "id": "bundle-consistent",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "expected": {
+        "reason": "bundle-consistent",
+        "verdict": "accept"
+      },
+      "id": "bundle-consistent-with-optional-records",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "coverage-claim-exceeds-proof",
+        "verdict": "reject"
+      },
+      "id": "bundle-record-coverage-claim-exceeds-proof",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predecessor-not-carried",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predecessor-not-carried",
+        "verdict": "reject"
+      },
+      "id": "bundle-predecessor-not-carried",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predecessor-type-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predecessor-type-mismatch",
+        "verdict": "reject"
+      },
+      "id": "bundle-predecessor-type-mismatch",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "incident-mismatch",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "incident-mismatch",
+        "verdict": "reject"
+      },
+      "id": "bundle-incident-mismatch",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "predecessor-issued-later",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "predecessor-issued-later",
+        "verdict": "reject"
+      },
+      "id": "bundle-predecessor-issued-later",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    },
+    {
+      "actual": {
+        "reason": "restored-credential-unswept",
+        "verdict": "reject"
+      },
+      "expected": {
+        "reason": "restored-credential-unswept",
+        "verdict": "reject"
+      },
+      "id": "bundle-restored-credential-unswept",
+      "mode": "profile",
+      "reason_match": true,
+      "verdict_match": true
+    }
+  ],
+  "status": "executed",
+  "vector_count": 57
+}

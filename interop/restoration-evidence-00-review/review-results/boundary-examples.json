@@ -1,0 +1,376 @@
+[
+  {
+    "draft_diagnostic": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "document-role",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/document-role.json",
+    "rule": "2",
+    "sha256": "4e7c84a10c9b3e45106005aeaff77a34d874105a791c9eb03389c3ec0d2eefd9"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "document-sink",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/document-sink.json",
+    "rule": "2",
+    "sha256": "90c9a331f1398e6e024b7ab1703820d6ebee3862f28adeff2c3ce89d96ed64c3"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "document-authority",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/document-authority.json",
+    "rule": "2",
+    "sha256": "2ffa4356ae6dad41069961a4b240a9f78c4502ca4e783b9235c147b76e8e6279"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "expected": "closed-vocabulary-violation",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "registry-independence",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "path": "examples/registry-independence.json",
+    "rule": "3",
+    "sha256": "76b8f8bfc5724925c080f79a977ee3295e289d61949d378b7324fdd7a9f4b19f"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "shape-before-registry",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/shape-before-registry.json",
+    "rule": "2",
+    "sha256": "54915d1711881ed341b9127b8dbf884fa47ce15c052752f6b433ec2e939e75d1"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "authority-basis-missing",
+      "verdict": "reject"
+    },
+    "expected": "authority-basis-missing",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "authority-absent",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "authority-basis-missing",
+      "verdict": "reject"
+    },
+    "path": "examples/authority-absent.json",
+    "rule": "R1.6",
+    "sha256": "e66ee8c1cd8fa776f18c15fe95237591b78496a46a8c1b37e99b7437c1516822"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "expected": "closed-vocabulary-violation",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "registry-before-authority-absence",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "path": "examples/registry-before-authority-absence.json",
+    "rule": "3",
+    "sha256": "2b741dedd25bf5225e1d37f20407204ae651e1ff32ce4b1190a664c773774f9e"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "authority-wrong-type",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/authority-wrong-type.json",
+    "rule": "2",
+    "sha256": "b2296593861381c85faaf52340351e02ee2a95ac4da7f653b680aeb97465f47d"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "induced-effects-unobserved",
+      "verdict": "reject"
+    },
+    "expected": "induced-effects-unobserved",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "observation-absent",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "induced-effects-unobserved",
+      "verdict": "reject"
+    },
+    "path": "examples/observation-absent.json",
+    "rule": "R1.10",
+    "sha256": "cf91de373b37d0c17c544c0412d05ea9a4f0e8c3b9a67c801357b19742c0cf4d"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "observation-malformed",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/observation-malformed.json",
+    "rule": "2",
+    "sha256": "a761d3f19ee3edd9f64f078d5bae30e60ad632d3436e752cd91617608068dc32"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "evidence-slot-missing",
+      "verdict": "reject"
+    },
+    "expected": "evidence-slot-missing",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "slot-absent",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "evidence-slot-missing",
+      "verdict": "reject"
+    },
+    "path": "examples/slot-absent.json",
+    "rule": "R3.4",
+    "sha256": "ea512421f404473d4fa745b06601f7e38c92522911412c8a44f946f7c5c8b7d0"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "evidence-slot-missing",
+      "verdict": "reject"
+    },
+    "expected": "evidence-slot-missing",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "slot-before-explanation-and-approver",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "evidence-slot-missing",
+      "verdict": "reject"
+    },
+    "path": "examples/slot-before-explanation-and-approver.json",
+    "rule": "R3.4",
+    "sha256": "226ee8d304e42b9ebdf1d7cb7aa51385c830a8845338bf8b31df29e6b7db2588"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "evidence-slot-unexplained",
+      "verdict": "reject"
+    },
+    "expected": "evidence-slot-unexplained",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "explanation-before-approver",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "evidence-slot-unexplained",
+      "verdict": "reject"
+    },
+    "path": "examples/explanation-before-approver.json",
+    "rule": "R3.5",
+    "sha256": "7fd4d9a553535437a12ee19e6c5fdb7ccea75e1e9ddf855802780b1b8dd51a16"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "evidence-container-absent",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/evidence-container-absent.json",
+    "rule": "2",
+    "sha256": "8da3f8be00de769a8a616ba4ba82e3f007f0fe945fc3da15f8753f0ab6e451fe"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "no-approver",
+      "verdict": "reject"
+    },
+    "expected": "no-approver",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "approvers-empty",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "no-approver",
+      "verdict": "reject"
+    },
+    "path": "examples/approvers-empty.json",
+    "rule": "R3.6",
+    "sha256": "db2d31d4a4cb4c188ea804e72576eeb5498ea20f12d638bef02bae7f2a6740ad"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "expected": "closed-vocabulary-violation",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "registry-before-empty-approvers",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "closed-vocabulary-violation",
+      "verdict": "reject"
+    },
+    "path": "examples/registry-before-empty-approvers.json",
+    "rule": "3",
+    "sha256": "397a18aeb8ce3a23e5ba266d00d1687bc2f91d436386dbd59970df7746d9084e"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "partial-without-scope",
+      "verdict": "reject"
+    },
+    "expected": "partial-without-scope",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "staged-scope-absent",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "partial-without-scope",
+      "verdict": "reject"
+    },
+    "path": "examples/staged-scope-absent.json",
+    "rule": "R3.7",
+    "sha256": "04914e94277df222ba9af354fba4ccd7ecbc4c3e84da0baddc019c40ffa65d28"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "scope-wrong-type",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/scope-wrong-type.json",
+    "rule": "2",
+    "sha256": "c47a24f8f7d9a7afbfc539b78eefa5e144d10fa2f6f7ae06a78f6dc7ae56a490"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "authority-basis-missing",
+      "verdict": "reject"
+    },
+    "expected": "authority-basis-missing",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "authority-before-single-organization",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "authority-basis-missing",
+      "verdict": "reject"
+    },
+    "path": "examples/authority-before-single-organization.json",
+    "rule": "R4.4",
+    "sha256": "cd8f7f04adced9e6ba9aec72fc2d8ed218e1f649de0038fc119f615a7b03ca7e"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "coverage-claim-incomplete",
+      "verdict": "reject"
+    },
+    "expected": "coverage-claim-incomplete",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "coverage-time-absent",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "coverage-claim-incomplete",
+      "verdict": "reject"
+    },
+    "path": "examples/coverage-time-absent.json",
+    "rule": "R2.7",
+    "sha256": "db9b0a569c8f8c2b8dcaab5afaa6bb9d9a1d11e4fc141d5b9ad58c724a6d149f"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "full-with-scope",
+      "verdict": "reject"
+    },
+    "expected": "full-with-scope",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "full-with-scope",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "full-with-scope",
+      "verdict": "reject"
+    },
+    "path": "examples/full-with-scope.json",
+    "rule": "R3.8",
+    "sha256": "ca354ea6e3a44dd383241cacfc77c4e7409330ddeff4106788d3f996f3a24153"
+  },
+  {
+    "draft_diagnostic": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "expected": "predicate-malformed",
+    "failure_condition": "Returned reason differs from expected; input bytes are pinned.",
+    "id": "slot-missing-and-value-wrong-type",
+    "invariant": "First failing rule is retained; only its named condition is deferred.",
+    "observed": {
+      "reason": "predicate-malformed",
+      "verdict": "reject"
+    },
+    "path": "examples/slot-missing-and-value-wrong-type.json",
+    "rule": "2",
+    "sha256": "e49909a3cf4c0fcd9077b6467b22d255ab6a88a06069c7d32478d14d8347aa9f"
+  }
+]

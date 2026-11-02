@@ -1,0 +1,35 @@
+test_authorization_equal_boundaries (tests_baseline.Controls.test_authorization_equal_boundaries) ... ok
+test_b1_precedes_unresolved (tests_baseline.Controls.test_b1_precedes_unresolved) ... ok
+test_b2_duplicate_carried_bytes (tests_baseline.Controls.test_b2_duplicate_carried_bytes) ... ok
+test_b2_precedes_incident_mismatch (tests_baseline.Controls.test_b2_precedes_incident_mismatch) ... ok
+test_b3_type_mismatch (tests_baseline.Controls.test_b3_type_mismatch) ... ok
+test_b5_precedes_b6 (tests_baseline.Controls.test_b5_precedes_b6) ... ok
+test_b5_related_common_pair (tests_baseline.Controls.test_b5_related_common_pair) ... ok
+test_b6_precedes_b7 (tests_baseline.Controls.test_b6_precedes_b7) ... ok
+test_b7_is_membership_not_successful_revocation_or_admission (tests_baseline.Controls.test_b7_is_membership_not_successful_revocation_or_admission) ... ok
+test_b7_unswept (tests_baseline.Controls.test_b7_unswept) ... ok
+test_byte_hash_not_reserialization (tests_baseline.Controls.test_byte_hash_not_reserialization) ... ok
+test_draft_profile_source_conflict_r4 (tests_baseline.Controls.test_draft_profile_source_conflict_r4) ... ok
+test_draft_profile_source_conflict_rb (tests_baseline.Controls.test_draft_profile_source_conflict_rb) ... ok
+test_duplicate_decoded_keys (tests_baseline.Controls.test_duplicate_decoded_keys) ... ok
+test_evidence_empty_precedes_no_approver (tests_baseline.Controls.test_evidence_empty_precedes_no_approver) ... ok
+test_evidence_missing_precedes_unexplained_and_no_approver (tests_baseline.Controls.test_evidence_missing_precedes_unexplained_and_no_approver) ... ok
+test_first_reason_not_last_r1 (tests_baseline.Controls.test_first_reason_not_last_r1) ... ok
+test_five_controls (tests_baseline.Controls.test_five_controls) ... ok
+test_graph_diamond_dag (tests_baseline.Controls.test_graph_diamond_dag) ... ok
+test_graph_indirect_cycle (tests_baseline.Controls.test_graph_indirect_cycle) ... ok
+test_graph_self_cycle (tests_baseline.Controls.test_graph_self_cycle) ... ok
+test_invalid_calendar_date (tests_baseline.Controls.test_invalid_calendar_date) ... ok
+test_late_rule_authority_basis_not_swallowed_by_shape (tests_baseline.Controls.test_late_rule_authority_basis_not_swallowed_by_shape) ... ok
+test_listed_effects_do_not_require_sorting (tests_baseline.Controls.test_listed_effects_do_not_require_sorting) ... ok
+test_observation_reason_not_swallowed_by_shape (tests_baseline.Controls.test_observation_reason_not_swallowed_by_shape) ... ok
+test_partition_members_do_not_require_sorting (tests_baseline.Controls.test_partition_members_do_not_require_sorting) ... ok
+test_partition_overlap_precedes_revocation_mismatch (tests_baseline.Controls.test_partition_overlap_precedes_revocation_mismatch) ... ok
+test_shape_precedes_vocabulary (tests_baseline.Controls.test_shape_precedes_vocabulary) ... ok
+test_unknown_nested_key (tests_baseline.Controls.test_unknown_nested_key) ... ok
+test_unsupported_registry_is_not_accept (tests_baseline.Controls.test_unsupported_registry_is_not_accept) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.018s
+
+OK

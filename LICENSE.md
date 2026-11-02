@@ -47,3 +47,6 @@ The C1 reproduction package has a path-specific
 [license and attribution notice](interop/event-absence-c1-checker/LICENSE-NOTICE.md).
 
 The claim adjudication supplement has a path-specific [license and attribution notice](papers/claim-adjudication-v0.7/LICENSE-NOTICE.md).
+
+The Restoration Evidence review has a path-specific [license notice](interop/restoration-evidence-00-review/LICENSE-NOTICE.md).
+

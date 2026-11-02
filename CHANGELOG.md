@@ -40,3 +40,8 @@ code. The root package declares version `0.1.0`; the standalone candidate
 declares `0.2.0.dev1`. These package metadata values do not imply corresponding
 repository releases. Baseline files and historical run identities remain
 available for exact replay; changed expectations require a new visible version.
+
+## Restoration Evidence -00 review
+
+- Publish the [bounded unsigned-record review](interop/restoration-evidence-00-review/README.md), preserving the original checker and archived results. The proposed default-mode correction is separated from the specification wording proposal; corpus agreement does not establish full conformance or safe resumption.
+

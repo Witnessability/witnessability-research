@@ -1,0 +1,29 @@
+--- baseline/checker.py
++++ proposed/checker.py
+@@ -118,7 +118,7 @@
+     return {"verdict": verdict, "reason": code}
+ 
+ class Reader:
+-    def __init__(self, vocabulary_mode="draft"):
++    def __init__(self, vocabulary_mode="profile"):
+         if vocabulary_mode not in ("draft", "profile"):
+             raise ValueError("unknown vocabulary mode")
+         self.mode = vocabulary_mode
+@@ -332,7 +332,7 @@
+                 queue.append(j)
+     return seen == len(edges)
+ 
+-def bundle(raw_records, mode="draft"):
++def bundle(raw_records, mode="profile"):
+     if not raw_records:
+         return result("input-empty-bundle", "input-error")
+     reader = Reader(mode)
+@@ -386,7 +386,7 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+-    parser.add_argument("--mode", choices=("draft", "profile"), default="draft")
++    parser.add_argument("--mode", choices=("draft", "profile"), default="profile")
+     group = parser.add_mutually_exclusive_group(required=True)
+     group.add_argument("--record", type=Path)
+     group.add_argument("--bundle", type=Path)

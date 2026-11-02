@@ -1,0 +1,40 @@
+[
+  {
+    "observed": {
+      "bundle": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "cli": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      },
+      "cli_exit": 1,
+      "reader": {
+        "reason": "closed-vocabulary-violation",
+        "verdict": "reject"
+      }
+    },
+    "passes_intended_default": false,
+    "variant": "baseline"
+  },
+  {
+    "observed": {
+      "bundle": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "cli": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      },
+      "cli_exit": 1,
+      "reader": {
+        "reason": "predicate-malformed",
+        "verdict": "reject"
+      }
+    },
+    "passes_intended_default": true,
+    "variant": "proposed"
+  }
+]

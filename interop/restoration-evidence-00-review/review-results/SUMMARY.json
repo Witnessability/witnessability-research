@@ -1,0 +1,88 @@
+{
+  "baseline_rows_identical_to_archived": 114,
+  "baseline_sha256": "4e30922ac5a5044e7e0fb821e620321dcaa6cb748eeb6c2f3280d541be103afe",
+  "corpus": {
+    "baseline-draft": {
+      "count": 57,
+      "reason_matches": 56,
+      "verdict_matches": 57
+    },
+    "baseline-profile": {
+      "count": 57,
+      "reason_matches": 57,
+      "verdict_matches": 57
+    },
+    "proposed-default": {
+      "count": 57,
+      "reason_matches": 57,
+      "verdict_matches": 57
+    }
+  },
+  "current_manifest_byte_identical": true,
+  "default_negative_controls": "Baseline fails intended reason on Reader, bundle and CLI; proposed passes.",
+  "external_dependencies": [],
+  "fresh_sources": [
+    {
+      "path": "profiles/restoration-evidence.md",
+      "sha256": "dc4d1d19ce3deaf50ab994222dc17d7c2cd4baceef5cddf32f2d744195a419d5",
+      "unchanged": true
+    },
+    {
+      "path": "spec/predicates/incident-action-authorization.md",
+      "sha256": "2f45d0bfa3cf9f02530ae9dc12be7876a674891d50d667842c41206ccaf25c58",
+      "unchanged": true
+    },
+    {
+      "path": "spec/predicates/joint-authority.md",
+      "sha256": "5ccdae0ef623f0f26e3b5507c330d7c745bfd0fa732e0bc6f451b35e8bb625f2",
+      "unchanged": true
+    },
+    {
+      "path": "spec/predicates/re-enable-decision.md",
+      "sha256": "d48ac8633cf60663a7d1ffadd6ac68570bf215319cf373dd19d59462605f7490",
+      "unchanged": true
+    },
+    {
+      "path": "spec/predicates/revocation-boundary.md",
+      "sha256": "ba4c1b5643a08f044669a852f6621ecbf98f7e08b1ef30cb9858523a5728f3e2",
+      "unchanged": true
+    },
+    {
+      "path": "spec/predicates/revocation-sweep.md",
+      "sha256": "e5fe884ad75bf61c8c95940cd9a8b8e6ac3b67e735788a7fab1d224a1d04cc18",
+      "unchanged": true
+    },
+    {
+      "path": "spec/schemas/incident-action-authorization-v1.schema.json",
+      "sha256": "190d928d6aae7837f1128c91bb24ef714b13bd3f309d22a903380397fb0ab020",
+      "unchanged": true
+    },
+    {
+      "path": "spec/schemas/re-enable-decision-v1.schema.json",
+      "sha256": "7efd116c066c563cd2c40adc18d8364c166c38724a874b60f06318bd79bfc6d4",
+      "unchanged": true
+    },
+    {
+      "path": "spec/schemas/joint-authority-v1.schema.json",
+      "sha256": "0c818a4b043505156d827d4c63538883bbe5a681f8ec3df61fe7e862a5e4732b",
+      "unchanged": true
+    }
+  ],
+  "new_boundary_examples": 22,
+  "original_unit_tests": {
+    "baseline": {
+      "errors": 0,
+      "failures": 0,
+      "run": 30
+    },
+    "proposed": {
+      "errors": 0,
+      "failures": 0,
+      "run": 30
+    }
+  },
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "proposed_sha256": "ce4e93194e08a6270eb40db8b0fbd794e27eb97a14a4fa1b8c18190f6ed0fd04",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "verified_input_files": 75
+}
