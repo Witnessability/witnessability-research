@@ -1,0 +1,1 @@
+{"sink":{"commitBoundary":"successful fsync return for first.txt; no directory durability claim","id":"urn:rb-control:first-file","kind":"filesystem"},"window":{"end":"2026-11-03T00:00:05Z","start":"2026-11-03T00:00:00Z"}}

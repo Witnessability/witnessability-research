@@ -1,0 +1,14 @@
+{
+  "repository": "Poke-nushi/Verifiable-Agent-Trust-Envelope",
+  "commit": "eaa47be4bd1f640f390ecd8b31111277c0e0e9e0",
+  "files": {
+    "CONTRACT.md": "9417a03997d6d33594b31bb366826cdbf0147719",
+    "rb_receiving.py": "12711c74b32cc2ca03c97a4d4ba3d04762fc7848",
+    "run_examples.py": "dd7e127369534780a5ac4fff747033f8c02b997d",
+    "test_rb_receiving.py": "3922dae462e288c20e5c9682cac6fc66f0035e44",
+    "SOURCE-PINS.json": "84803179daaa8df61126706c19f72391df51cd7a",
+    "LICENSE": "28c45b345ae547baaa6aee2f9b7faa40c300c4cf",
+    "run_capture.py": "e0a47c54b5ff793fc31a31f8dd3da3af50242733",
+    "example_inputs.py": "35f38c985aff054a34845a30bfafb83b4b665649"
+  }
+}
