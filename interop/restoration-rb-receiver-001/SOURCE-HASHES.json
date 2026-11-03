@@ -1,0 +1,14 @@
+{
+  "vendor/vate/CONTRACT.md": "6c99f7485f41ac8bd197f3f29efcaef442df5b25226ad9c02257b89659f6e6fe",
+  "vendor/vate/LICENSE": "a7f02d0ab1cc53abde08c95ab75725d673aa5af2d3184cfa07907d34c1f7a318",
+  "vendor/vate/SOURCE-PINS.json": "576c278206896ed02c9ef50685728f8374a21b6e84ead30612f76c6413255934",
+  "vendor/vate/example_inputs.py": "8d90cf287a1138683934b62782467b7e474c5a8e38a484ed9b4fd9d39ea7e1dd",
+  "vendor/vate/rb_receiving.py": "ecb386baf6328e3b974d6120b7b7ea5d07eef414b13262258bbd81867f04ba79",
+  "vendor/vate/run_capture.py": "c3210866bb7174833fbf7874cde9c252e58b5976954c6dc6787cb55789212619",
+  "vendor/vate/run_examples.py": "5cb0a1d0e3578a99fcc950ffdd4b67853e698c87ce5fdb1bfd525ed337e032f9",
+  "vendor/vate/test_rb_receiving.py": "c5f616966a47081c71f9392a6d74df5cf099340852806651984cb616330651ae",
+  "sources/MANIFEST.upstream.json": "7a3cd31da92c7349f508b8225f032dd43d16cb983ea647ac0027586bed31a6d0",
+  "sources/SOURCES.json": "c315ba30852abcc4fae654f3265db54cd90e39ca45bb8b5d981656be88ea7129",
+  "sources/corpus-inputs.json": "37421613640736b673c901ae18e2b9255dae501605553de64280a924ced8e94d",
+  "sources/draft-gilda-audit-restoration-evidence-00.txt": "0ae1b94c226cf85b006dfb34abf2180e9dcbda34ad30b9933067df37eafec745"
+}

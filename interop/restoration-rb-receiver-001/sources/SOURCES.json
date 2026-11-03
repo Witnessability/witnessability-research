@@ -1,0 +1,84 @@
+{
+  "primary": "https://www.ietf.org/archive/id/draft-gilda-audit-restoration-evidence-00.txt",
+  "primary_bytes_sha256": "0ae1b94c226cf85b006dfb34abf2180e9dcbda34ad30b9933067df37eafec745",
+  "primary_access": "Official text fetched by run 41516463644; exact returned text SHA-256 independently recomputed; sections 4-7 and 10 read in full after initial run.",
+  "upstream_repo": "probityai/agent-evidence-vectors",
+  "upstream_tag": "v0.31.2",
+  "upstream_commit": "1177028f6276f439768ab7d02fb734054832612c",
+  "manifest_sha256": "7a3cd31da92c7349f508b8225f032dd43d16cb983ea647ac0027586bed31a6d0",
+  "declared_corpus_digest": "5b7f58c91b517bd7c96dcccdef0d827a4f730fd4a650b4992b362bb9925cae29",
+  "corpus_digest_recomputed": false,
+  "corpus_digest_note": "All 75 individual case hashes verified; the corpus aggregation algorithm was not inferred from author code.",
+  "sources": [
+    {
+      "path": "profiles/restoration-evidence.md",
+      "sha256": "dc4d1d19ce3deaf50ab994222dc17d7c2cd4baceef5cddf32f2d744195a419d5",
+      "git_blob": "3482369e24401dc60663fd5434f9e786988b3beb"
+    },
+    {
+      "path": "spec/predicates/incident-action-authorization.md",
+      "sha256": "2f45d0bfa3cf9f02530ae9dc12be7876a674891d50d667842c41206ccaf25c58",
+      "git_blob": "8b3e1f71ea766f2548c9602c8cfabfd4ce904ce0"
+    },
+    {
+      "path": "spec/predicates/joint-authority.md",
+      "sha256": "5ccdae0ef623f0f26e3b5507c330d7c745bfd0fa732e0bc6f451b35e8bb625f2",
+      "git_blob": "7fb5d3fbfc7b85d0273e04e93dec393ba2ae0558"
+    },
+    {
+      "path": "spec/predicates/re-enable-decision.md",
+      "sha256": "d48ac8633cf60663a7d1ffadd6ac68570bf215319cf373dd19d59462605f7490",
+      "git_blob": "f5483f62b53da2477b48f6bec2a84e5d552647b7"
+    },
+    {
+      "path": "spec/predicates/revocation-boundary.md",
+      "sha256": "ba4c1b5643a08f044669a852f6621ecbf98f7e08b1ef30cb9858523a5728f3e2",
+      "git_blob": "cbcee83598b19f06d041575eb2349554e743ba23"
+    },
+    {
+      "path": "spec/predicates/revocation-sweep.md",
+      "sha256": "e5fe884ad75bf61c8c95940cd9a8b8e6ac3b67e735788a7fab1d224a1d04cc18",
+      "git_blob": "ad03ecf5172617106f4be8383340bc081d16bcc6"
+    },
+    {
+      "path": "spec/schemas/incident-action-authorization-v1.schema.json",
+      "sha256": "190d928d6aae7837f1128c91bb24ef714b13bd3f309d22a903380397fb0ab020",
+      "git_blob": "95092ab0313908598f016610eb777c00f0985cfc"
+    },
+    {
+      "path": "spec/schemas/revocation-sweep-v1.schema.json",
+      "sha256": "1c881a29936748eff3269d75d68a37a3893ec60f05b4304ebbc798d67c3c4a81",
+      "git_blob": "077c7c5ab12238d5fe8c9f58160f82c9677b9362"
+    },
+    {
+      "path": "spec/schemas/re-enable-decision-v1.schema.json",
+      "sha256": "7efd116c066c563cd2c40adc18d8364c166c38724a874b60f06318bd79bfc6d4",
+      "git_blob": "d76692887043a6fa98641e4c8bb104fb917eda28"
+    },
+    {
+      "path": "spec/schemas/joint-authority-v1.schema.json",
+      "sha256": "0c818a4b043505156d827d4c63538883bbe5a681f8ec3df61fe7e862a5e4732b",
+      "git_blob": "75b8c0d0ef93921473f1d614e11e37401e4a8daf"
+    },
+    {
+      "path": "spec/schemas/revocation-boundary-v1.schema.json",
+      "sha256": "379271c3b36c0e94b1e31fc84404b9607d647dd9b1687ead691143e02b987f24",
+      "git_blob": "58a7d1ad262953e774b1414e46b3f2ca562ee890"
+    }
+  ],
+  "registry": {
+    "path": "pages/vocab/v1/registry/sha256-1c5ff80bd97237a603afc402db692ffe5abe15e4a7f9eca13f20068ada347fdc.yaml",
+    "sha256": "1c5ff80bd97237a603afc402db692ffe5abe15e4a7f9eca13f20068ada347fdc",
+    "git_blob": "b2af354db1620babe1d394b68c8490c3a891b5f0",
+    "bytes_verified": true
+  },
+  "independence": {
+    "prior_manifest_expectation_exposure": true,
+    "checker_generator_go_not_read": true,
+    "logic_frozen_before_current_manifest_retrieval": true,
+    "blind_clean_room": false
+  },
+  "python_target": "3.12.14",
+  "third_party_python_dependencies": [],
+  "scope": "unsigned record shape and ordered rules; exact-byte predecessor resolution"
+}

@@ -1,0 +1,51 @@
+test_bad_attempt_shapes_and_times (__main__.ReceivingTests.test_bad_attempt_shapes_and_times) ... ok
+test_bounded_parsing_and_exact_numbers (__main__.ReceivingTests.test_bounded_parsing_and_exact_numbers) ... ok
+test_claim_values_are_not_receiver_choices (__main__.ReceivingTests.test_claim_values_are_not_receiver_choices) ... ok
+test_cli_and_optimized_output (__main__.ReceivingTests.test_cli_and_optimized_output) ... ok
+test_cli_failures_leave_no_success_output (__main__.ReceivingTests.test_cli_failures_leave_no_success_output) ... ok
+test_closed_attempt_total_is_exact_even_when_effect_is_unknown (__main__.ReceivingTests.test_closed_attempt_total_is_exact_even_when_effect_is_unknown) ... ok
+test_closed_initial_counts_must_fit_together_with_unknown_finish (__main__.ReceivingTests.test_closed_initial_counts_must_fit_together_with_unknown_finish) ... ok
+test_closed_unknown_commit_has_a_finite_upper_bound (__main__.ReceivingTests.test_closed_unknown_commit_has_a_finite_upper_bound) ... ok
+test_concurrent_replay_can_precede_original_finish_and_row (__main__.ReceivingTests.test_concurrent_replay_can_precede_original_finish_and_row) ... ok
+test_count_groups_report_independent_conflicts (__main__.ReceivingTests.test_count_groups_report_independent_conflicts) ... ok
+test_datetime_validation_and_whole_seconds (__main__.ReceivingTests.test_datetime_validation_and_whole_seconds) ... ok
+test_document_closed_values (__main__.ReceivingTests.test_document_closed_values) ... ok
+test_empty_partial_replays_can_share_an_initial (__main__.ReceivingTests.test_empty_partial_replays_can_share_an_initial) ... ok
+test_empty_partial_replays_require_initial_capacity (__main__.ReceivingTests.test_empty_partial_replays_require_initial_capacity) ... ok
+test_exclusions_are_compared (__main__.ReceivingTests.test_exclusions_are_compared) ... ok
+test_first_failure_not_last_failure (__main__.ReceivingTests.test_first_failure_not_last_failure) ... ok
+test_https_uses_pinned_ecmascript_whitespace_set (__main__.ReceivingTests.test_https_uses_pinned_ecmascript_whitespace_set) ... ok
+test_initial_after_revocation_is_not_a_zero_claim (__main__.ReceivingTests.test_initial_after_revocation_is_not_a_zero_claim) ... ok
+test_invalid_selection_raises_instead_of_adopting_producer (__main__.ReceivingTests.test_invalid_selection_raises_instead_of_adopting_producer) ... ok
+test_known_count_lower_bounds_survive_incomplete_observation (__main__.ReceivingTests.test_known_count_lower_bounds_survive_incomplete_observation) ... ok
+test_missing_inputs_are_not_success (__main__.ReceivingTests.test_missing_inputs_are_not_success) ... ok
+test_observation_count_contradiction (__main__.ReceivingTests.test_observation_count_contradiction) ... ok
+test_observation_references_exact_original (__main__.ReceivingTests.test_observation_references_exact_original) ... ok
+test_ordered_rule_failures (__main__.ReceivingTests.test_ordered_rule_failures) ... ok
+test_output_preserves_original_bytes_and_refuses_overwrite (__main__.ReceivingTests.test_output_preserves_original_bytes_and_refuses_overwrite) ... ok
+test_partial_collection_has_no_total_upper_bound (__main__.ReceivingTests.test_partial_collection_has_no_total_upper_bound) ... ok
+test_partial_initial_counts_must_fit_together (__main__.ReceivingTests.test_partial_initial_counts_must_fit_together) ... ok
+test_partial_positive_witness_refutes_a_zero_declaration (__main__.ReceivingTests.test_partial_positive_witness_refutes_a_zero_declaration) ... ok
+test_partial_replay_counts_must_fit_together (__main__.ReceivingTests.test_partial_replay_counts_must_fit_together) ... ok
+test_partition_check_matches_exhaustive_assignments (__main__.ReceivingTests.test_partition_check_matches_exhaustive_assignments) ... ok
+test_positive_observation_is_retained_in_partial_collection (__main__.ReceivingTests.test_positive_observation_is_retained_in_partial_collection) ... ok
+test_raw_plan_hash_and_context_both_required (__main__.ReceivingTests.test_raw_plan_hash_and_context_both_required) ... ok
+test_reader_refuses_nonregular_and_symlink_inputs (__main__.ReceivingTests.test_reader_refuses_nonregular_and_symlink_inputs) ... ok
+test_replay_alone_is_a_positive_result (__main__.ReceivingTests.test_replay_alone_is_a_positive_result) ... ok
+test_replay_before_referenced_initial_is_not_evidence (__main__.ReceivingTests.test_replay_before_referenced_initial_is_not_evidence) ... ok
+test_replay_capacity_rule_requires_valid_bound_observation (__main__.ReceivingTests.test_replay_capacity_rule_requires_valid_bound_observation) ... ok
+test_same_second_initial_start_is_not_a_definite_positive (__main__.ReceivingTests.test_same_second_initial_start_is_not_a_definite_positive) ... ok
+test_same_second_is_unestablished (__main__.ReceivingTests.test_same_second_is_unestablished) ... ok
+test_same_second_replay_and_initial_start_are_not_rejected (__main__.ReceivingTests.test_same_second_replay_and_initial_start_are_not_rejected) ... ok
+test_sink_observation_required_for_negative_result (__main__.ReceivingTests.test_sink_observation_required_for_negative_result) ... ok
+test_start_time_tie_preserves_only_possible_joint_counts (__main__.ReceivingTests.test_start_time_tie_preserves_only_possible_joint_counts) ... ok
+test_subject_and_predecessor_shapes (__main__.ReceivingTests.test_subject_and_predecessor_shapes) ... ok
+test_three_results_are_separate_from_permission (__main__.ReceivingTests.test_three_results_are_separate_from_permission) ... ok
+test_unknown_finish_does_not_prove_in_flight (__main__.ReceivingTests.test_unknown_finish_does_not_prove_in_flight) ... ok
+test_unknown_result_does_not_assert_no_commit (__main__.ReceivingTests.test_unknown_result_does_not_assert_no_commit) ... ok
+test_unrecognized_statement_does_not_crash (__main__.ReceivingTests.test_unrecognized_statement_does_not_crash) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.453s
+
+OK

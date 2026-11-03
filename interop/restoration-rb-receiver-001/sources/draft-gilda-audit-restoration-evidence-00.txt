@@ -1,0 +1,1344 @@
+
+
+
+
+Network Working Group                                           S. Gilda
+Internet-Draft                                           2 November 2026
+Intended status: Standards Track                                        
+Expires: 6 May 2027
+
+
+      Restoration Evidence Records for AI Agent Incident Response
+               draft-gilda-audit-restoration-evidence-00
+
+Abstract
+
+   When an AI agent system is stopped, restricted or has its credentials
+   revoked during an incident, someone later decides whether it may run
+   again.  Incident response guidance asks for that decision to be
+   documented with the risk that remains, but no format says what the
+   record must contain for a party outside the deploying organization to
+   check it.  This document defines five record types for that purpose:
+   an incident action authorization, a revocation sweep, a re-enable
+   decision, a joint authority assignment for incidents that span
+   organizations, and a revocation boundary report.  Each is an in-toto
+   Statement carried in a DSSE envelope, uses the canonical form of the
+   agent audit record, and is checked by ordered rules with a named
+   reason for each failure.  A bundle rule set binds a re-enable
+   decision to the records it cites, by digest.  A published conformance
+   corpus carries a reject member for every rule that a member can
+   force.
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   Status information for this document may be found at
+   https://datatracker.ietf.org/doc/draft-gilda-audit-restoration-
+   evidence/.
+
+   Discussion of this document takes place on the AUDIT Birds of a
+   Feather mailing list (mailto:audit@ietf.org), which is archived at
+   https://mailarchive.ietf.org/arch/browse/audit/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/audit/.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 1]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 6 May 2027.
+
+Copyright Notice
+
+   Copyright (c) 2026 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
+     1.1.  Relationship to the agent audit record  . . . . . . . . .   4
+   2.  Conventions and Definitions . . . . . . . . . . . . . . . . .   4
+   3.  Terminology . . . . . . . . . . . . . . . . . . . . . . . . .   4
+   4.  Common Structure  . . . . . . . . . . . . . . . . . . . . . .   5
+     4.1.  Statement and envelope  . . . . . . . . . . . . . . . . .   5
+     4.2.  Common predicate members  . . . . . . . . . . . . . . . .   5
+     4.3.  Closed values . . . . . . . . . . . . . . . . . . . . . .   6
+     4.4.  Rule order and verdicts . . . . . . . . . . . . . . . . .   6
+   5.  Record Types  . . . . . . . . . . . . . . . . . . . . . . . .   7
+     5.1.  R1: Incident action authorization . . . . . . . . . . . .   7
+     5.2.  R2: Revocation sweep  . . . . . . . . . . . . . . . . . .   9
+     5.3.  R3: Re-enable decision  . . . . . . . . . . . . . . . . .  11
+     5.4.  R4: Joint authority . . . . . . . . . . . . . . . . . . .  14
+     5.5.  RB: Revocation boundary . . . . . . . . . . . . . . . . .  15
+   6.  Bundles . . . . . . . . . . . . . . . . . . . . . . . . . . .  16
+   7.  Security Considerations . . . . . . . . . . . . . . . . . . .  18
+     7.1.  A signature authenticates an assertion, not its truth . .  18
+     7.2.  Absence is not read as a value  . . . . . . . . . . . . .  18
+     7.3.  Revocation reach  . . . . . . . . . . . . . . . . . . . .  18
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 2]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+     7.4.  Work in flight  . . . . . . . . . . . . . . . . . . . . .  18
+     7.5.  Authority that outlives a pause . . . . . . . . . . . . .  19
+     7.6.  Approver independence . . . . . . . . . . . . . . . . . .  19
+     7.7.  Predecessor digests . . . . . . . . . . . . . . . . . . .  19
+   8.  Privacy Considerations  . . . . . . . . . . . . . . . . . . .  19
+   9.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  20
+   10. Conformance . . . . . . . . . . . . . . . . . . . . . . . . .  20
+   11. Implementation Status . . . . . . . . . . . . . . . . . . . .  20
+   12. Mapping to the AUDIT Problem Statement  . . . . . . . . . . .  21
+   13. Normative References  . . . . . . . . . . . . . . . . . . . .  22
+   14. Informative References  . . . . . . . . . . . . . . . . . . .  23
+   Document History  . . . . . . . . . . . . . . . . . . . . . . . .  24
+   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .  24
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  24
+
+1.  Introduction
+
+   The agent audit record [AUDIT-RECORD] records one authorization
+   decision and its observed effect.  An incident adds decisions that
+   record does not carry: who authorized a pause or a revocation, which
+   credentials the revocation reached, who decided that the stopped
+   system may resume and on what evidence, and, when two organizations
+   are involved, which of them may act on which asset.  These decisions
+   are made over time, by different parties, and they refer to one
+   another.  The proposed charter of the AUDIT working group
+   [AUDIT-CHARTER] names "authorization state over time" among the
+   things its data models should represent; this document covers that
+   state for the period from containment to restoration.  Section 11 of
+   [AIMS] likewise requires durable audit logs covering "authorization
+   decisions and subsequent remediations" and leaves their form open;
+   the records here give the remediation half a form.
+
+   Incident response guidance asks for these decisions and leaves their
+   form open.  NIST SP 800-61 Rev. 3 [NIST-SP-800-61R3] has handlers
+   work with system owners to confirm restoration (RC.RP-04) and
+   declares the end of recovery "based on criteria" (RC.RP-06).  NIST SP
+   800-184 [NIST-SP-800-184] describes restored assets being validated
+   "before receiving approval to restore network operations"
+   (Section 6.2.2) without naming the approver.  The NIST, NSA and CISA
+   Key Practices for incidents in agent training and evaluation
+   [KEY-PRACTICES] ask that containment layers be shown working before
+   agents restart (7.3), that new controls be shown to catch a replay of
+   the incident (7.4), and that the recovery decision be documented with
+   the remaining risks (7.5).  None of these texts says what that
+   documentation must contain for a party that trusts neither the agent
+   nor its operator to check it.
+
+
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 3]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   This document fixes that record.  It defines five predicate types and
+   the rules a reader applies to each, and a set of rules for a bundle
+   of records that together support one re-enable decision.  It
+   specifies no admission policy: whether a given decision is enough to
+   let a system run again is the relying party's own policy, written
+   against these records.
+
+   The goals are:
+
+   *  to name, in each decision, the parties who held each role and the
+      kind of grant each authorizer acted on, so that "the team decided"
+      becomes a statement someone can be held to;
+
+   *  to make a revocation's reach visible from the record alone, so
+      that a claim wider than the evidence is refused;
+
+   *  to make an omitted restart condition distinguishable from one the
+      decision-maker chose not to address;
+
+   *  to bind a restart decision to the authorization and revocation
+      records it rests on, by digest, so the chain can be checked
+      offline.
+
+1.1.  Relationship to the agent audit record
+
+   This document uses the canonical form, statement shape and envelope
+   of [AUDIT-RECORD] and does not amend it.  The predicate type of that
+   document is frozen (Section 8 of [AUDIT-RECORD]), so the record types
+   defined here are separate predicate types and do not extend it.  A
+   re-enable decision (R3) MAY cite an agent audit record as evidence by
+   its digest (Section 5.3), which is how an enforced action and the
+   decision that authorized resuming it are joined.
+
+2.  Conventions and Definitions
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in BCP
+   14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+3.  Terminology
+
+   Containment:  An action that limits what an agent system can do while
+      an incident is handled: a pause, a restriction of a credential,
+      permission or tool, or an isolation of channels.
+
+   Restoration:  The decision to end a containment wholly or in part.
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 4]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+      It is separate from containment and from remediation and does not
+      follow from either.
+
+   Producer:  The party that signs a record.
+
+   Reader:  A party that checks a record against this document.
+
+   Relying party:  A party that decides what to do on the basis of a
+      checked record, under its own admission policy.
+
+   Bundle:  One re-enable decision record together with every record it
+      names as a predecessor, recursively, and any joint authority or
+      revocation boundary record the producer adds.
+
+   Closed value:  A value drawn from a set this document or [VOCABULARY]
+      enumerates.  A value outside the set makes the record malformed.
+
+4.  Common Structure
+
+4.1.  Statement and envelope
+
+   A record is an in-toto Statement v1 [IN-TOTO] carried in a DSSE
+   envelope [DSSE].  The statement MUST have exactly the members _type,
+   subject, predicateType and predicate. _type MUST be https://in-
+   toto.io/Statement/v1, and predicateType MUST be one of the five URIs
+   of Section 5.
+
+   Statements are I-JSON [RFC7493] and are canonicalized as in
+   Section 4.1 of [AUDIT-RECORD], using JCS [RFC8785].  A duplicate
+   member at any depth makes the statement malformed.  Times are RFC
+   3339 [RFC3339] UTC times to whole seconds and are compared as
+   instants.
+
+   A member this document does not define for a type MUST be refused.
+   This departs from the in-toto parsing rule that consumers ignore
+   unknown fields: a revision that adds a member publishes it under a
+   new predicate type URI (Section 9), so a reader of a v1 type never
+   meets a member it has not been told how to read.
+
+   Each subject member carries a digest holding only sha256.  What the
+   digest is taken over is stated for each type.
+
+4.2.  Common predicate members
+
+   Every predicate defined here carries these members:
+
+   incident:  An object with issuer, an https URL naming who assigns the
+
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 5]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+      identifier; id, a non-empty string; and, optionally, related, a
+      list of further {issuer, id} pairs naming the same incident in
+      another organization's records.  This is the term
+      incident_identifier of [VOCABULARY].
+
+   producer:  An object with id, an https URL naming the signing party.
+
+   issuedAt:  The time the record was issued.
+
+   registryDigest:  An object with sha256, the SHA-256 of the exact
+      bytes of the [VOCABULARY] registry the record's closed values are
+      expressed in.
+
+   doesNotAssert:  A list of non-empty strings, each stating something
+      the producer says the record does not claim.  The list MAY be
+      empty; the member MUST NOT be absent.
+
+   Where a type uses it, predecessors is a list of {predicateType,
+   digest} naming earlier records of this document, where digest holds
+   the sha256 of the predecessor statement's bytes exactly as carried in
+   its DSSE payload.
+
+4.3.  Closed values
+
+   The values of response_function, pause_hold, restoration_decision,
+   revocation_state, intent_binding, independence_basis and
+   set_sufficiency are those of the registry whose digest is
+   1c5ff80bd97237a603afc402db692ffe5abe15e4a7f9eca13f20068ada347fdc,
+   published under https://w3id.org/agent-evidence/vocab/v1/registry/
+   with the file name sha256-, then the digest, then .yaml.  Values that
+   a section of this document lists itself are closed by this document.
+
+   A reader MUST refuse a value outside a closed set and MUST NOT ignore
+   the member.  Registration in [VOCABULARY] gives a value its identity;
+   which values a member accepts is set by this document alone.
+
+4.4.  Rule order and verdicts
+
+   Each type has an ordered rule table.  A reader applies the rules in
+   order and reports the first that fails, with its reason code.  Rules
+   1 to 3 are the same for every type:
+
+
+
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 6]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   +===+================================+=============================+
+   | # | Rule                           | Code                        |
+   +===+================================+=============================+
+   | 1 | The statement has the shape of | statement-malformed         |
+   |   | Section 4.1 and the predicate  |                             |
+   |   | type of this section           |                             |
+   +---+--------------------------------+-----------------------------+
+   | 2 | The predicate has exactly its  | predicate-malformed         |
+   |   | members, each well formed      |                             |
+   +---+--------------------------------+-----------------------------+
+   | 3 | Every closed value is in its   | closed-vocabulary-violation |
+   |   | set                            |                             |
+   +---+--------------------------------+-----------------------------+
+
+                                 Table 1
+
+   A record that passes every rule of its type is accepted with the
+   verdict named for the type.  Two readers that apply this document
+   reach the same verdict and the same first failing reason on the same
+   bytes; the conformance corpus (Section 10) tests that.
+
+5.  Record Types
+
+   The five predicate type URIs are:
+
+   https://probityai.github.io/agent-evidence-vectors/predicate/v1/
+     incident-action-authorization
+   https://probityai.github.io/agent-evidence-vectors/predicate/v1/
+     revocation-sweep
+   https://probityai.github.io/agent-evidence-vectors/predicate/v1/
+     re-enable-decision
+   https://probityai.github.io/agent-evidence-vectors/predicate/v1/
+     joint-authority
+   https://probityai.github.io/agent-evidence-vectors/predicate/v1/
+     revocation-boundary
+
+   Each URI is the common prefix on the first line followed directly by
+   the type name on the second, with no space or line break.
+
+5.1.  R1: Incident action authorization
+
+   An R1 records who authorized one incident response action, which role
+   each named party held, on what kind of grant the authorizer acted,
+   and whether the authority was committed before the action ran.
+
+   The subject is the operation authorized: one or more members, each
+   the SHA-256 of the operation's declared description.
+
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 7]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   The predicate carries the common members and:
+
+   action:  functions, a non-empty sorted list of response_function
+      values (monitoring_increase, restriction, isolation, pause,
+      remediation, restoration); targets, a non-empty list of {id}
+      naming the agents, tools, routes or credentials acted on; and
+      inducedEffects, which is one of {"declared": "listed", "items":
+      [...]}, {"declared": "none_observed", "observation": {"sha256":
+      ...}} or {"declared": "unknown"}. A credential revocation is
+      recorded as restriction, and its reach as an R2.
+
+   parties:  A non-empty list of {id, roles, authorityBasis?,
+      independenceBasis?}. roles is a non-empty sorted list drawn from
+      advised, authorized, executed and accountable.  One party MAY hold
+      several roles. authorityBasis is one of role_grant,
+      policy_preauthorized, contract_third_party, executive_approval and
+      unknown, and MUST be present on every party holding authorized.
+      independenceBasis is an independence_basis value.
+
+   authorizedAt, notAfter:  When the authority was given, and when it
+      lapses.
+
+   executedAt:  Optional.  When the action ran.
+
+   intentBinding:  An intent_binding value: committed_before_execution
+      or asserted_after_execution.
+
+   pause:  Optional. {hold, holdProof}, where hold is a pause_hold value
+      and holdProof is {sha256} of the observation that established it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 8]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+    +====+============================+===============================+
+    | #  | Rule                       | Code                          |
+    +====+============================+===============================+
+    | 4  | At least one party holds   | no-authorizer                 |
+    |    | authorized                 |                               |
+    +----+----------------------------+-------------------------------+
+    | 5  | At least one party holds   | no-accountable-party          |
+    |    | accountable                |                               |
+    +----+----------------------------+-------------------------------+
+    | 6  | Every party holding        | authority-basis-missing       |
+    |    | authorized carries         |                               |
+    |    | authorityBasis             |                               |
+    +----+----------------------------+-------------------------------+
+    | 7  | authorizedAt is not after  | authorization-window-inverted |
+    |    | notAfter                   |                               |
+    +----+----------------------------+-------------------------------+
+    | 8  | When intentBinding is      | intent-not-committed-before   |
+    |    | committed_before_execution |                               |
+    |    | and executedAt is present, |                               |
+    |    | executedAt is not before   |                               |
+    |    | authorizedAt               |                               |
+    +----+----------------------------+-------------------------------+
+    | 9  | When executedAt is         | authorization-expired         |
+    |    | present, it is not after   |                               |
+    |    | notAfter                   |                               |
+    +----+----------------------------+-------------------------------+
+    | 10 | inducedEffects declared    | induced-effects-unobserved    |
+    |    | none_observed carries      |                               |
+    |    | observation                |                               |
+    +----+----------------------------+-------------------------------+
+
+                                  Table 2
+
+   A record passing every rule is accepted as authorization-recorded.  A
+   reader MUST NOT read an absent authorityBasis as role_grant; the
+   value for not knowing is unknown.
+
+5.2.  R2: Revocation sweep
+
+   An R2 records which credentials of a declared population were revoked
+   during an incident, which were not, and how far the producer claims
+   the sweep reaches.
+
+   The subject is the population manifest: one member, the SHA-256 of
+   the list of credential identifiers the sweep was run over.
+   Identifiers are opaque names; they MUST NOT be secrets, hashes of
+   secrets or key fingerprints.
+
+
+
+
+Gilda                      Expires 6 May 2027                   [Page 9]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   The predicate carries the common members, predecessors (at least one
+   R1, the authorization of the sweep), and:
+
+   population:  credentials, a non-empty, sorted, duplicate-free list of
+      identifiers.
+
+   partition:  A list of {state, credentials} parts, state one of
+      revoked, retained and unassessed.
+
+   revocations:  One entry per revoked credential: credential;
+      revokedAt; evidence, a resource descriptor {digest, uri?,
+      mediaType?} of the deny record or policy change; and
+      relyingParties, a list of {id, state} with state a
+      revocation_state value (issued, enforced_observed,
+      use_after_revocation, not_established).
+
+   coverage:  claim, one of complete_verified, issued_after_only,
+      partial and unknown; and issuedAfter, a time, present when claim
+      is issued_after_only.
+
+    +===+==============================+==============================+
+    | # | Rule                         | Code                         |
+    +===+==============================+==============================+
+    | 4 | The parts are disjoint and   | denominator-union-mismatch   |
+    |   | their union equals           |                              |
+    |   | population.credentials       |                              |
+    +---+------------------------------+------------------------------+
+    | 5 | revocations names exactly    | revocation-entries-mismatch  |
+    |   | the credentials of the       |                              |
+    |   | revoked part                 |                              |
+    +---+------------------------------+------------------------------+
+    | 6 | complete_verified is claimed | coverage-claim-exceeds-proof |
+    |   | only when every credential   |                              |
+    |   | is in the revoked part       |                              |
+    +---+------------------------------+------------------------------+
+    | 7 | issued_after_only carries    | coverage-claim-incomplete    |
+    |   | issuedAfter                  |                              |
+    +---+------------------------------+------------------------------+
+
+                                  Table 3
+
+   A record passing every rule is accepted as sweep-recorded.  An honest
+   partial or issued_after_only sweep is well formed.  Whether a relying
+   party admits a system restored under it is that party's policy.
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 10]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+5.3.  R3: Re-enable decision
+
+   An R3 records one decision about whether a stopped or restricted
+   agent system may run again: the outcome, the scope restored, who
+   approved it and on what independence, and, for every kind of evidence
+   incident guidance asks a restart to show, either the digest of what
+   was shown or an explicit statement that it was not addressed.
+
+   The subject is the configuration restored: one or more members, each
+   the SHA-256 of a baseline (model weights, harness code, container
+   image, tool configuration).
+
+   The predicate carries the common members, predecessors (at least one
+   record of this document), and:
+
+   restoration:  decision, a restoration_decision value (resume_full,
+      resume_staged, remain_restricted, not_established); and
+      restoredScope, present when decision is resume_staged: {agents,
+      tools, routes, credentials}, each a sorted list of identifiers, at
+      least one non-empty.
+
+   approvers:  A list of {id, roles, independenceBasis}, with roles as
+      in R1 and independenceBasis an independence_basis value
+      (independent_sources, subject_supplied, undeclared).
+
+   setSufficiency:  The producer's own set_sufficiency judgment of the
+      evidence below: sufficient, insufficient or not_assessed.
+
+   evidence:  An object with exactly the sixteen slots of the table
+      below.  Each slot is either a resource descriptor, {"digest":
+      {"sha256": ...}} with optional uri and mediaType as in the in-toto
+      ResourceDescriptor, or {"notAddressed": "<reason>"} with a non-
+      empty reason.  A slot MAY point at an attestation the producer
+      already emits, including an agent audit record [AUDIT-RECORD].
+
+    +=========================+=======================+===============+
+    | Slot                    | What it holds         | Where         |
+    |                         |                       | guidance asks |
+    |                         |                       | for it        |
+    +=========================+=======================+===============+
+    | actorObjective          | the adversary's       | SP 800-184    |
+    |                         | objective, or         | Sec. 2.3.4    |
+    |                         | confirmation it is    |               |
+    |                         | not apparent          |               |
+    +-------------------------+-----------------------+---------------+
+    | persistence             | persistence           | SP 800-184    |
+    |                         | mechanisms            | Sec. 2.3.4    |
+    |                         | understood, or non-   |               |
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 11]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+    |                         | persistence confirmed |               |
+    +-------------------------+-----------------------+---------------+
+    | rootCause               | root cause remediated | SP 800-61r3   |
+    |                         | before production use | RC.RP-05      |
+    +-------------------------+-----------------------+---------------+
+    | affectedScope           | affected hosts,       | SP 800-61r3   |
+    |                         | services and similar  | RS.MI-02; Key |
+    |                         | agents identified     | Practices 6.3 |
+    +-------------------------+-----------------------+---------------+
+    | assetIntegrity          | restoration assets    | SP 800-61r3   |
+    |                         | checked before use    | RC.RP-03; SP  |
+    |                         |                       | 800-53 CP-    |
+    |                         |                       | 10(4)         |
+    +-------------------------+-----------------------+---------------+
+    | restoredAssetsClean     | restored assets free  | SP 800-61r3   |
+    |                         | of indicators and of  | RC.RP-05; SP  |
+    |                         | the original weakness | 800-184 Sec.  |
+    |                         |                       | 6.2.2         |
+    +-------------------------+-----------------------+---------------+
+    | containmentReproof      | monitors, logging,    | Key Practices |
+    |                         | egress, shutdown and  | 7.3           |
+    |                         | permissions shown     |               |
+    |                         | working               |               |
+    +-------------------------+-----------------------+---------------+
+    | incidentReplay          | new controls shown to | Key Practices |
+    |                         | catch a replay of the | 7.4           |
+    |                         | incident              |               |
+    +-------------------------+-----------------------+---------------+
+    | restoreOrder            | dependency order of   | SP 800-61r3   |
+    |                         | the restoration       | RC.RP-04      |
+    +-------------------------+-----------------------+---------------+
+    | postRestartMonitoring   | monitoring that       | SP 800-61r3   |
+    |                         | detects recurrence    | RC.RP-04; SP  |
+    |                         |                       | 800-184 Sec.  |
+    |                         |                       | 6.2.3         |
+    +-------------------------+-----------------------+---------------+
+    | exclusiveControl        | exclusive control of  | SP 800-184    |
+    |                         | the environment re-   | Sec. 6.2.3    |
+    |                         | established           |               |
+    +-------------------------+-----------------------+---------------+
+    | controlsNotDegraded     | controls not degraded | SP 800-53     |
+    |                         | by the restoration    | CP-2          |
+    +-------------------------+-----------------------+---------------+
+    | residualRisk            | the remaining risk,   | Key Practices |
+    |                         | stated and accepted   | 7.5; SP       |
+    |                         |                       | 800-61r3      |
+    |                         |                       | RC.RP-06      |
+    +-------------------------+-----------------------+---------------+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 12]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+    | seniorApproval          | senior approval,      | Key Practices |
+    |                         | informed by outside   | 2.6           |
+    |                         | assessment where used |               |
+    +-------------------------+-----------------------+---------------+
+    | multiPartyAuthorization | more than one person  | AWS Agentic   |
+    |                         | authorized the        | AI Lens BP04  |
+    |                         | restart               |               |
+    +-------------------------+-----------------------+---------------+
+    | ownerConfirmation       | the system or asset   | SP 800-61r3   |
+    |                         | owner confirmed the   | RC.RP-04      |
+    |                         | restoration           |               |
+    +-------------------------+-----------------------+---------------+
+
+              Table 4: Evidence slots of a re-enable decision
+
+   The guidance is cited from [NIST-SP-800-61R3], [NIST-SP-800-184],
+   [NIST-SP-800-53R5], [KEY-PRACTICES] and [AWS-AGENTIC-LENS].
+
+       +===+===========================+===========================+
+       | # | Rule                      | Code                      |
+       +===+===========================+===========================+
+       | 4 | evidence carries every    | evidence-slot-missing     |
+       |   | slot, and no other        |                           |
+       +---+---------------------------+---------------------------+
+       | 5 | Every notAddressed reason | evidence-slot-unexplained |
+       |   | is non-empty              |                           |
+       +---+---------------------------+---------------------------+
+       | 6 | approvers is non-empty    | no-approver               |
+       |   | and at least one approver |                           |
+       |   | holds authorized          |                           |
+       +---+---------------------------+---------------------------+
+       | 7 | resume_staged carries     | partial-without-scope     |
+       |   | restoredScope with at     |                           |
+       |   | least one identifier      |                           |
+       +---+---------------------------+---------------------------+
+       | 8 | resume_full carries no    | full-with-scope           |
+       |   | restoredScope             |                           |
+       +---+---------------------------+---------------------------+
+
+                                  Table 5
+
+   A record passing every rule is accepted as decision-recorded.  The
+   slots record what a decision cites.  Which slots a relying party
+   requires to carry a digest, and what it does with a notAddressed
+   slot, is its own admission policy.  A record that omits a slot is
+   malformed; a record that declares a slot not addressed says so in a
+   form the relying party can refuse.
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 13]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+5.4.  R4: Joint authority
+
+   An R4 records, for an incident that crosses organizations, which
+   party may act on which asset, under what kind of grant, and which
+   indicators the parties share.  Restart conditions in incident
+   guidance assume one owner of the restored asset; when an agent
+   operated by one organization affects infrastructure run by another,
+   an R4 names the owners and the assignment, so each party's R1 and R3
+   records can be read against it.
+
+   The subject is the shared indicator set: one member, the SHA-256 of
+   the canonical list of shared indicators.
+
+   The predicate carries the common members and:
+
+   sharedIndicators:  A non-empty sorted list of {sha256} digests of
+      indicators both parties hold.
+
+   parties:  At least two entries {id, organization, correlationId,
+      authorityBasis, assets}, authorityBasis as in R1 and assets a
+      sorted list of asset identifiers the party may act on.
+
+   actions:  Optional.  A list of {party, asset, record} naming actions
+      already taken, where record is {sha256} of the R1 statement that
+      authorized the action.
+
+    +===+============================+===============================+
+    | # | Rule                       | Code                          |
+    +===+============================+===============================+
+    | 4 | Every party carries        | authority-basis-missing       |
+    |   | authorityBasis             |                               |
+    +---+----------------------------+-------------------------------+
+    | 5 | The parties belong to at   | single-organization           |
+    |   | least two organizations    |                               |
+    +---+----------------------------+-------------------------------+
+    | 6 | Every action names a party | party-acts-outside-assignment |
+    |   | in parties and an asset in |                               |
+    |   | that party's assets        |                               |
+    +---+----------------------------+-------------------------------+
+
+                                 Table 6
+
+   A record passing every rule is accepted as assignment-recorded.  A
+   record co-signed by every party (several DSSE signatures over one
+   payload) is stronger than one signed by one party, and the envelope
+   shows which it is.
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 14]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+5.5.  RB: Revocation boundary
+
+   Revoking a credential stops new work from starting under it.  It does
+   not by itself stop work already in flight from committing its effect
+   afterwards.  An RB reports, for one declared sink and one test
+   window, whether any effect from an in-flight task committed at that
+   sink's declared commit boundary after the revocation took effect.  It
+   states an outcome and requires no mechanism.
+
+   The subject is the test plan: one member, the SHA-256 of the declared
+   sink and window.
+
+   The predicate carries the common members, optional predecessors, and:
+
+   sink:  {id, kind, commitBoundary}. kind is one of database,
+      filesystem, http_endpoint, subprocess, queue and other.
+      commitBoundary is a non-empty string saying at which point an
+      effect counts as committed.
+
+   observer:  {id, vantage}, vantage one of sink_side and agent_side.
+
+   revocation:  credential, an opaque identifier; effectiveAt, when the
+      revocation took effect at its authority; and timeSource, a non-
+      empty string naming the clock.
+
+   window:  {start, end}.
+
+   counts:  Non-negative integers attempts, inFlightAtRevocation,
+      postRevocationCommits, replaysAttempted and replaysCommitted.
+
+   exclusions:  A list of {count, reason}, each reason non-empty, for
+      attempts left out of the counts.
+
+   result:  One of no_post_revocation_commit_observed,
+      post_revocation_commit_observed and not_established.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 15]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   +=+====================================+===========================+
+   |#| Rule                               | Code                      |
+   +=+====================================+===========================+
+   |4| window.start is not after          | revocation-outside-window |
+   | | effectiveAt, and effectiveAt is    |                           |
+   | | not after window.end               |                           |
+   +-+------------------------------------+---------------------------+
+   |5| inFlightAtRevocation does not      | counts-inconsistent       |
+   | | exceed attempts,                   |                           |
+   | | postRevocationCommits does not     |                           |
+   | | exceed inFlightAtRevocation, and   |                           |
+   | | replaysCommitted does not exceed   |                           |
+   | | replaysAttempted                   |                           |
+   +-+------------------------------------+---------------------------+
+   |6| result is                          | result-contradicts-counts |
+   | | post_revocation_commit_observed    |                           |
+   | | exactly when postRevocationCommits |                           |
+   | | or replaysCommitted is positive,   |                           |
+   | | unless result is not_established   |                           |
+   +-+------------------------------------+---------------------------+
+   |7| no_post_revocation_commit_observed | observer-not-at-sink      |
+   | | requires a sink_side observer      |                           |
+   +-+------------------------------------+---------------------------+
+
+                                 Table 7
+
+   A record passing every rule is accepted as boundary-recorded.  One
+   record covers one sink; a claim about several sinks is several
+   records.
+
+6.  Bundles
+
+   A re-enable decision is rarely checkable alone: it rests on the
+   authorizations and revocations before it.  A restoration evidence
+   bundle is one R3 together with every record its predecessors name,
+   recursively, and any R4 or RB the producer adds.  A reader checks a
+   bundle in this order and reports the first failure:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 16]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+     +====+===========================+=============================+
+     | #  | Rule                      | Code                        |
+     +====+===========================+=============================+
+     | B1 | Every record in the       | the record's own code       |
+     |    | bundle conforms to its    |                             |
+     |    | own type                  |                             |
+     +----+---------------------------+-----------------------------+
+     | B2 | Every predecessor digest  | predecessor-not-carried     |
+     |    | resolves to exactly one   |                             |
+     |    | record carried in the     |                             |
+     |    | bundle                    |                             |
+     +----+---------------------------+-----------------------------+
+     | B3 | The record a digest       | predecessor-type-mismatch   |
+     |    | resolves to has the       |                             |
+     |    | predicateType the         |                             |
+     |    | reference names           |                             |
+     +----+---------------------------+-----------------------------+
+     | B4 | No record names itself,   | predecessor-cycle           |
+     |    | directly or through other |                             |
+     |    | records, as its           |                             |
+     |    | predecessor               |                             |
+     +----+---------------------------+-----------------------------+
+     | B5 | Every record names the    | incident-mismatch           |
+     |    | same incident, by         |                             |
+     |    | incident or by one of its |                             |
+     |    | related pairs             |                             |
+     +----+---------------------------+-----------------------------+
+     | B6 | No record's issuedAt is   | predecessor-issued-later    |
+     |    | earlier than that of a    |                             |
+     |    | record it names as a      |                             |
+     |    | predecessor               |                             |
+     +----+---------------------------+-----------------------------+
+     | B7 | Every credential an R3    | restored-credential-unswept |
+     |    | restores in               |                             |
+     |    | restoredScope.credentials |                             |
+     |    | appears in some R2 in the |                             |
+     |    | bundle                    |                             |
+     +----+---------------------------+-----------------------------+
+
+                                 Table 8
+
+   A bundle passing every rule is reported as bundle-consistent.  That
+   verdict says the records agree with each other.  It does not say
+   whether the relying party should admit the decision.
+
+   A relying party's admission policy is written against a consistent
+   bundle.  For example, a policy can require that every restored
+   credential lie in the revoked part of an R2 whose coverage.claim is
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 17]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   complete_verified, that containmentReproof and incidentReplay carry
+   digests, and that at least one approver with independent_sources hold
+   authorized.  Such a policy is outside this document.
+
+7.  Security Considerations
+
+7.1.  A signature authenticates an assertion, not its truth
+
+   Every record here is a statement by its producer.  A conforming
+   record is complete and internally consistent; it is not evidence that
+   the authority named was held, that the action ran as described, that
+   the cited evidence shows what its slot names, or that resuming was
+   safe.  The value of the format is that a false statement is
+   attributable to a named signer and that an omission is visible, not
+   that falsehood is prevented.
+
+7.2.  Absence is not read as a value
+
+   An absent authorityBasis is not role_grant, an omitted evidence slot
+   is malformed rather than satisfied, and a claim of no induced effects
+   requires the observation that looked.  Each of these closes a way for
+   a record to look complete because it says less.  A reader that
+   supplies a default for an absent member defeats the format.
+
+7.3.  Revocation reach
+
+   A revocation sweep that claims more than its partition shows is
+   refused (R2 rule 6).  A sweep that honestly reports issued_after_only
+   or partial is well formed, and a relying party that admits a restart
+   under it accepts that credentials issued earlier, or outside the
+   revoked part, may still be live.  The relyingParties states
+   distinguish a revocation that was issued from one a relying party was
+   observed to enforce; use_after_revocation exists so that a use after
+   revocation can be recorded rather than omitted.
+
+7.4.  Work in flight
+
+   Revocation does not stop work that is already in flight from
+   committing.  An RB with a sink_side observer reports whether that
+   happened at one sink in one window.  A zero count bounds a rate for
+   that sink and window; it is not a guarantee for other sinks or
+   windows.  An agent-side observer cannot support
+   no_post_revocation_commit_observed (RB rule 7), because the agent
+   process cannot see the sink's committed state.
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 18]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+7.5.  Authority that outlives a pause
+
+   An R1 authorization carries notAfter.  A relying party that admits
+   actions under an R1 after a pause and restart SHOULD check notAfter
+   against the restart, and SHOULD require a fresh R1 for any action
+   after an R3, so that a permit issued before the pause is not reused
+   after it.
+
+7.6.  Approver independence
+
+   independenceBasis is the producer's statement.  A relying party that
+   requires independence SHOULD require independent_sources and SHOULD
+   resolve the named approver itself.  An approver who also stopped the
+   system and approves its restart is recordable; whether that is
+   acceptable is admission policy.
+
+7.7.  Predecessor digests
+
+   Predecessors are named by the SHA-256 of the statement bytes as
+   carried in the DSSE payload.  A reader MUST hash those bytes, not a
+   re-serialization, since a re-serialization that differs in member
+   order or number form changes the digest.
+
+8.  Privacy Considerations
+
+   Records name parties by identifier and may name natural persons as
+   authorizers, approvers or accountable parties.  Producers SHOULD use
+   role or account identifiers where a person's name is not needed by
+   the relying party, and SHOULD state in doesNotAssert what a
+   distributed record deliberately omits.
+
+   Credential identifiers in an R2 or RB are opaque names.  They MUST
+   NOT carry secrets, hashes of secrets or key fingerprints, because a
+   record may travel to parties not entitled to the credential.
+
+   Evidence slots and indicator sets are bound by digest and not
+   carried.  A record can therefore travel to a party entitled to check
+   the decision without carrying the forensic material the decision
+   rests on; that party resolves a digest only if it needs the content.
+   Shared indicators in an R4 are digests for the same reason: the
+   record shows the parties hold the same indicators without disclosing
+   them to a reader that does not.
+
+
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 19]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+9.  IANA Considerations
+
+   This document has no IANA actions.  Each predicate type is a URI
+   under a namespace the author controls and requires no registration to
+   be used, consistent with the in-toto Attestation Framework's
+   treatment of predicate type identifiers [IN-TOTO].
+
+   A record carries its predicate type inside the bytes its producer
+   signed.  A later revision of this document MUST NOT move a URI once
+   records carrying it exist, since moving it invalidates every
+   signature over them.  A change to what a record of a type must carry,
+   including a member or a closed value added, is published under a new
+   URI with v1 read as v2, and a record valid under a v1 URI stays valid
+   under every later revision that keeps that URI.
+
+10.  Conformance
+
+   A conforming producer emits records that meet every MUST of Section 4
+   and of the section of each type it emits.  A conforming reader
+   applies the rule order of Section 4.4 to each record and the order of
+   Section 6 to each bundle, and reports the first failing reason code.
+
+   A reader is not described as conforming to this revision unless it
+   reaches the verdict and the reason its manifest declares on every
+   member of the vectors-restart-records family of release 0.31.2 of
+   [VECTORS].  That family carries 57 members, 15 to accept and 42 to
+   reject, with corpus digest
+   5b7f58c91b517bd7c96dcccdef0d827a4f730fd4a650b4992b362bb9925cae29.
+   Each reject member changes exactly one value of an accepting control,
+   and the rule it names is the first that fails.  Three rules have no
+   member, and the manifest lists each with its reason: rule 3 of R4 and
+   of RB, which carry no registry-defined value, and bundle rule B4,
+   which would need a SHA-256 fixed point to force.  Passing the corpus
+   is necessary and not sufficient; those three rules are checked by
+   reading them.
+
+   A document that references this one normatively SHOULD name the
+   revision it relies on and MAY name a release of [VECTORS] as its
+   conformance test.  The five predicate type URIs, the reason codes,
+   and the section anchors common, rule-order, r1, r2, r3, r4, rb and
+   bundles are stable across revisions and may be referenced by name.
+
+11.  Implementation Status
+
+   Note to the RFC Editor: please remove this section before
+   publication.
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 20]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   This section records the status of known implementations at the time
+   of writing, following [RFC7942].  Listing an implementation here does
+   not imply endorsement by the IETF.
+
+   [VECTORS] is an open conformance corpus licensed under Apache-2.0.
+   Its vectors-restart-records family publishes the members of
+   Section 10 with a checker that uses only the Python standard library,
+   and JSON Schemas for the five types that check shape and closed
+   values.  From the source of release 0.31.2:
+
+   git clone --branch v0.31.2 \
+       https://github.com/probityai/agent-evidence-vectors
+   cd agent-evidence-vectors
+   python3 vectors-restart-records/check_vectors.py
+
+   On release 0.31.2 the run reports that all 57 members agree with the
+   manifest.  The checker also takes one record (--record) or one bundle
+   directory (--bundle) and prints the verdict and the first failing
+   reason.  The repository's Go reader, built from the same release (go
+   build ./cmd/aee-verify, then aee-verify vectors-restart-records),
+   reports the same: 57 members, 15 accepted and 42 rejected, each as
+   the manifest declares.
+
+12.  Mapping to the AUDIT Problem Statement
+
+   The AUDIT BoF request [AUDIT-BOFREQ] and the proposed charter
+   [AUDIT-CHARTER] name problems a data model should address.  This
+   document addresses three of them for the period from containment to
+   restoration:
+
+   *  Authorization state over time: R1 records each authorization with
+      its window, R2 the revocation of credentials and its reach, R3 the
+      decision that ends a containment, and the bundle rules bind them
+      in order by digest and time.
+
+   *  References to the identities of participating entities: R1 and R3
+      name each party with its role and its authority basis, and R4
+      names the organizations and the assets each may act on.
+
+   *  Verification by a party that trusts neither the agent nor its
+      operator: every record is signed, every closed value is fail-
+      closed, and every rule has a reason code a second reader
+      reproduces.
+
+   Action provenance for each enforced request is the subject of
+   [AUDIT-RECORD]; an R3 cites such records by digest.  Policy models,
+   admission policy and retention periods are left to other work.
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 21]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+13.  Normative References
+
+   [AUDIT-RECORD]
+              Gilda, S., "An Audit Record Format for AI Agent
+              Authorization Decisions", Work in Progress, Internet-
+              Draft, draft-gilda-audit-agent-audit-record-03, 29 October
+              2026, <https://datatracker.ietf.org/doc/html/draft-gilda-
+              audit-agent-audit-record-03>.
+
+   [DSSE]     Secure Systems Lab, "Dead Simple Signing Envelope", 2026,
+              <https://github.com/secure-systems-lab/dsse>.
+
+   [IN-TOTO]  in-toto, "in-toto Attestation Framework Specification",
+              2026, <https://github.com/in-
+              toto/attestation/blob/main/spec/README.md>.
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/rfc/rfc2119>.
+
+   [RFC3339]  Klyne, G. and C. Newman, "Date and Time on the Internet:
+              Timestamps", RFC 3339, DOI 10.17487/RFC3339, July 2002,
+              <https://www.rfc-editor.org/rfc/rfc3339>.
+
+   [RFC7493]  Bray, T., Ed., "The I-JSON Message Format", RFC 7493,
+              DOI 10.17487/RFC7493, March 2015,
+              <https://www.rfc-editor.org/rfc/rfc7493>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+   [RFC8785]  Rundgren, A., Jordan, B., and S. Erdtman, "JSON
+              Canonicalization Scheme (JCS)", RFC 8785,
+              DOI 10.17487/RFC8785, June 2020,
+              <https://www.rfc-editor.org/rfc/rfc8785>.
+
+   [VECTORS]  agent-evidence-vectors contributors, "agent-evidence-
+              vectors: conformance vectors for agent evidence records,
+              release 0.31.2", 2026, <https://github.com/probityai/
+              agent-evidence-vectors/tree/v0.31.2/vectors-restart-
+              records>.
+
+   [VOCABULARY]
+              agent-evidence-vocabulary contributors, "agent-evidence-
+              vocabulary: a closed term registry", 2026,
+              <https://w3id.org/agent-evidence/vocab/v1/>.
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 22]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+14.  Informative References
+
+   [AIMS]     Kasselman, P., Lombardo, J., Rosomakho, Y., Campbell, B.,
+              Steele, N., and A. Parecki, "AI Identity Management
+              System", Work in Progress, Internet-Draft, draft-ietf-
+              wimse-aims-00, 15 September 2026,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-wimse-
+              aims-00>.
+
+   [AUDIT-BOFREQ]
+              Kuehlewind, M., "AUDIT - Agent Use of Delegation and
+              Interaction Traceability", 8 October 2026,
+              <https://datatracker.ietf.org/doc/bofreq-kuhlewind-audit-
+              agent-use-of-delegation-and-interaction-traceability/>.
+
+   [AUDIT-CHARTER]
+              AUDIT BoF proponents, "Agent Use of Delegation and
+              Interaction Traceability (AUDIT) Working Group Charter
+              (proposed)", 2026, <https://github.com/mirjak/audit-bof-
+              preparation/blob/main/audit-charter.md>.
+
+   [AWS-AGENTIC-LENS]
+              Amazon Web Services, "AGENTSEC07-BP04, Agentic AI Lens,
+              AWS Well-Architected Framework", 2026,
+              <https://docs.aws.amazon.com/wellarchitected/latest/
+              agentic-ai-lens/agentsec07-bp04.html>.
+
+   [KEY-PRACTICES]
+              NIST Center for AI Standards and Innovation, NSA, and
+              CISA, "Key Practices for Incident Readiness and Response
+              in Super Intelligence Training and Evaluation", 16 October
+              2026.
+
+   [NIST-SP-800-53R5]
+              National Institute of Standards and Technology, "Security
+              and Privacy Controls for Information Systems and
+              Organizations", NIST Special Publication 800-53 Rev. 5,
+              September 2020,
+              <https://doi.org/10.6028/NIST.SP.800-53r5>.
+
+   [NIST-SP-800-61R3]
+              National Institute of Standards and Technology, "Incident
+              Response Recommendations and Considerations for
+              Cybersecurity Risk Management: A CSF 2.0 Community
+              Profile", NIST Special Publication 800-61 Rev. 3, April
+              2025, <https://doi.org/10.6028/NIST.SP.800-61r3>.
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 23]
+
+Internet-Draft        Restoration Evidence Records         November 2026
+
+
+   [NIST-SP-800-184]
+              National Institute of Standards and Technology, "Guide for
+              Cybersecurity Event Recovery", NIST Special
+              Publication 800-184, December 2016,
+              <https://doi.org/10.6028/NIST.SP.800-184>.
+
+   [RFC7942]  Sheffer, Y. and A. Farrel, "Improving Awareness of Running
+              Code: The Implementation Status Section", BCP 205,
+              RFC 7942, DOI 10.17487/RFC7942, July 2016,
+              <https://www.rfc-editor.org/rfc/rfc7942>.
+
+Document History
+
+   -00: Initial version.  Defines five record types and the bundle
+   rules; the predicate type URIs are those published with release
+   0.31.2 of the conformance corpus.
+
+Acknowledgments
+
+   The evidence slots of the re-enable decision follow the restart
+   conditions of NIST SP 800-61 Rev. 3, NIST SP 800-184, NIST SP 800-53
+   Rev. 5, the NIST, NSA and CISA Key Practices of October 2026, and the
+   AWS Agentic AI Lens.
+
+Author's Address
+
+   Sankalp Gilda
+   Email: sankalp.gilda@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gilda                      Expires 6 May 2027                  [Page 24]
