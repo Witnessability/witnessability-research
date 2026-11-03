@@ -35,3 +35,8 @@ jobs:
         run: make check-standalone PYTHON=python
       - name: Reproduce the three pinned C1 event-absence cases
         run: python interop/event-absence-c1-checker/run.py --out runs/event-absence-c1
+      - name: Reproduce pinned Restoration Evidence review
+        run: |
+          review_dir=$(mktemp -d)
+          cp -R interop/restoration-evidence-00-review/. "$review_dir/"
+          python "$review_dir/review.py"

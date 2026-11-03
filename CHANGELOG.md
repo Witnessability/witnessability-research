@@ -45,3 +45,4 @@ available for exact replay; changed expectations require a new visible version.
 
 - Publish the [bounded unsigned-record review](interop/restoration-evidence-00-review/README.md), preserving the original checker and archived results. The proposed default-mode correction is separated from the specification wording proposal; corpus agreement does not establish full conformance or safe resumption.
 
+- Reconcile the technical message and current status after publication; retain original research outputs and the preparation snapshot. Add isolated Restoration replay to the Python 3.12/3.13 CI matrix. This supersedes the message wording from cc97bb27be610b8b0fe03a3ea58e40d6c09d7d31, without changing the normative proposal or checker.
